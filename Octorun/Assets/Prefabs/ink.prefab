@@ -1,0 +1,170 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &6137463023539285234
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 114436001064554544, guid: deb4957b29806144d8e57d6e27824f2f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1073749717688323566, guid: deb4957b29806144d8e57d6e27824f2f,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2510883309010884760, guid: deb4957b29806144d8e57d6e27824f2f,
+        type: 3}
+      propertyPath: m_Name
+      value: CFXR Water Sprinkler Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 2510883309010884760, guid: deb4957b29806144d8e57d6e27824f2f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2510883309010884761, guid: deb4957b29806144d8e57d6e27824f2f,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2510883309010884766, guid: deb4957b29806144d8e57d6e27824f2f,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2510883309010884766, guid: deb4957b29806144d8e57d6e27824f2f,
+        type: 3}
+      propertyPath: ShapeModule.angle
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2510883309010884766, guid: deb4957b29806144d8e57d6e27824f2f,
+        type: 3}
+      propertyPath: ColorModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2510883309010884766, guid: deb4957b29806144d8e57d6e27824f2f,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2510883309010884766, guid: deb4957b29806144d8e57d6e27824f2f,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2510883309010884766, guid: deb4957b29806144d8e57d6e27824f2f,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2510883309010884766, guid: deb4957b29806144d8e57d6e27824f2f,
+        type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key0.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2510883309010884766, guid: deb4957b29806144d8e57d6e27824f2f,
+        type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key0.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2510883309010884766, guid: deb4957b29806144d8e57d6e27824f2f,
+        type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key0.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2510883309010884766, guid: deb4957b29806144d8e57d6e27824f2f,
+        type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key1.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2510883309010884766, guid: deb4957b29806144d8e57d6e27824f2f,
+        type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key1.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2510883309010884766, guid: deb4957b29806144d8e57d6e27824f2f,
+        type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key1.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2510883309010884766, guid: deb4957b29806144d8e57d6e27824f2f,
+        type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.m_ColorSpace
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2510883309010884767, guid: deb4957b29806144d8e57d6e27824f2f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -41.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 2510883309010884767, guid: deb4957b29806144d8e57d6e27824f2f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.247
+      objectReference: {fileID: 0}
+    - target: {fileID: 2510883309010884767, guid: deb4957b29806144d8e57d6e27824f2f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2510883309010884767, guid: deb4957b29806144d8e57d6e27824f2f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.77875733
+      objectReference: {fileID: 0}
+    - target: {fileID: 2510883309010884767, guid: deb4957b29806144d8e57d6e27824f2f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.6068384
+      objectReference: {fileID: 0}
+    - target: {fileID: 2510883309010884767, guid: deb4957b29806144d8e57d6e27824f2f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.07501829
+      objectReference: {fileID: 0}
+    - target: {fileID: 2510883309010884767, guid: deb4957b29806144d8e57d6e27824f2f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.1402015
+      objectReference: {fileID: 0}
+    - target: {fileID: 2510883309010884767, guid: deb4957b29806144d8e57d6e27824f2f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -75.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 2510883309010884767, guid: deb4957b29806144d8e57d6e27824f2f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -11.935
+      objectReference: {fileID: 0}
+    - target: {fileID: 2510883309010884767, guid: deb4957b29806144d8e57d6e27824f2f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 29.593
+      objectReference: {fileID: 0}
+    - target: {fileID: 4080346091478440712, guid: deb4957b29806144d8e57d6e27824f2f,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6421574446063911419, guid: deb4957b29806144d8e57d6e27824f2f,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7699921175360227159, guid: deb4957b29806144d8e57d6e27824f2f,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: deb4957b29806144d8e57d6e27824f2f, type: 3}

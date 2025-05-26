@@ -52,6 +52,7 @@ public class OctopusController : MonoBehaviour, IAdjustableSpeed
         {
             // La velocidad horizontal es afectada por el multiplicador, el salto vertical no
             Vector3 hopVector = _moveDirection * (moveSpeed * _speedMultiplier) + Vector3.up * hopForce;
+            Debug.Log(hopVector);
             _rb.AddForce(hopVector, ForceMode.Impulse);
             _hopTimer = hopCooldown;
         }
