@@ -13,9 +13,9 @@ TagManager:
   - Water
   - UI
   - Colision
-  - 
-  - 
-  - 
+  - Player
+  - Floor
+  - Enemy
   - 
   - 
   - 
