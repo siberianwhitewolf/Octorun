@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8453427053155263148}
   - component: {fileID: 5279782658811472463}
   - component: {fileID: 4341549852426958832}
+  - component: {fileID: 7702139147842996658}
   m_Layer: 0
   m_Name: Pared_metal_revestimiento
   m_TagString: Untagged
@@ -83,3 +84,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7702139147842996658
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504230657169233256}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.0000004, y: 2.0999997, z: 0.14222685}
+  m_Center: {x: -0.00000005960466, y: 0, z: 0.00000047683716}
