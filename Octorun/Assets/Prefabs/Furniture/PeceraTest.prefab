@@ -177,6 +177,7 @@ GameObject:
   - component: {fileID: 2663741174717679317}
   - component: {fileID: 3198643566547662056}
   - component: {fileID: 8310829697562237058}
+  - component: {fileID: 5817506671462514196}
   m_Layer: 0
   m_Name: Arena
   m_TagString: Untagged
@@ -249,6 +250,28 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &5817506671462514196
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3451998874695407925}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8563135981553767809, guid: efd2c9e723af220428dc70076d647eac, type: 3}
 --- !u!1 &4166128636428558111
 GameObject:
   m_ObjectHideFlags: 0
@@ -260,6 +283,7 @@ GameObject:
   - component: {fileID: 9051754274817551866}
   - component: {fileID: 3530914834183267725}
   - component: {fileID: 640432322913421654}
+  - component: {fileID: 556866309712210283}
   m_Layer: 0
   m_Name: Piedras
   m_TagString: Untagged
@@ -332,6 +356,28 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &556866309712210283
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4166128636428558111}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 586026952175044347, guid: efd2c9e723af220428dc70076d647eac, type: 3}
 --- !u!1 &4212736701795655831
 GameObject:
   m_ObjectHideFlags: 0
@@ -382,6 +428,7 @@ GameObject:
   - component: {fileID: 7392721073503988057}
   - component: {fileID: 6895109116172897712}
   - component: {fileID: 3670806036284866690}
+  - component: {fileID: 8203902400425145532}
   m_Layer: 0
   m_Name: Remo
   m_TagString: Untagged
@@ -454,6 +501,28 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &8203902400425145532
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5079929823208920781}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -4864850064201415404, guid: efd2c9e723af220428dc70076d647eac, type: 3}
 --- !u!1 &6706182945616410038
 GameObject:
   m_ObjectHideFlags: 0
@@ -465,6 +534,7 @@ GameObject:
   - component: {fileID: 5517506843387570981}
   - component: {fileID: 6993245517955425325}
   - component: {fileID: 8098876745317768791}
+  - component: {fileID: 6724766242880409528}
   m_Layer: 0
   m_Name: Acrilico
   m_TagString: Untagged
@@ -537,6 +607,28 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &6724766242880409528
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6706182945616410038}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2944984696796573611, guid: efd2c9e723af220428dc70076d647eac, type: 3}
 --- !u!1 &8488324055280263588
 GameObject:
   m_ObjectHideFlags: 0
@@ -548,6 +640,7 @@ GameObject:
   - component: {fileID: 691273940346347140}
   - component: {fileID: 7613316212848364883}
   - component: {fileID: 1982205177208912081}
+  - component: {fileID: 8818227557004951906}
   m_Layer: 0
   m_Name: Bote
   m_TagString: Untagged
@@ -620,6 +713,28 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &8818227557004951906
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8488324055280263588}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -1024212901188704161, guid: efd2c9e723af220428dc70076d647eac, type: 3}
 --- !u!1 &8836527999565452816
 GameObject:
   m_ObjectHideFlags: 0
@@ -631,6 +746,7 @@ GameObject:
   - component: {fileID: 1926649781968868386}
   - component: {fileID: 2538793592726490611}
   - component: {fileID: 3489976706083129081}
+  - component: {fileID: 5719392569587864755}
   m_Layer: 0
   m_Name: Arbolito
   m_TagString: Untagged
@@ -703,3 +819,26 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &5719392569587864755
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8836527999565452816}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 6.992891
+  m_Height: 48.87335
+  m_Direction: 1
+  m_Center: {x: -0.30897117, y: -5.302951, z: 6.903742e-17}
