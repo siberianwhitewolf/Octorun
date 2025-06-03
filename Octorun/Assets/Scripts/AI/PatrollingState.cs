@@ -29,9 +29,11 @@ public class PatrollingState : IState
         if (isWaiting)
         {
             waitTimer += Time.deltaTime;
+            chef.animator.SetBool("IsWalking",false);
             if (waitTimer >= currentNode.waitTime)
             {
                 isWaiting = false;
+                chef.animator.SetBool("IsWalking",true);
                 AdvanceIndex();
                 MoveToWaypoint(chef.currentWaypointIndex);
             }

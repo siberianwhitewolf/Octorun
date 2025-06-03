@@ -2073,7 +2073,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6923367732349897337}
   - component: {fileID: 4903428302100607119}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cristal_ojo2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2165,9 +2165,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4342887847643316383}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pulpito
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2331,7 +2331,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7004725763523415225}
   - component: {fileID: 6536704324886250012}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cristal_ojo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5257,7 +5257,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3209848344684656353}
   - component: {fileID: 6381599027463969244}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Skin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5299,8 +5299,8 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 90828b8980cd8674f8f45c26ec18e5ba, type: 2}
   - {fileID: 2100000, guid: ee81a5534294666449027265c8972019, type: 2}
+  - {fileID: 2100000, guid: 90828b8980cd8674f8f45c26ec18e5ba, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7666,7 +7666,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2287751511071209093}
   - component: {fileID: 1199947112949967578}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Ojo2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8029,7 +8029,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4376120974046006693
 Transform:
   m_ObjectHideFlags: 0
@@ -8671,7 +8671,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4812261096911838438}
   - component: {fileID: 2018647509256468538}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Ojo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9150,17 +9150,17 @@ PrefabInstance:
     - target: {fileID: 3278883554580211484, guid: 72c47fdc43d84b243bdc109c284341d6,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -42.35
+      value: 1.0325179
       objectReference: {fileID: 0}
     - target: {fileID: 3278883554580211484, guid: 72c47fdc43d84b243bdc109c284341d6,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.100000024
       objectReference: {fileID: 0}
     - target: {fileID: 3278883554580211484, guid: 72c47fdc43d84b243bdc109c284341d6,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -22.07
+      value: -1.2349713
       objectReference: {fileID: 0}
     - target: {fileID: 3278883554580211484, guid: 72c47fdc43d84b243bdc109c284341d6,
         type: 3}
@@ -9269,6 +9269,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 5884829129145826507}
+    - targetCorrespondingSourceObject: {fileID: 2795397902362475942, guid: 72c47fdc43d84b243bdc109c284341d6,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8703909136559686758}
+    - targetCorrespondingSourceObject: {fileID: 2795397902362475942, guid: 72c47fdc43d84b243bdc109c284341d6,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3949402586872226876}
   m_SourcePrefab: {fileID: 100100000, guid: 72c47fdc43d84b243bdc109c284341d6, type: 3}
 --- !u!1 &3464002488724881093 stripped
 GameObject:
@@ -9316,10 +9324,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 1.5
-  hopForce: 1.5
-  hopCooldown: 0.35
-  rotationSpeed: 35
-  visualBody: {fileID: 0}
+  rotationSpeed: 18
+  visualBody: {fileID: 4342887847643316383}
 --- !u!136 &8474196425354421666
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -9339,10 +9345,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.3142773
-  m_Height: 0.65043986
+  m_Radius: 0.21937585
+  m_Height: 0.4387518
   m_Direction: 1
-  m_Center: {x: -4.0358446e-11, y: 0.021804959, z: 0.28886405}
+  m_Center: {x: -3.5567985e-10, y: 0.09495948, z: 0.19396259}
 --- !u!114 &8065476285661567659
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9355,8 +9361,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4af15dd06f5525546a11834cf87bbc99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxJumpForce: 8
-  chargeTimeToMax: 1.5
+  maxJumpForce: 5
+  chargeTimeToMax: 0.5
   jumpKey: 32
   movementScript: {fileID: 6618901275838071403}
   slowFactor: 0.5
@@ -9387,6 +9393,40 @@ MonoBehaviour:
   currentInk: 0
   inkParticle: {fileID: 1765877957324576745}
   blindTimer: 0
+--- !u!114 &8703909136559686758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3464002488724881093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4b15752771fa7d4492b874ee8058762, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatPropertyName: _Float1
+  lerpSpeed: 1
+  materialsToControl:
+  - {fileID: 2100000, guid: de10b8bf4f083db43972ad76bcab2baf, type: 2}
+  IsInked: 0
+--- !u!114 &3949402586872226876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3464002488724881093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7aba475ce5f43934e9be7ae82dc9b7e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatPropertyName: _Float
+  lerpSpeed: 1
+  materialsToControl:
+  - {fileID: 2100000, guid: ee81a5534294666449027265c8972019, type: 2}
+  - {fileID: 2100000, guid: f7d3a68faa09e674fb3424029d1c156b, type: 2}
 --- !u!4 &4276532083225240703 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3278883554580211484, guid: 72c47fdc43d84b243bdc109c284341d6,

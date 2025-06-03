@@ -6,7 +6,11 @@ public class ChasingState : IState
 
     public ChasingState(ChefAIController chef) => this.chef = chef;
 
-    public void Enter() { }
+    public void Enter()
+    {
+        chef.animator.SetBool("IsWalking",false);
+        chef.animator.SetBool("IsRunning",true);
+    }
 
     public void Update()
     {
@@ -26,5 +30,9 @@ public class ChasingState : IState
         }
     }
 
-    public void Exit() { }
+    public void Exit()
+    {
+        chef.animator.SetBool("IsRunning",false);
+        chef.animator.SetBool("IsWalking",true);
+    }
 }

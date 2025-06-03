@@ -1,13 +1,14 @@
 using UnityEngine;
 using UnityEngine.AI;
 
-[RequireComponent(typeof(NavMeshAgent), typeof(LineOfSight))]
+[RequireComponent(typeof(NavMeshAgent), typeof(LineOfSight), typeof(MaterialFloatLerpByInked))]
 public class ChefAIController : MonoBehaviour, IBlindable
 {
     [Header("References")] public Transform player;
     public Transform[] waypoints;
     public LayerMask playerMask;
     public LayerMask obstacleMask;
+    public Animator animator;
 
     [Header("Detection")] public float viewRadius = 10f;
     public float viewAngle = 45f;
@@ -20,6 +21,7 @@ public class ChefAIController : MonoBehaviour, IBlindable
 
     private IState currentState;
     public LineOfSight lineOfSight;
+    public MaterialFloatLerpByInked inked;
 
     // Estados disponibles
     public IdleState idleState;
@@ -34,6 +36,7 @@ public class ChefAIController : MonoBehaviour, IBlindable
     {
         agent = GetComponent<NavMeshAgent>();
         lineOfSight = GetComponent<LineOfSight>();
+        inked = GetComponent<MaterialFloatLerpByInked>();
 
         // Crear instancias de los estados
         idleState = new IdleState(this);
@@ -76,7 +79,6 @@ public class ChefAIController : MonoBehaviour, IBlindable
         SwitchState(blindedState);
     }
     
-    /*
 public bool CanSeePlayer()
     {
         if (player == null) return false;
@@ -96,7 +98,6 @@ public bool CanSeePlayer()
 
         return false;
     }
-*/
     void OnDrawGizmosSelected()
     {
         // Dibuja FOV

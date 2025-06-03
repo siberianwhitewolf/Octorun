@@ -12,6 +12,8 @@ public class BlindedState : IState
     {
         timer = 0f;
         blindDuration = chef.blindTime;
+        chef.inked.IsInked = true;
+        chef.animator.SetBool("IsRunning", true);
 
         // Movimiento errático
         WanderRandomly();
@@ -43,6 +45,8 @@ public class BlindedState : IState
     public void Exit()
     {
         chef.isBlinded = false;
+        chef.inked.IsInked = false;
+        chef.animator.SetBool("IsRunning", false);
     }
 
     private void WanderRandomly()

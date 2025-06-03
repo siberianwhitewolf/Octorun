@@ -8,6 +8,12 @@ public class OctopusJump : MonoBehaviour
     public float maxJumpForce = 8f;
     public float chargeTimeToMax = 1.5f;
     public KeyCode jumpKey = KeyCode.Space;
+    public bool isGrounded;
+    
+    [Header("Ground Check Settings")]
+    public Transform groundCheckPoint;     // Punto de origen del chequeo (normalmente debajo del personaje)
+    public float groundCheckRadius = 0.3f; // Radio de la esfera que detecta el suelo
+    public LayerMask groundLayer;          // Layer que representa el suelo
 
     [Header("Movement Reference")]
     public MonoBehaviour movementScript; // Referencia al script que controla el movimiento
@@ -29,7 +35,10 @@ public class OctopusJump : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(jumpKey))
+        
+        CheckGround();
+        
+        if (Input.GetKeyDown(jumpKey) && isGrounded)
         {
             isCharging = true;
             chargeTimer = 0f;
@@ -59,4 +68,20 @@ public class OctopusJump : MonoBehaviour
                 adjustableSpeed.SetSpeedMultiplier(1f); // Restaura la velocidad normal
         }
     }
+    
+    void CheckGround()
+    {
+        isGrounded = Physics.CheckSphere(groundCheckPoint.position, groundCheckRadius, groundLayer);
+    }
+    
+    void OnDrawGizmosSelected()
+    {
+        if (groundCheckPoint != null)
+        {
+            Gizmos.color = isGrounded ? Color.green : Color.red;
+            Gizmos.DrawWireSphere(groundCheckPoint.position, groundCheckRadius);
+        }
+    }
+    
+    
 }

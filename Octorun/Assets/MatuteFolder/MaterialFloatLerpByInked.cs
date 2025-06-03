@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class MaterialFloatLerpByInked : MonoBehaviour
 {
-    [Header("Nombre del parámetro Float (ej: _Float)")]
-    public string floatPropertyName = "_Float";
-
-    [Header("Velocidad de transición")]
+    [Header("Nombre del parï¿½metro Float (ej: _Float)")]
+    public string floatPropertyName = "_Float1";
+    
+    [Header("Velocidad de transiciï¿½n")]
     public float lerpSpeed = 1f;
 
     [Header("Materiales a controlar")]
@@ -25,7 +25,7 @@ public class MaterialFloatLerpByInked : MonoBehaviour
 
     void Update()
     {
-        // Cambió el valor del booleano desde el inspector y todos los materiales están en un estado válido
+        // Cambiï¿½ el valor del booleano desde el inspector y todos los materiales estï¿½n en un estado vï¿½lido
         if (IsInked != previousIsInked && !isLerping && AllFloatsAtSameValue())
         {
             targetValue = IsInked ? minValue : maxValue;
