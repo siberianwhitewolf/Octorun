@@ -11,6 +11,9 @@ GameObject:
   - component: {fileID: 256932629420872349}
   - component: {fileID: 6481440251024826453}
   - component: {fileID: 8512699149566478565}
+  - component: {fileID: 3750116955313585758}
+  - component: {fileID: 6161899308502776695}
+  - component: {fileID: 5401223385519890361}
   m_Layer: 0
   m_Name: Puerta_manija_doble1
   m_TagString: Untagged
@@ -83,3 +86,70 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3750116955313585758
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2323955119338356906}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 79.999954, y: 180.01242, z: 6.892488}
+  m_Center: {x: -39.999992, y: 90.00621, z: 2.7772257}
+--- !u!136 &6161899308502776695
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2323955119338356906}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2.1134865
+  m_Height: 101.663185
+  m_Direction: 1
+  m_Center: {x: -74.2, y: 87.05205, z: -5.5}
+--- !u!136 &5401223385519890361
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2323955119338356906}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2.1134865
+  m_Height: 101.663185
+  m_Direction: 1
+  m_Center: {x: -74.2, y: 87.05205, z: 10.92232}

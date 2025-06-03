@@ -1219,13 +1219,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 38524029}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalRotation: {x: 0.4027945, y: -0.23388872, z: 0.1108306, w: 0.87793463}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 49.385, y: -29.585, z: 0.544}
 --- !u!114 &38524032
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26098,6 +26098,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Carrito (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8098606654966161488, guid: 9c2ee173c3d9c1b41a827d29fd4a55c7,
+        type: 3}
+      propertyPath: m_Convex
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

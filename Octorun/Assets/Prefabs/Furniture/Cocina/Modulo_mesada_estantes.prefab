@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8833545348634115242}
   - component: {fileID: 1619990717085969590}
   - component: {fileID: 2123028773265439427}
+  - component: {fileID: 191006531892368439}
   m_Layer: 0
   m_Name: Modulo_mesada_estantes
   m_TagString: Untagged
@@ -83,3 +84,25 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &191006531892368439
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4241558406916630102}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8640167283329240179, guid: 9b28bd9cc9f58994d802bb5a541d0db9, type: 3}
