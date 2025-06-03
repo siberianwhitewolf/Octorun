@@ -7,6 +7,7 @@ public class LineOfSight : MonoBehaviour
     [Range(0, 360)] public float viewAngle = 90f;
     public LayerMask targetMask;
     public LayerMask obstacleMask;
+    public OctopusController octopus;
 
     public bool CanSeeTarget { get; private set; }
 
@@ -17,7 +18,8 @@ public class LineOfSight : MonoBehaviour
 
     private bool CheckLineOfSight()
     {
-        if (target == null) return false;
+        
+        if (target == null || octopus.isHiding ) return false;
 
         Vector3 dirToTarget = (target.position - transform.position).normalized;
         float distToTarget = Vector3.Distance(transform.position, target.position);

@@ -9323,9 +9323,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75c4a5b54855dd143b7941b1495dd09b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1.5
+  moveSpeed: 2
   rotationSpeed: 18
-  visualBody: {fileID: 4342887847643316383}
+  isHiding: 0
+  _materialFloatLerp: {fileID: 3949402586872226876}
 --- !u!136 &8474196425354421666
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -9362,8 +9363,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxJumpForce: 5
-  chargeTimeToMax: 0.5
+  chargeTimeToMax: 0.1
   jumpKey: 32
+  isGrounded: 0
+  groundCheckPoint: {fileID: 4342887847643316383}
+  groundCheckRadius: 0.43
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 320
   movementScript: {fileID: 6618901275838071403}
   slowFactor: 0.5
 --- !u!114 &5884829129145826507
@@ -9427,6 +9434,7 @@ MonoBehaviour:
   materialsToControl:
   - {fileID: 2100000, guid: ee81a5534294666449027265c8972019, type: 2}
   - {fileID: 2100000, guid: f7d3a68faa09e674fb3424029d1c156b, type: 2}
+  triggered: 0
 --- !u!4 &4276532083225240703 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3278883554580211484, guid: 72c47fdc43d84b243bdc109c284341d6,

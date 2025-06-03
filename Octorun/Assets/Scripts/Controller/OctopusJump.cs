@@ -11,9 +11,9 @@ public class OctopusJump : MonoBehaviour
     public bool isGrounded;
     
     [Header("Ground Check Settings")]
-    public Transform groundCheckPoint;     // Punto de origen del chequeo (normalmente debajo del personaje)
+    public Transform groundCheckPoint; // Punto de origen del chequeo (normalmente debajo del personaje)
     public float groundCheckRadius = 0.3f; // Radio de la esfera que detecta el suelo
-    public LayerMask groundLayer;          // Layer que representa el suelo
+    public LayerMask groundLayer;      // Layer que representa el suelo
 
     [Header("Movement Reference")]
     public MonoBehaviour movementScript; // Referencia al script que controla el movimiento

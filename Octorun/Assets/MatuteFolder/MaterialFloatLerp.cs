@@ -15,10 +15,11 @@ public class MaterialFloatLerp : MonoBehaviour
 
     private float targetValue = 1f;
     private bool isLerping = false;
+    public bool triggered;
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Q) && !isLerping && AllFloatsAtSameValue())
+        if ((Input.GetKeyDown(KeyCode.Q) && !isLerping && AllFloatsAtSameValue()) || triggered)
         {
             // Alternar target: si estamos en 0, ir a 1. Si estamos en 1, ir a 0.
             targetValue = Mathf.Approximately(materialsToControl[0].GetFloat(floatPropertyName), 1f) ? 0f : 1f;
@@ -42,7 +43,11 @@ public class MaterialFloatLerp : MonoBehaviour
             }
 
             if (allReached)
+            {
+                triggered = false;
                 isLerping = false;
+            }
+                
         }
     }
 

@@ -6,17 +6,15 @@ public class OctopusController : MonoBehaviour, IAdjustableSpeed
     [Header("Movement Settings")]
     public float moveSpeed = 3.5f;
     public float rotationSpeed = 10f;
-    private bool isHiding = false;
+    public bool isHiding = false;
     private bool canMove = true;
+    private float hideTimer = 0;
 
     private float _speedMultiplier = 1f;
-
-    [Header("Visual Feedback")]
-    public Transform visualBody;
-
+    
     private Rigidbody _rb;
     private Vector3 _moveDirection;
-
+    public MaterialFloatLerp  _materialFloatLerp;
     void Start()
     {
         _rb = GetComponent<Rigidbody>();
@@ -29,8 +27,25 @@ public class OctopusController : MonoBehaviour, IAdjustableSpeed
             
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            setIsHiding();
+            SetIsHiding();
         }
+        
+        if (isHiding)
+        {
+            HideTimer();
+        }
+    }
+    
+    void FixedUpdate()
+    {
+        // Movimiento directo en XZ manteniendo la velocidad en Y (por gravedad)
+        if (canMove)
+        {
+            Vector3 targetVelocity = _moveDirection * moveSpeed * _speedMultiplier;
+            _rb.velocity = new Vector3(targetVelocity.x, _rb.velocity.y, targetVelocity.z);
+        }
+
+        
     }
 
     void GetInputs()
@@ -50,21 +65,23 @@ public class OctopusController : MonoBehaviour, IAdjustableSpeed
         }
     }
 
-    void FixedUpdate()
-    {
-        // Movimiento directo en XZ manteniendo la velocidad en Y (por gravedad)
-        if (canMove)
-        {
-            Vector3 targetVelocity = _moveDirection * moveSpeed * _speedMultiplier;
-            _rb.velocity = new Vector3(targetVelocity.x, _rb.velocity.y, targetVelocity.z);
-        }
-    }
-
-    void setIsHiding()
+    void SetIsHiding()
     {
         isHiding = !isHiding;
         canMove = !canMove;
         _rb.velocity = new Vector3(0f, 0f, 0f);
+    }
+
+    void HideTimer()
+    {
+        hideTimer += Time.deltaTime;
+        Debug.Log(hideTimer);
+        if (hideTimer >= 3)
+        {
+            hideTimer = 0;
+            _materialFloatLerp.triggered = true;
+            SetIsHiding();
+        }
     }
 
     public void SetSpeedMultiplier(float multiplier)

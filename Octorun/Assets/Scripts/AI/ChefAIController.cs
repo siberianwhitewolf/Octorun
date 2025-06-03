@@ -55,7 +55,6 @@ public class ChefAIController : MonoBehaviour, IBlindable
     void Update()
     {
         currentState?.Update();
-        Debug.Log(currentState);
 
         if (lineOfSight != null && lineOfSight.CanSeeTarget && currentState != chasingState && !isBlinded)
         {
