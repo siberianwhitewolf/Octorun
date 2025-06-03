@@ -1,0 +1,34 @@
+Pasos a seguir:
+
+➖Animator: El animator tiene 2 booleanos los cuales son "IsWalking" e "IsRunning"
+
+Resumen de transiciones
+
+| De → Hacia     | Condiciones                                     |
+| -------------- | ----------------------------------------------- |
+| Idle → Walk    | `IsWalking == true`                             |
+| Walk → Idle    | `IsWalking == false` **y** `IsRunning == false` |
+| Walk → Run     | `IsRunning == true`                             |
+| Run → Walk     | `IsRunning == false` **y** `IsWalking == true`  |
+| Run → Idle     | `IsRunning == false` **y** `IsWalking == false` |
+| **Idle → Run** | `IsRunning == true`                             |
+
+En síntesis: Cuando está quieto que vaya en idle, cuando está haciendo patrolling que camine y cuando detecte al enemigo que corra.
+----------------------------------------
+
+
+➖Los Scripts de Material Float Lerp, Material float lerp by inked y toggle ragdoll son de testeo.
+
+➖Las lógicas deberían ser las mismas pero aplicadas en conjunto a otras funciones.
+
+➖Material Float Lerp agarra los materiales del skin y los ojos del pulpo, hace un toggle y lo activa/desactiva en base a un float al presionar la Q (Se llama _Float el flotante que toca en ambos materiales porque es del mismo shadergraph).
+La idea es utilizarlo para que el personaje se haga invisible y no lo puedan detectar 
+
+➖Material Float Lerp by inked hace esencialmente lo mismo pero sólo puede editarse con un booleano en el inspector. Hace un lerp en un material que se llama "Entintado" (se encuentra en la carpeta de MaterialesPulpo).
+La idea es que cuando el jugador dispare al enemigo, se active este behavior y luego de una cantidad de tiempo determinada, el lerp vuelva a su estado original.
+
+➖Toggle Ragdoll esencialmente desactiva el ragdoll del pulpo al inciar el juego y lo activa si tocamos la tecla "M". Mi idea es que cuando el jugador muera, se active el ragdoll (ya que no lo podemos utilizar para mover al pulpito)
+
+
+
+
