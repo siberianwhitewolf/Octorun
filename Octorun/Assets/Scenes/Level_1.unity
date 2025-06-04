@@ -185,6 +185,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piso_mosaico (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -514,7 +519,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1587321120413612690, guid: 48884e786bb804a4996585e95393a3ff,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 15540763}
   m_SourcePrefab: {fileID: 100100000, guid: 48884e786bb804a4996585e95393a3ff, type: 3}
 --- !u!4 &15540761 stripped
 Transform:
@@ -522,6 +531,33 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 15540760}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &15540762 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1587321120413612690, guid: 48884e786bb804a4996585e95393a3ff,
+    type: 3}
+  m_PrefabInstance: {fileID: 15540760}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &15540763
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 15540762}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 8.9813595, y: 0.20000005, z: 9.983359}
+  m_Center: {x: -3.977804, y: 0.000000007450581, z: -4.4916797}
 --- !u!1001 &16068130
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -806,6 +842,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pared_basica (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 504231097502774777, guid: 45778b9f5a06347468b135659c667055,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2166390569208551154, guid: 45778b9f5a06347468b135659c667055,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -940,6 +981,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piso_mosaico (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1044,7 +1090,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &32319822
 Transform:
@@ -1391,6 +1437,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piso_mosaico (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1554,6 +1605,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pared_marco_doble (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7291624123051352141, guid: cf03f6ca82e939d4ca717f5ed230ec60,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1712,6 +1768,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piso_mosaico (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1859,6 +1920,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Piso_mosaico (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2012,6 +2078,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Piso_mosaico (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3029,6 +3100,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pared_basica_esquina (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1126551084809742420, guid: 051cc09319daf4244b4e5f696560f7cc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4366270595907445851, guid: 051cc09319daf4244b4e5f696560f7cc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3079,7 +3155,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3789405825249683474, guid: 051cc09319daf4244b4e5f696560f7cc, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3191,6 +3268,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Piso_mosaico (67)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3641,6 +3723,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piso_mosaico (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3664,6 +3751,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pared_basica (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 504231097502774777, guid: 45778b9f5a06347468b135659c667055,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2166390569208551154, guid: 45778b9f5a06347468b135659c667055,
         type: 3}
@@ -3798,6 +3890,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Piso_mosaico (69)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4110,6 +4207,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piso_mosaico (55)
       objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4257,6 +4359,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Piso_mosaico (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4554,6 +4661,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piso_mosaico (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4627,6 +4739,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Piso_mosaico (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5131,6 +5248,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piso_mosaico (63)
       objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5387,6 +5509,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pared_basica_esquina (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1126551084809742420, guid: 051cc09319daf4244b4e5f696560f7cc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4366270595907445851, guid: 051cc09319daf4244b4e5f696560f7cc,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -5450,7 +5577,19 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1126551084809742420, guid: 051cc09319daf4244b4e5f696560f7cc,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 257427390}
+    - targetCorrespondingSourceObject: {fileID: 1126551084809742420, guid: 051cc09319daf4244b4e5f696560f7cc,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 257427389}
+    - targetCorrespondingSourceObject: {fileID: 1126551084809742420, guid: 051cc09319daf4244b4e5f696560f7cc,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 257427388}
   m_SourcePrefab: {fileID: 100100000, guid: 051cc09319daf4244b4e5f696560f7cc, type: 3}
 --- !u!4 &257427386 stripped
 Transform:
@@ -5458,6 +5597,75 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 257427385}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &257427387 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1126551084809742420, guid: 051cc09319daf4244b4e5f696560f7cc,
+    type: 3}
+  m_PrefabInstance: {fileID: 257427385}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &257427388
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257427387}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 12.820481, y: 209.98962, z: 87.321396}
+  m_Center: {x: -94.16419, y: 104.99481, z: -231.53137}
+--- !u!65 &257427389
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257427387}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 12.839995, y: 209.98962, z: 101.114334}
+  m_Center: {x: -94.15439, y: 104.99481, z: -37.445835}
+--- !u!65 &257427390
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257427387}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 201.51231, y: 209.98962, z: 12.671504}
+  m_Center: {x: 0.1817465, y: 104.99481, z: 6.7755833}
 --- !u!1001 &259351373
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5520,6 +5728,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Piso_mosaico (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5860,6 +6073,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pared_basica_esquina (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1126551084809742420, guid: 051cc09319daf4244b4e5f696560f7cc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4366270595907445851, guid: 051cc09319daf4244b4e5f696560f7cc,
         type: 3}
@@ -6716,6 +6934,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piso_mosaico (53)
       objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7111,6 +7334,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piso_mosaico (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7431,6 +7659,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Piso_mosaico (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7817,6 +8050,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piso_mosaico (49)
       objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7964,6 +8202,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Piso_mosaico (51)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8191,6 +8434,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Piso_mosaico (58)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8587,6 +8835,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piso_mosaico (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8610,6 +8863,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pared_basica (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 504231097502774777, guid: 45778b9f5a06347468b135659c667055,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2166390569208551154, guid: 45778b9f5a06347468b135659c667055,
         type: 3}
@@ -8902,6 +9160,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Piso_mosaico (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9382,6 +9645,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piso_mosaico (52)
       objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9467,6 +9735,74 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 526958310}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &535273332
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2199701800411020275, guid: f7f9f320adf861542b4c0aba9aa92255,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -10.648
+      objectReference: {fileID: 0}
+    - target: {fileID: 2199701800411020275, guid: f7f9f320adf861542b4c0aba9aa92255,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.689
+      objectReference: {fileID: 0}
+    - target: {fileID: 2199701800411020275, guid: f7f9f320adf861542b4c0aba9aa92255,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.487
+      objectReference: {fileID: 0}
+    - target: {fileID: 2199701800411020275, guid: f7f9f320adf861542b4c0aba9aa92255,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2199701800411020275, guid: f7f9f320adf861542b4c0aba9aa92255,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2199701800411020275, guid: f7f9f320adf861542b4c0aba9aa92255,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2199701800411020275, guid: f7f9f320adf861542b4c0aba9aa92255,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2199701800411020275, guid: f7f9f320adf861542b4c0aba9aa92255,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2199701800411020275, guid: f7f9f320adf861542b4c0aba9aa92255,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2199701800411020275, guid: f7f9f320adf861542b4c0aba9aa92255,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3625244033885999704, guid: f7f9f320adf861542b4c0aba9aa92255,
+        type: 3}
+      propertyPath: m_Name
+      value: Pila_platos
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f7f9f320adf861542b4c0aba9aa92255, type: 3}
 --- !u!1001 &540721380
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10715,6 +11051,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piso_mosaico (64)
       objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10897,6 +11238,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pared_basica (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 504231097502774777, guid: 45778b9f5a06347468b135659c667055,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2166390569208551154, guid: 45778b9f5a06347468b135659c667055,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -10981,6 +11327,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pared_basica (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 504231097502774777, guid: 45778b9f5a06347468b135659c667055,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2166390569208551154, guid: 45778b9f5a06347468b135659c667055,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11054,6 +11405,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pared_basica (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 504231097502774777, guid: 45778b9f5a06347468b135659c667055,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2166390569208551154, guid: 45778b9f5a06347468b135659c667055,
         type: 3}
@@ -11178,6 +11534,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Piso_mosaico (59)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11558,6 +11919,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Piso_mosaico (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11954,6 +12320,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piso_mosaico (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12270,6 +12641,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Piso_mosaico (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12690,6 +13066,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pared_basica (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 504231097502774777, guid: 45778b9f5a06347468b135659c667055,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2166390569208551154, guid: 45778b9f5a06347468b135659c667055,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -13100,10 +13481,19 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piso_mosaico
       objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 774959504}
   m_SourcePrefab: {fileID: 100100000, guid: 64646d75ebdfb63468c78c2dd948a26d, type: 3}
 --- !u!4 &774959502 stripped
 Transform:
@@ -13111,6 +13501,33 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 774959501}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &774959503 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+    type: 3}
+  m_PrefabInstance: {fileID: 774959501}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &774959504
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774959503}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 6.9982476, y: 0.20000005, z: 10.011452}
+  m_Center: {x: -1.9810855, y: 0.000000007450581, z: 3.5001278}
 --- !u!1001 &775460824
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13281,6 +13698,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pared_basica (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 504231097502774777, guid: 45778b9f5a06347468b135659c667055,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2166390569208551154, guid: 45778b9f5a06347468b135659c667055,
         type: 3}
@@ -13490,6 +13912,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piso_mosaico (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13563,6 +13990,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Piso_mosaico (44)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13796,6 +14228,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piso_mosaico (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13819,6 +14256,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pared_basica (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 504231097502774777, guid: 45778b9f5a06347468b135659c667055,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2166390569208551154, guid: 45778b9f5a06347468b135659c667055,
         type: 3}
@@ -13895,7 +14337,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &840500218
 Transform:
@@ -14080,6 +14522,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Piso_mosaico (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14308,6 +14755,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piso_mosaico (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14466,6 +14918,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piso_mosaico (45)
       objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14613,6 +15070,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Piso_mosaico (54)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14845,6 +15307,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Piso_mosaico (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15241,6 +15708,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piso_mosaico (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15389,6 +15861,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piso_mosaico (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15412,6 +15889,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pared_basica (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 504231097502774777, guid: 45778b9f5a06347468b135659c667055,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2166390569208551154, guid: 45778b9f5a06347468b135659c667055,
         type: 3}
@@ -15767,6 +16249,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Piso_mosaico (61)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16335,6 +16822,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pared_basica (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 504231097502774777, guid: 45778b9f5a06347468b135659c667055,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2166390569208551154, guid: 45778b9f5a06347468b135659c667055,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16587,6 +17079,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piso_mosaico (56)
       objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16818,6 +17315,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Piso_mosaico (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17381,6 +17883,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pared_basica (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 504231097502774777, guid: 45778b9f5a06347468b135659c667055,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2166390569208551154, guid: 45778b9f5a06347468b135659c667055,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -17757,6 +18264,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piso_mosaico (66)
       objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17830,6 +18342,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Piso_mosaico (57)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18305,6 +18822,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piso_mosaico (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18462,6 +18984,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Piso_mosaico (47)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18966,6 +19493,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pared_basica_esquina (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1126551084809742420, guid: 051cc09319daf4244b4e5f696560f7cc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4366270595907445851, guid: 051cc09319daf4244b4e5f696560f7cc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -19317,6 +19849,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piso_mosaico (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19391,6 +19928,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piso_mosaico (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19464,6 +20006,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Piso_mosaico (62)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19562,6 +20109,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pared_basica (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 504231097502774777, guid: 45778b9f5a06347468b135659c667055,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2166390569208551154, guid: 45778b9f5a06347468b135659c667055,
         type: 3}
@@ -20003,6 +20555,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piso_mosaico (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20076,6 +20633,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Piso_mosaico (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21243,6 +21805,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pared_basica_esquina (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1126551084809742420, guid: 051cc09319daf4244b4e5f696560f7cc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4366270595907445851, guid: 051cc09319daf4244b4e5f696560f7cc,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -21303,10 +21870,19 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3789405825249683474, guid: 051cc09319daf4244b4e5f696560f7cc, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1126551084809742420, guid: 051cc09319daf4244b4e5f696560f7cc,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1309080514}
+    - targetCorrespondingSourceObject: {fileID: 1126551084809742420, guid: 051cc09319daf4244b4e5f696560f7cc,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1309080513}
   m_SourcePrefab: {fileID: 100100000, guid: 051cc09319daf4244b4e5f696560f7cc, type: 3}
 --- !u!4 &1309080511 stripped
 Transform:
@@ -21314,6 +21890,54 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1309080510}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1309080512 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1126551084809742420, guid: 051cc09319daf4244b4e5f696560f7cc,
+    type: 3}
+  m_PrefabInstance: {fileID: 1309080510}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1309080513
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1309080512}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 12.810733, y: 209.98964, z: 300.0196}
+  m_Center: {x: -94.17419, y: 104.99482, z: -136.89854}
+--- !u!65 &1309080514
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1309080512}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1000.76587, y: 209.98962, z: 13.123054}
+  m_Center: {x: 399.80792, y: 104.99481, z: 6.549746}
 --- !u!1001 &1312957577
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21376,6 +22000,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pared_marco_individual (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7064624104599563054, guid: 5e1a244ade4cf644e9ec987f8bf451b8,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21450,6 +22079,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Piso_mosaico (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -22331,6 +22965,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pared_basica_esquina (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1126551084809742420, guid: 051cc09319daf4244b4e5f696560f7cc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4366270595907445851, guid: 051cc09319daf4244b4e5f696560f7cc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22384,7 +23023,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1126551084809742420, guid: 051cc09319daf4244b4e5f696560f7cc,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1378891180}
   m_SourcePrefab: {fileID: 100100000, guid: 051cc09319daf4244b4e5f696560f7cc, type: 3}
 --- !u!4 &1378891178 stripped
 Transform:
@@ -22392,6 +23035,33 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1378891177}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1378891179 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1126551084809742420, guid: 051cc09319daf4244b4e5f696560f7cc,
+    type: 3}
+  m_PrefabInstance: {fileID: 1378891177}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1378891180
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1378891179}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 412.3744, y: 209.98962, z: 12.564701}
+  m_Center: {x: 105.612854, y: 104.99481, z: 6.8289013}
 --- !u!1001 &1379454279
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23008,6 +23678,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piso_mosaico (65)
       objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23031,6 +23706,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pared_basica (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 504231097502774777, guid: 45778b9f5a06347468b135659c667055,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2166390569208551154, guid: 45778b9f5a06347468b135659c667055,
         type: 3}
@@ -24904,6 +25584,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piso_mosaico (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25328,6 +26013,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pared_basica_esquina (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1126551084809742420, guid: 051cc09319daf4244b4e5f696560f7cc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4366270595907445851, guid: 051cc09319daf4244b4e5f696560f7cc,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -25391,7 +26081,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1126551084809742420, guid: 051cc09319daf4244b4e5f696560f7cc,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1578455245}
   m_SourcePrefab: {fileID: 100100000, guid: 051cc09319daf4244b4e5f696560f7cc, type: 3}
 --- !u!4 &1578455243 stripped
 Transform:
@@ -25399,6 +26093,33 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1578455242}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1578455244 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1126551084809742420, guid: 051cc09319daf4244b4e5f696560f7cc,
+    type: 3}
+  m_PrefabInstance: {fileID: 1578455242}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1578455245
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1578455244}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 12.689411, y: 209.98962, z: 301.27835}
+  m_Center: {x: -94.22968, y: 104.99481, z: -137.52812}
 --- !u!1001 &1583184197
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25619,6 +26340,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Piso_mosaico (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -26340,6 +27066,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Piso_mosaico (60)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -27130,6 +27861,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pared_basica (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 504231097502774777, guid: 45778b9f5a06347468b135659c667055,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2166390569208551154, guid: 45778b9f5a06347468b135659c667055,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -27263,6 +27999,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Piso_mosaico (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -27421,6 +28162,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Piso_mosaico (48)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -27886,6 +28632,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piso_mosaico (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27909,6 +28660,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pared_basica (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 504231097502774777, guid: 45778b9f5a06347468b135659c667055,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2166390569208551154, guid: 45778b9f5a06347468b135659c667055,
         type: 3}
@@ -28384,6 +29140,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pared_basica (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 504231097502774777, guid: 45778b9f5a06347468b135659c667055,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2166390569208551154, guid: 45778b9f5a06347468b135659c667055,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -28517,6 +29278,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Piso_mosaico (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -28665,6 +29431,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Piso_mosaico (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -28902,6 +29673,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Piso_mosaico (50)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -29480,6 +30256,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pared_basica (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 504231097502774777, guid: 45778b9f5a06347468b135659c667055,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2166390569208551154, guid: 45778b9f5a06347468b135659c667055,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -29722,6 +30503,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pared_basica (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 504231097502774777, guid: 45778b9f5a06347468b135659c667055,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2166390569208551154, guid: 45778b9f5a06347468b135659c667055,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -29855,6 +30641,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Piso_mosaico (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -30008,6 +30799,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Piso_mosaico (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -30240,6 +31036,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Piso_mosaico (68)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -30932,6 +31733,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piso_mosaico (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -31597,6 +32403,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piso_mosaico (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -31670,6 +32481,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Piso_mosaico (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -32294,6 +33110,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pared_basica (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 504231097502774777, guid: 45778b9f5a06347468b135659c667055,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2166390569208551154, guid: 45778b9f5a06347468b135659c667055,
         type: 3}
@@ -33209,6 +34030,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piso_mosaico (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 9133842452995325785, guid: 64646d75ebdfb63468c78c2dd948a26d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -33232,6 +34058,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pared_basica (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 504231097502774777, guid: 45778b9f5a06347468b135659c667055,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2166390569208551154, guid: 45778b9f5a06347468b135659c667055,
         type: 3}
@@ -34498,6 +35329,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Puerta_principal_izq
       objectReference: {fileID: 0}
+    - target: {fileID: 8512699149566478565, guid: f1e27d5b584861e48a4828602e2d019c,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8512699149566478565, guid: f1e27d5b584861e48a4828602e2d019c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 72013b92295101343811613d2daeac76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -34657,6 +35498,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pared_basica (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 504231097502774777, guid: 45778b9f5a06347468b135659c667055,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2166390569208551154, guid: 45778b9f5a06347468b135659c667055,
         type: 3}
@@ -34974,6 +35820,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pared_basica_esquina
       objectReference: {fileID: 0}
+    - target: {fileID: 1126551084809742420, guid: 051cc09319daf4244b4e5f696560f7cc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4366270595907445851, guid: 051cc09319daf4244b4e5f696560f7cc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -35027,8 +35878,22 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1126551084809742420, guid: 051cc09319daf4244b4e5f696560f7cc,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8321266175652519829}
+    - targetCorrespondingSourceObject: {fileID: 1126551084809742420, guid: 051cc09319daf4244b4e5f696560f7cc,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8321266175652519828}
   m_SourcePrefab: {fileID: 100100000, guid: 051cc09319daf4244b4e5f696560f7cc, type: 3}
+--- !u!1 &7682912092060492049 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1126551084809742420, guid: 051cc09319daf4244b4e5f696560f7cc,
+    type: 3}
+  m_PrefabInstance: {fileID: 7682912092060492048}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7748753032991721474 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5615981858786242322, guid: 986fd0e65ef091547a76e3741e9a81f7,
@@ -35199,6 +36064,48 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 7682912092060492048}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &8321266175652519828
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7682912092060492049}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 13.530731, y: 209.98962, z: 1000.4932}
+  m_Center: {x: -93.80904, y: 104.99481, z: -487.1353}
+--- !u!65 &8321266175652519829
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7682912092060492049}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 200.16942, y: 209.98964, z: 13.111258}
+  m_Center: {x: 0.084757805, y: 104.99482, z: 6.555629}
 --- !u!4 &9148135257292382970 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 650549143697875708, guid: e0b3c757ed174724b83539748f6822b9,
@@ -35215,3 +36122,4 @@ SceneRoots:
   - {fileID: 1875991348}
   - {fileID: 706825386}
   - {fileID: 1271793436}
+  - {fileID: 535273332}
