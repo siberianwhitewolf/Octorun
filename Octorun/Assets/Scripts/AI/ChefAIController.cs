@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.AI;
 
+
 [RequireComponent(typeof(NavMeshAgent), typeof(LineOfSight), typeof(MaterialFloatLerpByInked))]
 public class ChefAIController : MonoBehaviour, IBlindable
 {

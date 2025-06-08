@@ -9,6 +9,7 @@ public class OctopusController : MonoBehaviour, IAdjustableSpeed
     public bool isHiding = false;
     private bool canMove = true;
     private float hideTimer = 0;
+    public float maxHideTime = 1.5f;
 
     private float _speedMultiplier = 1f;
     
@@ -24,6 +25,7 @@ public class OctopusController : MonoBehaviour, IAdjustableSpeed
     void Update()
     { 
         GetInputs();
+        RotateTowardsMouse();
             
         if (Input.GetKeyDown(KeyCode.Q))
         {
@@ -76,11 +78,32 @@ public class OctopusController : MonoBehaviour, IAdjustableSpeed
     {
         hideTimer += Time.deltaTime;
         Debug.Log(hideTimer);
-        if (hideTimer >= 3)
+        if (hideTimer > maxHideTime)
         {
-            hideTimer = 0;
             _materialFloatLerp.triggered = true;
-            SetIsHiding();
+            hideTimer = 0;
+            isHiding = !isHiding;
+            canMove = !canMove;
+        }
+    }
+    
+    void RotateTowardsMouse()
+    {
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        Plane groundPlane = new Plane(Vector3.up, transform.position); // plano horizontal (y = personaje)
+
+        if (groundPlane.Raycast(ray, out float hitDistance))
+        {
+            Vector3 hitPoint = ray.GetPoint(hitDistance);
+            Vector3 direction = hitPoint - transform.position;
+            direction.y = 0f;
+
+            if (direction.sqrMagnitude > 0.01f)
+            {
+                Quaternion targetRotation = Quaternion.LookRotation(direction);
+                Quaternion yOnlyRotation = Quaternion.Euler(-90f, targetRotation.eulerAngles.y, 0f); // misma lógica que tu controlador
+                transform.rotation = Quaternion.Slerp(transform.rotation, yOnlyRotation, Time.deltaTime * rotationSpeed);
+            }
         }
     }
 
