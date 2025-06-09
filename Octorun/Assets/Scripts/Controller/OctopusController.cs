@@ -16,16 +16,24 @@ public class OctopusController : MonoBehaviour, IAdjustableSpeed
     private Rigidbody _rb;
     private Vector3 _moveDirection;
     public MaterialFloatLerp  _materialFloatLerp;
+    WallCling _wallCling;
+    private OctopusJump _octopusJump;
+    
     void Start()
     {
+        _octopusJump  = GetComponent<OctopusJump>();
         _rb = GetComponent<Rigidbody>();
         _rb.freezeRotation = true;
+        _wallCling = GetComponent<WallCling>();
     }
 
     void Update()
-    { 
-        GetInputs();
-        RotateTowardsMouse();
+    {
+        if (!_wallCling._isClinging)
+        {
+            GetInputs();
+            RotateTowardsMouse();
+        }
             
         if (Input.GetKeyDown(KeyCode.Q))
         {
@@ -41,7 +49,7 @@ public class OctopusController : MonoBehaviour, IAdjustableSpeed
     void FixedUpdate()
     {
         // Movimiento directo en XZ manteniendo la velocidad en Y (por gravedad)
-        if (canMove)
+        if (canMove && _octopusJump.isGrounded)
         {
             Vector3 targetVelocity = _moveDirection * moveSpeed * _speedMultiplier;
             _rb.velocity = new Vector3(targetVelocity.x, _rb.velocity.y, targetVelocity.z);
@@ -62,7 +70,7 @@ public class OctopusController : MonoBehaviour, IAdjustableSpeed
         {
             Vector3 flatDirection = new Vector3(_moveDirection.x, 0, _moveDirection.z);
             Quaternion targetRotation = Quaternion.LookRotation(flatDirection);
-            Quaternion yOnlyRotation = Quaternion.Euler(-90, targetRotation.eulerAngles.y, 0);
+            Quaternion yOnlyRotation = Quaternion.Euler( -90, targetRotation.eulerAngles.y, 0);
             transform.rotation = Quaternion.Slerp(transform.rotation, yOnlyRotation, Time.deltaTime * rotationSpeed);
         }
     }
@@ -111,4 +119,16 @@ public class OctopusController : MonoBehaviour, IAdjustableSpeed
     {
         _speedMultiplier = multiplier;
     }
+    
+    public void SetMovement(bool canPlayerMove)
+    {
+        canMove = canPlayerMove;
+    
+        // Si detenemos el movimiento, es buena idea resetear la velocidad del Rigidbody.
+        if (!canPlayerMove)
+        {
+            _rb.velocity = Vector3.zero;
+        }
+    }
+    
 }
