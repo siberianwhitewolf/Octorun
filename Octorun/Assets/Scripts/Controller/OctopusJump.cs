@@ -37,7 +37,6 @@ public class OctopusJump : MonoBehaviour
     {
         
         CheckGround();
-        Debug.Log(_chargeTimer);
         
         if (Input.GetKeyDown(jumpKey) && isGrounded)
         {

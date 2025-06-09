@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 434478310085321021}
   - component: {fileID: 3843052003028095209}
   - component: {fileID: 5726071530856489442}
-  - component: {fileID: 6066100616183212692}
+  - component: {fileID: -4379633541046763719}
   m_Layer: 0
   m_Name: Node
   m_TagString: Untagged
@@ -121,7 +121,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waitTime: 0
   triggerCookingHere: 0
---- !u!114 &6066100616183212692
+--- !u!114 &-4379633541046763719
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -140,16 +140,16 @@ MonoBehaviour:
   gScore: 0
   hScore: 0
   cameFromNode: {fileID: 0}
-  isWalkable: 0
+  isWalkable: 1
   isTargetNode: 0
-  colliderRadius: 0
+  colliderRadius: 0.5
   isTextVisible: 0
   walkableMat: {fileID: 2100000, guid: 5b5f80acd9122cd4091c4cb180146707, type: 2}
   notWalkableMat: {fileID: 2100000, guid: d19629a5e180b634f9b9ec7c7f96949d, type: 2}
   targetMat: {fileID: 2100000, guid: bdfec62ed1a594444972b2117034ed29, type: 2}
   obstacleLayer:
     serializedVersion: 2
-    m_Bits: 192
+    m_Bits: 64
   floorLayer:
     serializedVersion: 2
     m_Bits: 256

@@ -29,6 +29,18 @@ using UnityEngine;
 
         private void Start()
         {
+            // --- LÓGICA MODIFICADA ---
+            // Verificamos que el GridManager exista en la escena.
+            if (GridManager.Instance == null)
+            {
+                Debug.LogError("No se encontró un GridManager en la escena. Este NodeGrid no funcionará.");
+                this.enabled = false; // Desactivamos el script para evitar errores.
+                return;
+            }
+
+            // Este NodeGrid se presenta al manager.
+            GridManager.Instance.RegisterGrid(this);
+            
             AutoDetectDimensions();
             GenerateGrid();
             ConnectNodeGrid();
@@ -117,6 +129,7 @@ using UnityEngine;
                         spawnedNode.x = x;
                         spawnedNode.z = z;
                         spawnedNode.index = x + z * _width;
+                        spawnedNode.enabled = true;
                         
                         spawnedNode.CheckWalkability(obstacleLayer);
 
@@ -248,6 +261,13 @@ using UnityEngine;
             }
             return nodeList.ToArray();
         }
+        
+        public bool IsWorldPositionInBounds(Vector3 worldPosition)
+        {
+            // _totalBounds es la variable de clase que ya calculas en AutoDetectDimensions.
+            return _totalBounds.Contains(worldPosition);
+        }
+
 
         public int Width => _width;
         public int Height => _height;

@@ -1,55 +1,39 @@
 using System.Collections.Generic;
 using UnityEngine;
+
     public class Pathfinding : MonoBehaviour
     {
-        private NodeGrid _nodeGrid;
+        // Ya no necesitamos una referencia a un NodeGrid específico ni una función Setup.
+        // Este script ahora es una herramienta del GridManager.
 
         private const int MOVE_STRAIGHT_COST = 10;
         private const int MOVE_DIAGONAL_COST = 14;
 
-        public void Setup(NodeGrid nodeGrid)
-        {
-            this._nodeGrid = nodeGrid;
-        }
-
         public List<Node> FindPath(Vector3 startWorldPos, Vector3 endWorldPos)
         {
-            // --- MODIFICADO: Obtención de nodos de inicio/fin mucho más robusta ---
-            Node startNode = _nodeGrid.GetNodeFromWorldPosition(startWorldPos);
-            Node endNode = _nodeGrid.GetNodeFromWorldPosition(endWorldPos);
+            // Usamos el GridManager para obtener nodos de CUALQUIER grid en el mapa.
+            Node startNode = GridManager.Instance.GetNodeFromWorld(startWorldPos);
+            Node endNode = GridManager.Instance.GetNodeFromWorld(endWorldPos);
             
-            // Si el nodo de inicio o fin no es válido (cae en un hueco),
-            // busca el nodo caminable más cercano.
-            if (startNode == null)
-            {
-                startNode = _nodeGrid.GetNearestWalkableNode(startWorldPos);
-            }
-            if (endNode == null)
-            {
-                endNode = _nodeGrid.GetNearestWalkableNode(endWorldPos);
-            }
+            // Si los puntos de inicio/fin caen fuera, buscamos el nodo existente más cercano en todo el mapa.
+            if (startNode == null) startNode = GetNearestWalkableNode(startWorldPos);
+            if (endNode == null) endNode = GetNearestWalkableNode(endWorldPos);
 
-            // Si después de buscar el más cercano todavía no hay nodos, el camino es imposible.
-            if (startNode == null || endNode == null)
+            // Si incluso después de buscar no encontramos nodos válidos, el camino es imposible.
+            if (startNode == null || endNode == null || !startNode.isWalkable)
             {
-                Debug.LogWarning("Pathfinding: No se pudo encontrar un nodo caminable de inicio o fin.");
+                Debug.LogWarning("Pathfinding: No se pudo encontrar un nodo de inicio/fin caminable en el mapa global.");
                 return null;
             }
 
-            // A*
             List<Node> openList = new List<Node> { startNode };
             HashSet<Node> closedList = new HashSet<Node>();
 
-            // Inicializamos todos los nodos del grid
-            foreach (Node node in _nodeGrid.GetAllNodes())
+            // Iteramos sobre la lista maestra de TODOS los nodos que el GridManager ha recopilado.
+            foreach (Node node in GridManager.Instance.AllNodes)
             {
-                // Solo inicializamos nodos que existen
-                if (node != null)
-                {
-                    node.gScore = float.MaxValue;
-                    node.hScore = 0;
-                    node.cameFromNode = null; // Usamos la referencia directa
-                }
+                node.gScore = float.MaxValue;
+                node.cameFromNode = null;
             }
 
             startNode.gScore = 0;
@@ -60,25 +44,21 @@ using UnityEngine;
                 Node currentNode = GetLowestFScoreNode(openList);
                 if (currentNode == endNode)
                 {
-                    // ¡Camino encontrado!
                     return ReconstructPath(endNode);
                 }
 
                 openList.Remove(currentNode);
                 closedList.Add(currentNode);
-
-                foreach (Node neighbour in _nodeGrid.GetNeighbours(currentNode))
+                
+                // La magia del multi-grid: currentNode.nodes ya contiene vecinos de otros grids si están cerca.
+                foreach (Node neighbour in currentNode.nodes)
                 {
-                    // --- MODIFICADO: Simplificación ---
-                    // Ya no es necesario comprobar si el vecino es caminable, porque GetNeighbours
-                    // solo devuelve nodos válidos. Solo necesitamos comprobar si ya lo hemos evaluado.
-                    if (closedList.Contains(neighbour)) continue;
+                    if (neighbour == null || !neighbour.isWalkable || closedList.Contains(neighbour)) continue;
 
                     float tentativeGScore = currentNode.gScore + CalculateDistanceCost(currentNode, neighbour);
                     if (tentativeGScore < neighbour.gScore)
                     {
-                        // Este es un mejor camino hacia el vecino. Lo registramos.
-                        neighbour.cameFromNode = currentNode; // Usamos la referencia directa
+                        neighbour.cameFromNode = currentNode;
                         neighbour.gScore = tentativeGScore;
                         neighbour.hScore = CalculateDistanceCost(neighbour, endNode);
 
@@ -90,25 +70,42 @@ using UnityEngine;
                 }
             }
 
-            // No se pudo encontrar un camino
-            Debug.LogWarning("Pathfinding: No se encontró un camino posible de " + startNode.name + " a " + endNode.name);
-            return null;
+            return null; // No se encontró camino
         }
+        
+        // Esta función ahora busca en todo el mapa gracias a la lista AllNodes del manager.
+        public Node GetNearestWalkableNode(Vector3 worldPosition)
+        {
+            Node closestNode = null;
+            float minDistance = float.MaxValue;
 
-        // --- MODIFICADO: Reconstrucción mucho más simple y segura ---
+            if(GridManager.Instance.AllNodes == null) return null;
+
+            foreach (Node node in GridManager.Instance.AllNodes)
+            {
+                if (!node.isWalkable) continue;
+
+                float distance = Vector3.Distance(worldPosition, node.transform.position);
+                if (distance < minDistance)
+                {
+                    minDistance = distance;
+                    closestNode = node;
+                }
+            }
+            return closestNode;
+        }
+        
         private List<Node> ReconstructPath(Node endNode)
         {
             List<Node> path = new List<Node>();
             Node currentNode = endNode;
             
-            // Recorremos hacia atrás usando la referencia directa hasta que no haya más.
             while (currentNode != null)
             {
                 path.Add(currentNode);
                 currentNode = currentNode.cameFromNode;
             }
             
-            // El camino está en orden inverso (del final al principio), así que lo invertimos.
             path.Reverse();
             return path;
         }

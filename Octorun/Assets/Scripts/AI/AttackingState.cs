@@ -10,7 +10,7 @@ public class AttackingState : IState
 
     public void Enter()
     {
-        chef.agent.SetDestination(chef.transform.position);
+        chef.StopMovement(); // Le decimos al piloto que se detenga
         timer = 0f;
     }
 
@@ -19,11 +19,15 @@ public class AttackingState : IState
         if (chef.player == null) return;
 
         timer += Time.deltaTime;
-        chef.transform.LookAt(chef.player);
+        // Rotar para mirar al jugador
+        Vector3 direction = (chef.player.position - chef.transform.position).normalized;
+        if(direction != Vector3.zero)
+            chef.transform.rotation = Quaternion.LookRotation(direction);
 
         if (timer >= attackCooldown)
         {
-            // Aquí podrías aplicar daño o animación
+            chef.animator.SetTrigger("Attack");
+            // Aquí aplicarías daño, etc.
             timer = 0f;
         }
 

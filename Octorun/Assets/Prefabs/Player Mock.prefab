@@ -9165,22 +9165,22 @@ PrefabInstance:
     - target: {fileID: 3278883554580211484, guid: 72c47fdc43d84b243bdc109c284341d6,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.046862762
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3278883554580211484, guid: 72c47fdc43d84b243bdc109c284341d6,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.046862762
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3278883554580211484, guid: 72c47fdc43d84b243bdc109c284341d6,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.7055522
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 3278883554580211484, guid: 72c47fdc43d84b243bdc109c284341d6,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.7055522
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 3278883554580211484, guid: 72c47fdc43d84b243bdc109c284341d6,
         type: 3}
@@ -9190,7 +9190,7 @@ PrefabInstance:
     - target: {fileID: 3278883554580211484, guid: 72c47fdc43d84b243bdc109c284341d6,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -172.4
+      value: -180
       objectReference: {fileID: 0}
     - target: {fileID: 3278883554580211484, guid: 72c47fdc43d84b243bdc109c284341d6,
         type: 3}
@@ -9277,6 +9277,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 3949402586872226876}
+    - targetCorrespondingSourceObject: {fileID: 2795397902362475942, guid: 72c47fdc43d84b243bdc109c284341d6,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9039474162298268107}
   m_SourcePrefab: {fileID: 100100000, guid: 72c47fdc43d84b243bdc109c284341d6, type: 3}
 --- !u!1 &3464002488724881093 stripped
 GameObject:
@@ -9323,9 +9327,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75c4a5b54855dd143b7941b1495dd09b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2
+  moveSpeed: 1.5
   rotationSpeed: 18
   isHiding: 0
+  maxHideTime: 1.5
   _materialFloatLerp: {fileID: 3949402586872226876}
 --- !u!136 &8474196425354421666
 CapsuleCollider:
@@ -9362,8 +9367,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4af15dd06f5525546a11834cf87bbc99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxJumpForce: 5
-  chargeTimeToMax: 0.1
+  maxJumpForce: 6.5
+  chargeTimeToMax: 1.5
   jumpKey: 32
   isGrounded: 0
   groundCheckPoint: {fileID: 4342887847643316383}
@@ -9385,7 +9390,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2985c2f4a1312e7448aed4eb002228b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inkMax: 100
+  inkMax: 25
   inkCostPerSecond: 10
   inkRechargeRate: 5
   recoilForce: 0.01
@@ -9434,7 +9439,27 @@ MonoBehaviour:
   materialsToControl:
   - {fileID: 2100000, guid: ee81a5534294666449027265c8972019, type: 2}
   - {fileID: 2100000, guid: f7d3a68faa09e674fb3424029d1c156b, type: 2}
+  isLerping: 0
   triggered: 0
+--- !u!114 &9039474162298268107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3464002488724881093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fc64237845ceee40ab75129528e6e57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wallLayer:
+    serializedVersion: 2
+    m_Bits: 1024
+  checkDistance: 0.7
+  maxClingTime: 1.5
+  jumpForce: 4.5
+  _isClinging: 0
 --- !u!4 &4276532083225240703 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3278883554580211484, guid: 72c47fdc43d84b243bdc109c284341d6,

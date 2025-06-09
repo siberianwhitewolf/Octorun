@@ -48,10 +48,6 @@ using Random = UnityEngine.Random;
             
         }
 
-        protected override void Start()
-        {
-            pathfinding.Setup(grid);
-        }
 
         protected override void Update()
         {
