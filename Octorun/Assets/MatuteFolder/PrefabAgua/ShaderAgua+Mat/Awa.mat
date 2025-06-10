@@ -73,7 +73,7 @@ Material:
     - _Espuma: 1
     - _FallOff: 2
     - _FresnelPwr: 0
-    - _Fuerza_ola: 3
+    - _Fuerza_ola: 1
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Transparencia: 0.3
