@@ -19,7 +19,6 @@ public class LineOfSight : MonoBehaviour
     void Update()
     {
         CanSeeTarget = CheckLineOfSight();
-        Debug.Log(CanSeeTarget);
         
         // --- NUEVO: DIBUJAR LÍNEA DE DEBUG EN TIEMPO REAL ---
         // Esto te permitirá ver exactamente qué está pasando en la vista de Scene.
@@ -37,7 +36,7 @@ public class LineOfSight : MonoBehaviour
     private bool CheckLineOfSight()
     {
         // La comprobación del estado 'hiding' del pulpo es correcta.
-        if (target == null || (octopus != null && octopus.isHiding)) return false;
+        if (target == null || (octopus != null && octopus.isHiding) || !octopus.isAlive) return false;
 
         // --- LÓGICA DE VISIÓN MODIFICADA ---
         

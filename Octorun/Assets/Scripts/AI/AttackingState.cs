@@ -36,13 +36,18 @@ public class AttackingState : IState
             timer = 0f;
         }
 
+        if (!chef.playerEntity.IsAlive)
+        {
+            chef.animator.SetBool("IsRunning", false);
+            chef.animator.SetBool("IsWalking", true);
+            chef.SwitchState(chef.patrollingState);
+        }
+
         // --- CONDICIÓN DE SALIDA CORREGIDA ---
         float dist = Vector3.Distance(chef.transform.position, chef.player.position);
 
         // Volvemos a perseguir si el jugador se aleja DEMASIADO (más allá de la nueva distancia)
         // O si perdemos la línea de visión directa con él (se esconde detrás de una columna).
-        Debug.Log("distance: "+ dist);
-        Debug.Log("disengage: "+ chef.disengageDistance);
         if (dist > chef.disengageDistance || !chef.lineOfSight.CanSeeTarget)
         {
             chef.SwitchState(chef.chasingState);

@@ -56,7 +56,7 @@ public class ChasingState : IState
             chef.SwitchState(chef.attackingState);
         }
         // Si perdemos la línea de visión, volvemos a patrullar.
-        else if (chef.lineOfSight != null && !chef.lineOfSight.CanSeeTarget)
+        else if (chef.lineOfSight != null && !chef.lineOfSight.CanSeeTarget || !chef.playerEntity.IsAlive)
         {
             chef.SwitchState(chef.patrollingState);
         }

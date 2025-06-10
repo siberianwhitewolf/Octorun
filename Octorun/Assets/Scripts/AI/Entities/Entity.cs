@@ -19,12 +19,13 @@ using UnityEngine;
     [RequireComponent(typeof(PassiveEffectHandler),typeof(PassiveEffectHUD))]
     public class Entity : MonoBehaviour, IDamageable, IHealed
     {
+        public static event Action<int, int> OnPlayerHealthChanged;
         private PassiveEffectHUD _hud;
         [SerializeField]
-        protected int maxHealth = 100;
+        protected int maxHealth = 3;
         [SerializeField]
         protected int health;
-        protected bool isAlive = true;
+        public bool isAlive = true;
         private PriorityQueue _activeBuffs;
         public bool debugPriorityQueue = false;
         [SerializeField]
@@ -53,6 +54,10 @@ using UnityEngine;
         protected virtual void Start()
         {
             _activeBuffs.Start();
+            if (gameObject.CompareTag("Player"))
+            {
+                OnPlayerHealthChanged?.Invoke(health, maxHealth);
+            }
         }
 
         protected virtual void Update()
@@ -71,6 +76,12 @@ using UnityEngine;
             set
             {
                 health = value;
+                if (gameObject.CompareTag("Player"))
+                {
+                    // El '?' comprueba si alguien está escuchando antes de llamar al evento, evitando errores.
+                    OnPlayerHealthChanged?.Invoke(health, maxHealth);
+                }
+                
                 if (health <= 0)
                 {
                     Die();
@@ -80,6 +91,8 @@ using UnityEngine;
                 {
                     health = maxHealth;
                 }
+                
+               
             }
         }
 

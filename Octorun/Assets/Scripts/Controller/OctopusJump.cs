@@ -18,6 +18,7 @@ public class OctopusJump : MonoBehaviour
     [Header("Movement Reference")]
     public MonoBehaviour movementScript; // Referencia al script que controla el movimiento
     public float slowFactor = 0.5f;
+    public Entity playerEntity;
 
     private Rigidbody _rb;
     private bool _isCharging = false;
@@ -38,7 +39,7 @@ public class OctopusJump : MonoBehaviour
         
         CheckGround();
         
-        if (Input.GetKeyDown(jumpKey) && isGrounded)
+        if (Input.GetKeyDown(jumpKey) && isGrounded && playerEntity.IsAlive)
         {
             _isCharging = true;
 

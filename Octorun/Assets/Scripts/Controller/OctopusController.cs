@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
-public class OctopusController : MonoBehaviour, IAdjustableSpeed
+public class OctopusController : Entity, IAdjustableSpeed
 {
     [Header("Movement Settings")]
     public float moveSpeed = 3.5f;
@@ -18,29 +18,36 @@ public class OctopusController : MonoBehaviour, IAdjustableSpeed
     public MaterialFloatLerp  _materialFloatLerp;
     WallCling _wallCling;
     private OctopusJump _octopusJump;
-    
-    void Start()
+
+    protected override void Awake()
     {
+        base.Awake();
+    }
+
+    protected override void Start()
+    {
+        base.Start();
         _octopusJump  = GetComponent<OctopusJump>();
         _rb = GetComponent<Rigidbody>();
         _rb.freezeRotation = true;
         _wallCling = GetComponent<WallCling>();
     }
 
-    void Update()
+    protected override void Update()
     {
-        if (!_wallCling._isClinging)
+        base.Update();  
+        if (!_wallCling._isClinging && isAlive)
         {
             GetInputs();
             RotateTowardsMouse();
         }
             
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.Q) && isAlive)
         {
             SetIsHiding();
         }
         
-        if (isHiding)
+        if (isHiding && isAlive)
         {
             HideTimer();
         }
