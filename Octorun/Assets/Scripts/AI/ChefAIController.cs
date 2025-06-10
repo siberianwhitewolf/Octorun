@@ -78,12 +78,6 @@ public class ChefAIController : MonoBehaviour, IBlindable
     void Update()
     {
         currentState?.Update();
-        
-        // La lógica de ver al jugador para cambiar a ChasingState se mantiene
-        if (lineOfSight != null && lineOfSight.CanSeeTarget && currentState != chasingState && !isBlinded)
-        {
-            SwitchState(chasingState);
-        }
     }
     
     void FixedUpdate()

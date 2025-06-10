@@ -33,6 +33,7 @@ using UnityEngine;
         protected ClassType classType;
         [SerializeField]
         protected int _moveSpeedMultiplier = 1;
+        public Animator animator;
         
 
         protected virtual void Awake()
@@ -118,8 +119,8 @@ using UnityEngine;
                 health = 0;
                 isAlive = false;
                 // Handle death logic here (e.g., play animation, remove from game, etc.)
+                animator.SetBool("isDead",true);
                 Debug.Log($"{gameObject.name} has died.");
-                Destroy(this.gameObject);
         }
 
         public void TakeDamage(int damage)

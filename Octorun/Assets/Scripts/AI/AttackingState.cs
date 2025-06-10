@@ -13,19 +13,13 @@ public class AttackingState : IState
     {
         Debug.Log("Enter attacking state");
         chef.StopMovement(); // El Chef se detiene para atacar.
-        timer = attackCooldown; // Hacemos que pueda atacar inmediatamente al entrar en el estado.
+        timer = 0f; // Hacemos que pueda atacar inmediatamente al entrar en el estado.
         chef.animator.SetBool("IsRunning", false);
         chef.animator.SetBool("IsWalking", false);
     }
 
     public void Update()
     {
-        if (chef.playerEntity == null)
-        {
-            chef.SwitchState(chef.patrollingState);
-            return;
-        }
-
         // Siempre rotar para mirar al jugador mientras está en rango de ataque.
         Vector3 direction = (chef.player.position - chef.transform.position).normalized;
         if(direction != Vector3.zero)
@@ -33,7 +27,7 @@ public class AttackingState : IState
         
         // Lógica de ataque con cooldown
         timer += Time.deltaTime;
-        if (timer >= attackCooldown)
+        if (timer > attackCooldown)
         {
             chef.animator.SetTrigger("Attack");
             // Aquí aplicarías el daño al jugador.
@@ -47,6 +41,8 @@ public class AttackingState : IState
 
         // Volvemos a perseguir si el jugador se aleja DEMASIADO (más allá de la nueva distancia)
         // O si perdemos la línea de visión directa con él (se esconde detrás de una columna).
+        Debug.Log("distance: "+ dist);
+        Debug.Log("disengage: "+ chef.disengageDistance);
         if (dist > chef.disengageDistance || !chef.lineOfSight.CanSeeTarget)
         {
             chef.SwitchState(chef.chasingState);

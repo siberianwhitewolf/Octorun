@@ -33,7 +33,6 @@ public class PatrollingState : IState
 
     public void Update()
     {
-        Debug.Log("Enter patrolling state");
         // La detección del jugador siempre tiene la máxima prioridad.
         if (chef.lineOfSight != null && chef.lineOfSight.CanSeeTarget)
         {
