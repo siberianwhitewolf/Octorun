@@ -9466,21 +9466,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2985c2f4a1312e7448aed4eb002228b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inkMax: 25
   inkCostPerSecond: 10
-  inkRechargeRate: 5
   recoilForce: 0.075
   fireKey: 323
-  enemyMask:
-    serializedVersion: 2
-    m_Bits: 512
   sprayRadius: 3.01
   sprayAngle: 19.9
   blindDuration: 5
   blindInterval: 1
-  currentInk: 0
+  enemyMask:
+    serializedVersion: 2
+    m_Bits: 512
   inkParticle: {fileID: 1765877957324576745}
-  blindTimer: 0
   playerEntity: {fileID: 6618901275838071403}
 --- !u!114 &8703909136559686758
 MonoBehaviour:
@@ -9851,6 +9847,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Octo-Base
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516485373091673924, guid: bb15617d677ec1243a504f484eeea8ab,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6629632333043662182, guid: bb15617d677ec1243a504f484eeea8ab,
         type: 3}
