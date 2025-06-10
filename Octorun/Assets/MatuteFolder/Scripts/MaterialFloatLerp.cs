@@ -14,12 +14,12 @@ public class MaterialFloatLerp : MonoBehaviour
     public List<Material> materialsToControl = new List<Material>();
 
     private float targetValue = 1f;
-    private bool isLerping = false;
+    public bool isLerping = false;
     public bool triggered;
 
     void Update()
     {
-        if ((Input.GetKeyDown(KeyCode.Q) && !isLerping && AllFloatsAtSameValue()) || triggered)
+        if ((Input.GetKeyDown(KeyCode.Q) && !isLerping && AllFloatsAtSameValue()) || (triggered && AllFloatsAtSameValue()))
         {
             // Alternar target: si estamos en 0, ir a 1. Si estamos en 1, ir a 0.
             targetValue = Mathf.Approximately(materialsToControl[0].GetFloat(floatPropertyName), 1f) ? 0f : 1f;

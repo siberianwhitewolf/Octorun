@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 public class OctopusInk : MonoBehaviour
 {
@@ -25,6 +26,7 @@ public class OctopusInk : MonoBehaviour
     private bool isFiring = false;
     private Rigidbody rb;
     public float blindTimer;
+    public Entity playerEntity;
 
     void Start()
     {
@@ -38,7 +40,7 @@ public class OctopusInk : MonoBehaviour
         blindTimer -= Time.deltaTime;
         bool shootPressed = Input.GetKey(fireKey);
 
-        if (shootPressed && currentInk > 0f)
+        if (shootPressed && currentInk > 0f && playerEntity.IsAlive)
         {
             if (!isFiring)
             {
@@ -62,7 +64,7 @@ public class OctopusInk : MonoBehaviour
         }
         else
         {
-            if (isFiring)
+            if (isFiring && playerEntity.IsAlive)
             {
                 foreach (var ps in allInkParticles)
                     ps.Stop();

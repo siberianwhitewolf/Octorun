@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1372288313201514398}
   - component: {fileID: 1608822783512915329}
   - component: {fileID: 6703027059473205210}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Pared_madera_revestimiento
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3295823167782984559}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.59, y: -0.00000047683716, z: 1.9807949}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -91,7 +91,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3295823167782984559}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: f80d9806d8e10bb49b0798d44a97e18c, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0

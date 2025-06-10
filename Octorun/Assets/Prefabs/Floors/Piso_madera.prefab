@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 600331338684255065}
   - component: {fileID: 477851332563853863}
   - component: {fileID: 8071303055052218107}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Piso_madera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1587321120413612690}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.28353, y: -0.00000047683716, z: 0.177}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

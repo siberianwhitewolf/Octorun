@@ -10,33 +10,28 @@ public class BlindedState : IState
 
     public void Enter()
     {
+        Debug.Log("Enter blinded state");
         timer = 0f;
         blindDuration = chef.blindTime;
         chef.inked.IsInked = true;
-        chef.animator.SetBool("IsRunning", true);
-
-        // Movimiento errático
+        chef.animator.SetBool("IsWalking", true); // Quizás caminar es más apropiado que correr
         WanderRandomly();
     }
 
     public void Update()
     {
         timer += Time.deltaTime;
-
         if (timer >= blindDuration)
         {
             if (chef.lineOfSight != null && chef.lineOfSight.CanSeeTarget)
-            {
                 chef.SwitchState(chef.chasingState);
-            }
             else
-            {
                 chef.SwitchState(chef.patrollingState);
-            }
             return;
         }
 
-        if (!chef.agent.pathPending && chef.agent.remainingDistance <= chef.agent.stoppingDistance)
+        // Si ha llegado a su destino aleatorio, busca otro.
+        if (chef.HasReachedDestination)
         {
             WanderRandomly();
         }
@@ -46,18 +41,19 @@ public class BlindedState : IState
     {
         chef.isBlinded = false;
         chef.inked.IsInked = false;
-        chef.animator.SetBool("IsRunning", false);
+        chef.animator.SetBool("IsWalking", false);
     }
 
     private void WanderRandomly()
     {
-        Vector3 randomDir = Random.insideUnitSphere;
-        randomDir.y = 0;
-        Vector3 destination = chef.transform.position + randomDir.normalized * Random.Range(2f, 5f);
-
-        if (UnityEngine.AI.NavMesh.SamplePosition(destination, out UnityEngine.AI.NavMeshHit hit, 3f, UnityEngine.AI.NavMesh.AllAreas))
+        Vector3 randomDir = Random.insideUnitSphere * 5f; // Radio de 5m
+        randomDir += chef.transform.position;
+        
+        // Buscamos un nodo caminable cerca de ese punto aleatorio
+        Node targetNode = GridManager.Instance.Pathfinder.GetNearestWalkableNode(randomDir);
+        if (targetNode != null)
         {
-            chef.agent.SetDestination(hit.position);
+            chef.SetMovementTarget(targetNode.transform.position);
         }
     }
 }
