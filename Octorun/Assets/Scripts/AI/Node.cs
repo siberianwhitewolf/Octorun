@@ -1,9 +1,15 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
-    // --- VERSIÓN REFACTORIZADA DE Node.cs ---
+// --- VERSIÓN REFACTORIZADA DE Node.cs ---
     public class Node : MonoBehaviour
     {
+        
+        [Header("Eventos del Nodo")]
+        [Tooltip("Este evento se disparará cuando una entidad llegue a este nodo.")]
+        public UnityEvent OnNodeReached;
+        
         // --- Propiedades del Grid y A* ---
         public int x;
         public int z;

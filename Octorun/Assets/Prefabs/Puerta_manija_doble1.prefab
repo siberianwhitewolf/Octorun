@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3750116955313585758}
   - component: {fileID: 6161899308502776695}
   - component: {fileID: 5401223385519890361}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Puerta_manija_doble1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2323955119338356906}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: f80d9806d8e10bb49b0798d44a97e18c, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
