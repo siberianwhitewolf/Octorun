@@ -10,29 +10,42 @@ public class OctoInputAnimator : MonoBehaviour
     [SerializeField] private float groundCheckRadius = 0.1f;
     [SerializeField] private LayerMask groundLayer;
 
+    /* --- IDs hashados: menos GC y más rápido --- */
+    static readonly int IsMovingForwardID = Animator.StringToHash("IsMovingForward");
+    static readonly int StepTriggerID = Animator.StringToHash("StepTrigger");
+    static readonly int JumpTriggerID = Animator.StringToHash("JumpTrigger");
+    static readonly int AttackTriggerID = Animator.StringToHash("AttackTrigger");
+    static readonly int AttackHeldID = Animator.StringToHash("AttackHeld");
+    static readonly int HideID = Animator.StringToHash("Hide");
+    static readonly int HideToggleID = Animator.StringToHash("HideToggle");
+    static readonly int IsGroundedID = Animator.StringToHash("IsGrounded");
+
     void Update()
     {
         /* --------- Movimiento --------- */
         bool moving = Input.GetKey(KeyCode.W);
-        animator.SetBool("IsMovingForward", moving);
+        animator.SetBool(IsMovingForwardID, moving);
 
-        // NUEVO ➜ dispara el ciclo con un toque
         if (Input.GetKeyDown(KeyCode.W))
-            animator.SetTrigger("StepTrigger");
+            animator.SetTrigger(StepTriggerID);
 
         /* ---------- Salto ---------- */
         if (Input.GetKeyDown(KeyCode.Space))
-            animator.SetTrigger("JumpTrigger");
+            animator.SetTrigger(JumpTriggerID);
 
         /* ---------- Ataque ---------- */
         if (Input.GetMouseButtonDown(0))
-            animator.SetTrigger("AttackTrigger");
+            animator.SetTrigger(AttackTriggerID);
 
-        animator.SetBool("AttackHeld", Input.GetMouseButton(0));
+        animator.SetBool(AttackHeldID, Input.GetMouseButton(0));
 
         /* -------- Ocultarse -------- */
         if (Input.GetKeyDown(KeyCode.Q))
-            animator.SetBool("Hide", !animator.GetBool("Hide"));
+        {
+            bool nowHidden = !animator.GetBool(HideID);  // invierte estado
+            animator.SetBool(HideID, nowHidden);         // memoria
+            animator.SetTrigger(HideToggleID);           // pulso de 1 frame ⬅️  NUEVO
+        }
 
         /* -------- Grounded --------- */
         bool grounded = alwaysGrounded;
@@ -44,7 +57,7 @@ public class OctoInputAnimator : MonoBehaviour
                 groundLayer,
                 QueryTriggerInteraction.Ignore);
         }
-        animator.SetBool("IsGrounded", grounded);
+        animator.SetBool(IsGroundedID, grounded);
     }
 
 #if UNITY_EDITOR
