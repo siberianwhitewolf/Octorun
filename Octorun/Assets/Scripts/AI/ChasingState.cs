@@ -16,6 +16,7 @@ public class ChasingState : IState
 
     public void Enter()
     {
+        Debug.Log("Enter chase state");
         // Al entrar en el estado, activamos la animación de correr.
         chef.animator.SetBool("IsWalking", false);
         chef.animator.SetBool("IsRunning", true);
@@ -50,7 +51,7 @@ public class ChasingState : IState
         float distance = Vector3.Distance(chef.transform.position, chef.player.position);
 
         // Si estamos suficientemente cerca, atacamos.
-        if (distance <= chef.attackRange)
+        if (distance < chef.attackRange)
         {
             chef.SwitchState(chef.attackingState);
         }

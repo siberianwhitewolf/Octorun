@@ -8,6 +8,7 @@ public class CookingState : IState
 
     public void Enter()
     {
+        Debug.Log("Enter cooking state");
         chef.StopMovement(); // Se detiene para cocinar
         chef.animator.SetBool("IsCooking", true); // Ejemplo de animación
     }

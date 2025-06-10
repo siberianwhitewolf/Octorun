@@ -29,13 +29,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 584423021096874103}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0.0026179885, z: 0, w: 0.9999966}
   m_LocalPosition: {x: -16.65, y: 13.02, z: 36.43}
   m_LocalScale: {x: 0.34237066, y: 0.34237066, z: 0.34237066}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0.3, z: 0}
 --- !u!33 &8523783907499937659
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -142,14 +142,14 @@ MonoBehaviour:
   cameFromNode: {fileID: 0}
   isWalkable: 1
   isTargetNode: 0
-  colliderRadius: 0.5
+  colliderRadius: 0.3
   isTextVisible: 0
   walkableMat: {fileID: 2100000, guid: 5b5f80acd9122cd4091c4cb180146707, type: 2}
   notWalkableMat: {fileID: 2100000, guid: d19629a5e180b634f9b9ec7c7f96949d, type: 2}
   targetMat: {fileID: 2100000, guid: bdfec62ed1a594444972b2117034ed29, type: 2}
   obstacleLayer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 1088
   floorLayer:
     serializedVersion: 2
     m_Bits: 256

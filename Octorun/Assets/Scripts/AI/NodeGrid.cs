@@ -123,7 +123,7 @@ using UnityEngine;
 
                     if (Physics.CheckSphere(cellCenter, cellSize / 2 * 0.9f, tileLayer))
                     {
-                        Vector3 nodePosition = new Vector3(cellCenter.x, transform.position.y, cellCenter.z);
+                        Vector3 nodePosition = new Vector3(cellCenter.x, transform.position.y + 0.3f, cellCenter.z);
                         Node spawnedNode = Instantiate(nodePrefab, nodePosition, Quaternion.identity, transform);
                         spawnedNode.name = $"Node_{x}_{z}";
                         spawnedNode.x = x;

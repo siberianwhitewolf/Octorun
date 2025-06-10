@@ -12,6 +12,9 @@ public class ChefAIController : MonoBehaviour, IBlindable
     [Header("Movement Settings")]
     public float moveSpeed = 3.5f;
     public float rotationSpeed = 10f;
+    
+    [Header("Combat Settings")]
+    public int damage = 1;
 
     [Header("References")]
     public Transform player;
@@ -20,11 +23,12 @@ public class ChefAIController : MonoBehaviour, IBlindable
     [Tooltip("La capa de los obstáculos que bloquean la visión directa (paredes, columnas, etc.).")]
     public LayerMask obstacleMask; // MUY IMPORTANTE
     public Animator animator;
+    public Entity playerEntity;
 
     [Header("Detection")]
-    public float viewRadius = 10f;
-    public float viewAngle = 45f;
-    public float attackRange = 2f;
+    public float attackRange = 1f;
+    [Tooltip("Distancia a la que el jugador debe alejarse para que el Chef deje de atacar y vuelva a perseguir. DEBE SER MAYOR que attackRange.")]
+    public float disengageDistance = 2.5f; 
     public float blindTime = 5f;
     public bool isBlinded = false;
 
@@ -211,37 +215,12 @@ public class ChefAIController : MonoBehaviour, IBlindable
         isBlinded = true;
         SwitchState(blindedState);
     }
-    
-    public bool CanSeePlayer()
-    {
-        if (player == null) return false;
-
-        Vector3 dirToPlayer = (player.position - transform.position).normalized;
-        float distToPlayer = Vector3.Distance(transform.position, player.position);
-
-        if (distToPlayer < viewRadius)
-        {
-            float angle = Vector3.Angle(transform.forward, dirToPlayer);
-            if (angle < viewAngle / 2f)
-            {
-                if (!Physics.Linecast(transform.position, player.position, obstacleMask))
-                    return true;
-            }
-        }
-
-        return false;
-    }
 
     void OnDrawGizmosSelected()
     {
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, viewRadius);
-
-        Vector3 left = Quaternion.Euler(0, -viewAngle / 2, 0) * transform.forward;
-        Vector3 right = Quaternion.Euler(0, viewAngle / 2, 0) * transform.forward;
-
         Gizmos.color = Color.red;
-        Gizmos.DrawLine(transform.position, transform.position + left * viewRadius);
-        Gizmos.DrawLine(transform.position, transform.position + right * viewRadius);
+        Gizmos.DrawWireSphere(transform.position, attackRange);
+        Gizmos.color = Color.magenta;
+        Gizmos.DrawWireSphere(transform.position, disengageDistance);
     }
 }

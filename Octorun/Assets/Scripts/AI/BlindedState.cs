@@ -10,6 +10,7 @@ public class BlindedState : IState
 
     public void Enter()
     {
+        Debug.Log("Enter blinded state");
         timer = 0f;
         blindDuration = chef.blindTime;
         chef.inked.IsInked = true;

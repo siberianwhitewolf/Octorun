@@ -10,6 +10,7 @@ public class IdleState : IState
 
     public void Enter()
     {
+        Debug.Log("Enter idle state");
         timer = 0f;
         chef.StopMovement(); 
         chef.animator.SetBool("IsWalking", false);
