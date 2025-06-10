@@ -1,37 +1,45 @@
-using System.Collections;
 using UnityEngine;
-using UnityEngine.Rendering.Universal;
 
 public class OctopusInk : MonoBehaviour
 {
-    [Header("Ink Settings")]
-    public float inkMax = 100f;
+    [Header("Coste y Efecto")]
+    [Tooltip("Cuánta tinta consume la habilidad por segundo.")]
     public float inkCostPerSecond = 10f;
-    public float inkRechargeRate = 5f;
+    [Tooltip("Fuerza del retroceso al disparar.")]
     public float recoilForce = 3f;
     public KeyCode fireKey = KeyCode.Mouse0;
-    public LayerMask enemyMask;
-
-
+    
     [Header("Spray Settings")]
     public float sprayRadius = 4f;
     public float sprayAngle = 30f;
     public float blindDuration = 5f;
     public float blindInterval = 1f;
+    public LayerMask enemyMask;
 
-    public float currentInk;
+    [Header("Referencias")]
     public ParticleSystem inkParticle;
+    public Entity playerEntity;
+
+    // --- Variables eliminadas: inkMax, currentInk, inkRechargeRate ---
+    // --- Nueva referencia al InkManager ---
+    private InkManager inkManager;
 
     private ParticleSystem[] allInkParticles;
     private bool isFiring = false;
     private Rigidbody rb;
-    public float blindTimer;
-    public Entity playerEntity;
-
-    void Start()
+    private float blindTimer;
+    
+    void Awake() // Cambiado de Start a Awake para asegurar que la referencia exista antes que otros Start() la necesiten
     {
+        inkManager = GetComponent<InkManager>();
+        if (inkManager == null)
+        {
+            Debug.LogError("El componente InkManager no se encuentra en el jugador. El script OctopusInk no funcionará.", this);
+            enabled = false;
+            return;
+        }
+
         allInkParticles = inkParticle.GetComponentsInChildren<ParticleSystem>();
-        currentInk = inkMax;
         rb = GetComponent<Rigidbody>();
     }
 
@@ -40,48 +48,54 @@ public class OctopusInk : MonoBehaviour
         blindTimer -= Time.deltaTime;
         bool shootPressed = Input.GetKey(fireKey);
 
-        if (shootPressed && currentInk > 0f && playerEntity.IsAlive)
+        if (shootPressed && playerEntity.IsAlive)
         {
-            if (!isFiring)
+            // --- LÓGICA DE CONSUMO MODIFICADA ---
+            // Intentamos usar la tinta. Si InkManager nos da permiso (devuelve true)...
+            if (inkManager.UseInk(inkCostPerSecond * Time.deltaTime))
             {
-                foreach (var ps in allInkParticles)
-                    ps.Play();
-
-                isFiring = true;
+                // ...entonces activamos los efectos.
+                if (!isFiring)
+                {
+                    StartFiringEffects();
+                }
+                ApplyRecoil();
+                TryBlindTargets();
             }
-
-            ApplyRecoil();
-            TryBlindTargets();
-
-            currentInk -= inkCostPerSecond * Time.deltaTime;
-            currentInk = Mathf.Max(0f, currentInk);
-
-            if (currentInk == 0)
+            else // Si UseInk devuelve false (no hay tinta)...
             {
-                foreach (var ps in allInkParticles)
-                    ps.Stop();
+                // ...detenemos los efectos.
+                StopFiringEffects();
             }
         }
         else
         {
-            if (isFiring && playerEntity.IsAlive)
-            {
-                foreach (var ps in allInkParticles)
-                    ps.Stop();
-
-                isFiring = false;
-            }
-
-            currentInk += inkRechargeRate * Time.deltaTime;
-            currentInk = Mathf.Min(inkMax, currentInk);
+            // Si dejamos de presionar la tecla, detenemos los efectos.
+            StopFiringEffects();
         }
+        // --- La lógica de regeneración ha sido eliminada de aquí. El InkManager se encarga. ---
+    }
+
+    void StartFiringEffects()
+    {
+        if (isFiring) return;
+        foreach (var ps in allInkParticles)
+            ps.Play();
+        isFiring = true;
+    }
+
+    void StopFiringEffects()
+    {
+        if (!isFiring) return;
+        foreach (var ps in allInkParticles)
+            ps.Stop();
+        isFiring = false;
     }
 
     void ApplyRecoil()
     {
         if (rb == null) return;
-
-        Vector3 recoilDir = transform.up; // hacia la espalda del pulpo
+        Vector3 recoilDir = transform.up;
         rb.AddForce(recoilDir * recoilForce, ForceMode.Impulse);
     }
 
@@ -144,8 +158,4 @@ public class OctopusInk : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, sprayRadius);
     }
-
-
-
-    public float GetInkLevelNormalized() => currentInk / inkMax;
 }

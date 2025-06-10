@@ -35,6 +35,7 @@ using UnityEngine;
         [SerializeField]
         protected int _moveSpeedMultiplier = 1;
         public Animator animator;
+        public SceneLoader sceneLoader;
         
 
         protected virtual void Awake()
@@ -134,6 +135,10 @@ using UnityEngine;
                 // Handle death logic here (e.g., play animation, remove from game, etc.)
                 animator.SetBool("isDead",true);
                 Debug.Log($"{gameObject.name} has died.");
+                if (gameObject.CompareTag("Player"))
+                {
+                    sceneLoader.LoadSceneByName("Defeat");
+                }
         }
 
         public void TakeDamage(int damage)

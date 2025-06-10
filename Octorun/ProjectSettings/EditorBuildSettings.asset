@@ -6,9 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 3808db3eed1dab54b83dddaa86471cfc
+  - enabled: 1
     path: Assets/Scenes/Level_Complete.unity
     guid: 5e8b5542302a41647a770e27c9c13d42
   - enabled: 1
     path: Assets/Scenes/Victoty.unity
     guid: d5fe0c347cd5dc0499d69328099011da
+  - enabled: 1
+    path: Assets/Scenes/Defeat.unity
+    guid: 5af386d8280b97643a454e1eca77b8ef
   m_configObjects: {}
