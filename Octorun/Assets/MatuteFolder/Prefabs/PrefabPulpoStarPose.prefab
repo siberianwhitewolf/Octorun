@@ -2759,7 +2759,7 @@ SkinnedMeshRenderer:
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
   m_SkinnedMotionVectors: 1
-  m_Mesh: {fileID: 2756627725118907817, guid: 656a12ac8083e844a9a409d383e6245a, type: 3}
+  m_Mesh: {fileID: 6981290006637109699, guid: c1eacc27a9c339b4384d68bbca62bc37, type: 3}
   m_Bones:
   - {fileID: 3421279750110342841}
   - {fileID: 3472365000293827696}
@@ -7248,6 +7248,8 @@ MonoBehaviour:
   materialsToControl:
   - {fileID: 2100000, guid: ee81a5534294666449027265c8972019, type: 2}
   - {fileID: 2100000, guid: f7d3a68faa09e674fb3424029d1c156b, type: 2}
+  isLerping: 0
+  triggered: 0
 --- !u!1 &7544125917720907012
 GameObject:
   m_ObjectHideFlags: 0

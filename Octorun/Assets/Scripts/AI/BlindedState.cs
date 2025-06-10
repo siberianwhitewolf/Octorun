@@ -14,26 +14,23 @@ public class BlindedState : IState
         timer = 0f;
         blindDuration = chef.blindTime;
         chef.inked.IsInked = true;
-        chef.animator.SetBool("IsWalking", true); // Quizás caminar es más apropiado que correr
-        WanderRandomly();
+        chef.animator.SetBool("IsWalking",false);
+        chef.animator.SetBool("IsRunning",false);
+        chef.animator.SetTrigger("blind"); // Quizás caminar es más apropiado que correr
+        chef.StopMovement();
     }
 
     public void Update()
     {
         timer += Time.deltaTime;
-        if (timer >= blindDuration)
+        if (timer > blindDuration)
         {
-            if (chef.lineOfSight != null && chef.lineOfSight.CanSeeTarget)
+            if (chef.lineOfSight.CanSeeTarget)
+            {
                 chef.SwitchState(chef.chasingState);
-            else
-                chef.SwitchState(chef.patrollingState);
-            return;
-        }
-
-        // Si ha llegado a su destino aleatorio, busca otro.
-        if (chef.HasReachedDestination)
-        {
-            WanderRandomly();
+            }
+            chef.SwitchState(chef.patrollingState);
+            
         }
     }
 
@@ -41,19 +38,7 @@ public class BlindedState : IState
     {
         chef.isBlinded = false;
         chef.inked.IsInked = false;
-        chef.animator.SetBool("IsWalking", false);
     }
 
-    private void WanderRandomly()
-    {
-        Vector3 randomDir = Random.insideUnitSphere * 5f; // Radio de 5m
-        randomDir += chef.transform.position;
-        
-        // Buscamos un nodo caminable cerca de ese punto aleatorio
-        Node targetNode = GridManager.Instance.Pathfinder.GetNearestWalkableNode(randomDir);
-        if (targetNode != null)
-        {
-            chef.SetMovementTarget(targetNode.transform.position);
-        }
-    }
+ 
 }

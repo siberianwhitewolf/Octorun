@@ -2920,17 +2920,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 81bb9eea30387e442899949a80011e55,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.6818
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 81bb9eea30387e442899949a80011e55,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.6818
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 81bb9eea30387e442899949a80011e55,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.6818
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 81bb9eea30387e442899949a80011e55,
         type: 3}
@@ -3387,8 +3387,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 618c04ac7826c5a49b3ee676e5fc806c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 3.5
+  moveSpeed: 1
   rotationSpeed: 10
+  damage: 1
   player: {fileID: 0}
   waypoints:
   - {fileID: 0}
@@ -3402,9 +3403,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   animator: {fileID: 2120939144758111844}
-  viewRadius: 3.85
-  viewAngle: 45
-  attackRange: 2.65
+  playerEntity: {fileID: 0}
+  attackRange: 1
+  disengageDistance: 2
   blindTime: 5
   isBlinded: 0
   currentWaypointIndexPatrol: 0
@@ -3430,9 +3431,9 @@ CapsuleCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.18444157
-  m_Height: 1.8917646
+  m_Height: 2.1342506
   m_Direction: 1
-  m_Center: {x: -0.00005308787, y: 0.90367526, z: 0}
+  m_Center: {x: -0.00005308787, y: 1.0801303, z: 0}
 --- !u!114 &7547179719082342158
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3463,8 +3464,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  viewRadius: 10
+  viewRadius: 3
   viewAngle: 90
+  eyeHeight: 2
   targetMask:
     serializedVersion: 2
     m_Bits: 512
@@ -3494,10 +3496,10 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 80
   m_CollisionDetection: 0
 --- !u!4 &5444634515647165470 stripped
 Transform:
