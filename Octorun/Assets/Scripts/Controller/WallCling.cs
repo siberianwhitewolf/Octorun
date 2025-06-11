@@ -147,10 +147,5 @@ public class WallCling : MonoBehaviour
         _rb.AddForce(jumpDirection * jumpForce, ForceMode.Impulse);
     }
 
-    void OnDrawGizmosSelected()
-    {
-        // El Gizmo ahora también usa la dirección correcta para que veas el rayo de detección.
-        Gizmos.color = Color.cyan;
-        Gizmos.DrawLine(transform.position, transform.position + (transform.up * checkDistance));
-    }
+    
 }

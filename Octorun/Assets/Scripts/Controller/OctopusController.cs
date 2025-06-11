@@ -1,45 +1,63 @@
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
-public class OctopusController : Entity, IAdjustableSpeed
+public class OctopusController : Entity, IAdjustableSpeed // Asegúrate que tu clase herede de Entity si lo necesitas
 {
     [Header("Movement Settings")]
-    public float moveSpeed = 3.5f;
-    public float rotationSpeed = 10f;
+    public float moveSpeed = 5f; // Puedes ajustar la velocidad
+    public float rotationSpeed = 15f;
+
+    [Header("Hiding Settings")]
     public bool isHiding = false;
     private bool canMove = true;
     private float hideTimer = 0;
     public float maxHideTime = 1.5f;
 
     private float _speedMultiplier = 1f;
-    
+
     private Rigidbody _rb;
     private Vector3 _moveDirection;
     public MaterialFloatLerp  _materialFloatLerp;
-    WallCling _wallCling;
+    private WallCling _wallCling;
     private OctopusJump _octopusJump;
+
+    // Referencia a la cámara principal para el movimiento isométrico
+    private Camera mainCamera;
 
     protected override void Awake()
     {
-        base.Awake();
+        base.Awake(); // Llama al Awake de Entity si heredas de él
+        _rb = GetComponent<Rigidbody>();
+        _octopusJump = GetComponent<OctopusJump>();
+        _wallCling = GetComponent<WallCling>();
+        mainCamera = Camera.main; // Guardamos la referencia a la cámara principal
     }
 
     protected override void Start()
     {
         base.Start();
-        _octopusJump  = GetComponent<OctopusJump>();
-        _rb = GetComponent<Rigidbody>();
-        _rb.freezeRotation = true;
-        _wallCling = GetComponent<WallCling>();
+        if (_rb != null)
+        {
+            _rb.freezeRotation = true;
+        }
     }
 
     protected override void Update()
     {
-        base.Update();  
-        if (!_wallCling._isClinging && isAlive)
+        base.Update();
+        
+        // Comprobamos si podemos movernos (no estamos escondidos, pegados a la pared, etc.)
+        bool canCurrentlyMove = !isHiding && (_wallCling == null || !_wallCling._isClinging) && isAlive;
+        
+        if (canCurrentlyMove)
         {
             GetInputs();
             RotateTowardsMouse();
+        }
+        else
+        {
+            // Si no nos podemos mover, aseguramos que la dirección sea cero.
+            _moveDirection = Vector3.zero;
         }
             
         if (Input.GetKeyDown(KeyCode.Q) && isAlive)
@@ -55,70 +73,93 @@ public class OctopusController : Entity, IAdjustableSpeed
     
     void FixedUpdate()
     {
-        // Movimiento directo en XZ manteniendo la velocidad en Y (por gravedad)
-        if (canMove && _octopusJump.isGrounded)
+        // La lógica de movimiento ahora es más simple, solo aplica la dirección calculada.
+        if (canMove)
         {
+            // Aplicamos la velocidad. Si no hay input, _moveDirection será cero.
             Vector3 targetVelocity = _moveDirection * moveSpeed * _speedMultiplier;
             _rb.velocity = new Vector3(targetVelocity.x, _rb.velocity.y, targetVelocity.z);
         }
-
-        
     }
 
+    /// <summary>
+    /// Calcula la dirección del movimiento basándose en la rotación de la cámara.
+    /// </summary>
     void GetInputs()
     {
-        float h = Input.GetAxis("Horizontal");
-        float v = Input.GetAxis("Vertical");
+        float h = Input.GetAxis("Horizontal"); // A/D o Izquierda/Derecha
+        float v = Input.GetAxis("Vertical");   // W/S o Arriba/Abajo
 
-        _moveDirection = new Vector3(h, 0, v).normalized;
+        // --- LÓGICA DE MOVIMIENTO ISOMÉTRICO ---
 
-        // Rotar suavemente hacia la dirección de movimiento (solo eje Y)
-        if (_moveDirection.sqrMagnitude > 0.01f)
+        // 1. Obtenemos los vectores de dirección de la cámara.
+        Vector3 camForward = mainCamera.transform.forward;
+        Vector3 camRight = mainCamera.transform.right;
+
+        // 2. Aplanamos los vectores para que no tengan componente vertical (Y).
+        camForward.y = 0;
+        camRight.y = 0;
+        camForward.Normalize();
+        camRight.Normalize();
+
+        // 3. Creamos la dirección de movimiento final combinando el input del jugador
+        //    con las direcciones de la cámara.
+        //    'v' (W/S) controla el movimiento a lo largo del eje "adelante" de la cámara.
+        //    'h' (A/D) controla el movimiento a lo largo del eje "derecha" de la cámara.
+        _moveDirection = (camForward * v + camRight * h);
+
+        // Opcional: Normalizar si se usa teclado para que el movimiento diagonal no sea más rápido.
+        if (_moveDirection.sqrMagnitude > 1f)
         {
-            Vector3 flatDirection = new Vector3(_moveDirection.x, 0, _moveDirection.z);
-            Quaternion targetRotation = Quaternion.LookRotation(flatDirection);
-            Quaternion yOnlyRotation = Quaternion.Euler( -90, targetRotation.eulerAngles.y, 0);
-            transform.rotation = Quaternion.Slerp(transform.rotation, yOnlyRotation, Time.deltaTime * rotationSpeed);
+            _moveDirection.Normalize();
         }
     }
+    
+    /// <summary>
+    /// Rota al personaje para que siempre mire hacia la posición del cursor del mouse.
+    /// </summary>
+    void RotateTowardsMouse()
+    {
+        Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
+        
+        // Creamos un plano a la altura del personaje para intersectar el rayo.
+        Plane groundPlane = new Plane(Vector3.up, transform.position);
+
+        if (groundPlane.Raycast(ray, out float hitDistance))
+        {
+            Vector3 hitPoint = ray.GetPoint(hitDistance);
+            Vector3 directionToLook = hitPoint - transform.position;
+            directionToLook.y = 0f; // Nos aseguramos de que la rotación sea solo en el eje Y.
+
+            if (directionToLook.sqrMagnitude > 0.01f)
+            {
+                Quaternion targetRotation = Quaternion.LookRotation(directionToLook);
+                
+                // Aplicamos la rotación base de -90 en X de tu modelo si es necesario.
+                // Si tu modelo ya mira hacia adelante por defecto, puedes usar solo 'targetRotation'.
+                transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation * Quaternion.Euler(-90, 0, 0), Time.deltaTime * rotationSpeed);
+            }
+        }
+    }
+    
+    // --- El resto de tus funciones se mantienen igual ---
 
     void SetIsHiding()
     {
         isHiding = !isHiding;
-        canMove = !canMove;
-        _rb.velocity = new Vector3(0f, 0f, 0f);
+        canMove = !isHiding;
+        if(isHiding) _rb.velocity = Vector3.zero;
     }
 
     void HideTimer()
     {
         hideTimer += Time.deltaTime;
-        Debug.Log(hideTimer);
         if (hideTimer > maxHideTime)
         {
-            _materialFloatLerp.triggered = true;
+            if(_materialFloatLerp != null) _materialFloatLerp.triggered = true;
             hideTimer = 0;
-            isHiding = !isHiding;
-            canMove = !canMove;
-        }
-    }
-    
-    void RotateTowardsMouse()
-    {
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        Plane groundPlane = new Plane(Vector3.up, transform.position); // plano horizontal (y = personaje)
-
-        if (groundPlane.Raycast(ray, out float hitDistance))
-        {
-            Vector3 hitPoint = ray.GetPoint(hitDistance);
-            Vector3 direction = hitPoint - transform.position;
-            direction.y = 0f;
-
-            if (direction.sqrMagnitude > 0.01f)
-            {
-                Quaternion targetRotation = Quaternion.LookRotation(direction);
-                Quaternion yOnlyRotation = Quaternion.Euler(-90f, targetRotation.eulerAngles.y, 0f); // misma lógica que tu controlador
-                transform.rotation = Quaternion.Slerp(transform.rotation, yOnlyRotation, Time.deltaTime * rotationSpeed);
-            }
+            isHiding = false;
+            canMove = true;
         }
     }
 
@@ -130,12 +171,9 @@ public class OctopusController : Entity, IAdjustableSpeed
     public void SetMovement(bool canPlayerMove)
     {
         canMove = canPlayerMove;
-    
-        // Si detenemos el movimiento, es buena idea resetear la velocidad del Rigidbody.
         if (!canPlayerMove)
         {
             _rb.velocity = Vector3.zero;
         }
     }
-    
 }
