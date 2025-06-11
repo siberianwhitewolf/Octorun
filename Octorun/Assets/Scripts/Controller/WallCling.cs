@@ -6,16 +6,12 @@ using UnityEngine;
 public class WallCling : MonoBehaviour
 {
     [Header("Configuración de Adhesión")]
-    [Tooltip("La capa que identifica a las paredes a las que se puede pegar.")]
     public LayerMask wallLayer;
-    [Tooltip("Distancia máxima para detectar una pared y poder pegarse.")]
     public float checkDistance = 0.7f;
-    [Tooltip("Tiempo máximo en segundos que puede estar pegado.")]
     public float maxClingTime = 1.5f;
 
     [Header("Configuración de Salto")]
-    [Tooltip("Fuerza con la que se impulsa al saltar de la pared.")]
-    public float jumpForce = 10f;
+    public float jumpForce = 12f; // Puedes ajustar esta fuerza
 
     private Rigidbody _rb;
     private OctopusController _octopusController;
@@ -34,6 +30,7 @@ public class WallCling : MonoBehaviour
         _octopusJump = GetComponent<OctopusJump>();
     }
 
+    // ... (Update y HandleStates se mantienen igual) ...
     void Update()
     {
         if (_lockClingUntilGrounded && _octopusJump.isGrounded)
@@ -41,16 +38,9 @@ public class WallCling : MonoBehaviour
             _lockClingUntilGrounded = false;
         }
 
-        if (_isClinging)
-        {
-            HandleClingingState();
-        }
-        else
-        {
-            HandleDefaultState();
-        }
+        if (_isClinging) { HandleClingingState(); }
+        else { HandleDefaultState(); }
     }
-
     private void HandleDefaultState()
     {
         if (Input.GetKey(KeyCode.E) && !_octopusJump.isGrounded && !_lockClingUntilGrounded)
@@ -58,33 +48,26 @@ public class WallCling : MonoBehaviour
             TryToCling();
         }
     }
-
     private void HandleClingingState()
     {
         _clingTimer += Time.deltaTime;
-        if (_clingTimer >= maxClingTime)
-        {
-            StopClinging();
-            return;
-        }
-
-        if (Input.GetKeyUp(KeyCode.E))
-        {
-            StopClinging();
-            return;
-        }
-
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            JumpFromWall();
-        }
+        if (_clingTimer >= maxClingTime) { StopClinging(); return; }
+        if (Input.GetKeyUp(KeyCode.E)) { StopClinging(); return; }
+        if (Input.GetKeyDown(KeyCode.Space)) { JumpFromWall(); }
     }
+
 
     private void TryToCling()
     {
-        // --- CORREGIDO ---
-        // Usamos el vector de movimiento hacia adelante de tu pulpo (su eje Y local) para detectar la pared.
-        if (Physics.Raycast(transform.position, -transform.up, out RaycastHit hit, checkDistance, wallLayer))
+        // --- LÓGICA DE DETECCIÓN CORREGIDA ---
+        // Le preguntamos al controlador la dirección del input del jugador.
+        Vector3 directionToProbe = _octopusController.MoveDirection;
+
+        // Si el jugador no se está moviendo, no intentamos pegarnos.
+        if (directionToProbe.sqrMagnitude < 0.1f) return;
+        
+        // Usamos esa dirección para lanzar el rayo. ¡Ahora siempre será la correcta!
+        if (Physics.Raycast(transform.position, directionToProbe, out RaycastHit hit, checkDistance, wallLayer))
         {
             StartClinging(hit);
         }
@@ -95,27 +78,18 @@ public class WallCling : MonoBehaviour
         _isClinging = true;
         _lockClingUntilGrounded = false;
         _clingTimer = 0f;
-        _wallNormal = wallHit.normal; // La dirección que "sale" de la pared.
+        _wallNormal = wallHit.normal; 
 
         _octopusController.SetMovement(false);
         _octopusJump.enabled = false;
         _rb.useGravity = false;
         _rb.velocity = Vector3.zero;
 
-        // --- LÓGICA DE ROTACIÓN MODIFICADA PARA FORZAR -180 EN X ---
-
-        // 1. Primero, calculamos la rotación ideal para que el pulpo "mire" en dirección
-        //    opuesta a la pared. Esto nos dará el ángulo correcto en el eje Y.
+        // La lógica de rotación que funcionaba la mantenemos.
         Quaternion lookAwayFromWall = Quaternion.LookRotation(-_wallNormal, Vector3.up);
-
-        // 2. Extraemos únicamente el ángulo de rotación en Y de este cálculo.
         float targetYAngle = lookAwayFromWall.eulerAngles.y;
-
-        // 3. Finalmente, creamos y aplicamos la rotación final, forzando el eje X a -180 grados
-        //    y usando el ángulo Y que acabamos de obtener. Dejamos Z en 0 para evitar que el pulpo ruede.
         transform.rotation = Quaternion.Euler(-180f, targetYAngle, 0f);
     
-        // El resto de la función se mantiene igual.
         transform.position = wallHit.point;
     }
 
@@ -130,22 +104,25 @@ public class WallCling : MonoBehaviour
 
     private void JumpFromWall()
     {
-        // Primero, nos despegamos para que la física normal (gravedad, etc.) se reactive.
+        // Esta función ahora está más limpia.
         StopClinging();
     
-        // Activamos nuestra bandera para no volver a pegarnos al instante.
-        _lockClingUntilGrounded = true;
-
-        // --- LÍNEA CORREGIDA Y DEFINITIVA ---
-        // Calculamos la dirección del salto combinando la normal de la pared (para alejarlo)
-        // y el vector hacia arriba del mundo (para darle altura).
-        // .normalized asegura que el vector final tenga una longitud consistente,
-        // para que la fuerza del salto sea siempre la misma.
+        // --- LÓGICA DE SALTO CORREGIDA Y DEFINITIVA ---
+        // Volvemos a la lógica que funcionaba. Ahora el _wallNormal será el correcto
+        // porque el Raycast en TryToCling golpeará la pared de frente.
         Vector3 jumpDirection = (_wallNormal + Vector3.up).normalized;
+        Debug.Log(jumpDirection);
 
-        // Aplicamos la fuerza en la dirección calculada.
         _rb.AddForce(jumpDirection * jumpForce, ForceMode.Impulse);
     }
 
-    
+    void OnDrawGizmosSelected()
+    {
+        // El Gizmo ahora muestra la dirección de movimiento del controlador.
+        Gizmos.color = Color.cyan;
+        if (_octopusController != null)
+        {
+            Gizmos.DrawLine(transform.position, transform.position + (_octopusController.MoveDirection * checkDistance));
+        }
+    }
 }

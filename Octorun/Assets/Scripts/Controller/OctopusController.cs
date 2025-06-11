@@ -23,6 +23,7 @@ public class OctopusController : Entity, IAdjustableSpeed // Asegúrate que tu c
 
     // Referencia a la cámara principal para el movimiento isométrico
     private Camera mainCamera;
+    public Vector3 MoveDirection { get; private set; }
 
     protected override void Awake()
     {
@@ -74,7 +75,7 @@ public class OctopusController : Entity, IAdjustableSpeed // Asegúrate que tu c
     void FixedUpdate()
     {
         // La lógica de movimiento ahora es más simple, solo aplica la dirección calculada.
-        if (canMove)
+        if (canMove && _octopusJump.isGrounded)
         {
             // Aplicamos la velocidad. Si no hay input, _moveDirection será cero.
             Vector3 targetVelocity = _moveDirection * moveSpeed * _speedMultiplier;
@@ -110,8 +111,9 @@ public class OctopusController : Entity, IAdjustableSpeed // Asegúrate que tu c
 
         // Opcional: Normalizar si se usa teclado para que el movimiento diagonal no sea más rápido.
         if (_moveDirection.sqrMagnitude > 1f)
-        {
+        { 
             _moveDirection.Normalize();
+            MoveDirection = _moveDirection;
         }
     }
     
