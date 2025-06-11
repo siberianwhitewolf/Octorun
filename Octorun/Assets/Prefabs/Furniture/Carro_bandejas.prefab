@@ -66,7 +66,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 7012005185310865401, guid: ebba0954394aae746b0402872c46933e, type: 3}
+  - {fileID: 2100000, guid: 6b62476c7e4ce254aa7950485f6667b9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -107,8 +107,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 48.850292, y: 160.29884, z: 34.78275}
-  m_Center: {x: -13.331249, y: 47.942337, z: -0.0000029802322}
+  m_Size: {x: 48.850292, y: 160.0663, z: 34.78279}
+  m_Center: {x: -25.3, y: 88.38764, z: 17.492771}
 --- !u!65 &653042120283761579
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -129,7 +129,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 8.455476, y: 8.955699, z: 1.6516864}
-  m_Center: {x: -36.23548, y: -36.430607, z: -16.995283}
+  m_Center: {x: -48.6, y: 3.72, z: 0.2}
 --- !u!65 &4313514388646803352
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -150,7 +150,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 8.455476, y: 8.955699, z: 1.6516864}
-  m_Center: {x: 9.67, y: -36.430607, z: -16.995283}
+  m_Center: {x: -2.5, y: 3.72, z: 0.3}
 --- !u!65 &5464160911111839960
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -171,7 +171,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 8.455476, y: 8.955699, z: 1.6516864}
-  m_Center: {x: 9.7, y: -36.430607, z: 17.1}
+  m_Center: {x: -2.5, y: 3.72, z: 34.5}
 --- !u!65 &1706658415516617395
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -192,4 +192,4 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 8.455476, y: 8.955699, z: 1.6516864}
-  m_Center: {x: -36.23548, y: -36.430607, z: 17}
+  m_Center: {x: -48.6, y: 3.72, z: 34.5}
