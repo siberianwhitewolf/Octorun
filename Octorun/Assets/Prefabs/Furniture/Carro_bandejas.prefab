@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4313514388646803352}
   - component: {fileID: 5464160911111839960}
   - component: {fileID: 1706658415516617395}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Carro_bandejas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31,7 +31,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4104924618330615226}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -9.333595, y: 0.409, z: -2.4088106}
   m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_ConstrainProportionsScale: 0
@@ -66,7 +66,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 7012005185310865401, guid: ebba0954394aae746b0402872c46933e, type: 3}
+  - {fileID: 2100000, guid: 6b62476c7e4ce254aa7950485f6667b9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -108,7 +108,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 48.850292, y: 160.29884, z: 34.78275}
-  m_Center: {x: -13.331249, y: 47.942337, z: -0.0000029802322}
+  m_Center: {x: -25.4, y: 88.25, z: 17.2}
 --- !u!65 &653042120283761579
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -129,7 +129,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 8.455476, y: 8.955699, z: 1.6516864}
-  m_Center: {x: -36.23548, y: -36.430607, z: -16.995283}
+  m_Center: {x: -48.5, y: 3.7, z: 0.2}
 --- !u!65 &4313514388646803352
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -150,7 +150,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 8.455476, y: 8.955699, z: 1.6516864}
-  m_Center: {x: 9.67, y: -36.430607, z: -16.995283}
+  m_Center: {x: -2.3, y: 3.8, z: 0.2}
 --- !u!65 &5464160911111839960
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -171,7 +171,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 8.455476, y: 8.955699, z: 1.6516864}
-  m_Center: {x: 9.7, y: -36.430607, z: 17.1}
+  m_Center: {x: -2.3, y: 3.87, z: 34.6}
 --- !u!65 &1706658415516617395
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -192,4 +192,4 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 8.455476, y: 8.955699, z: 1.6516864}
-  m_Center: {x: -36.23548, y: -36.430607, z: 17}
+  m_Center: {x: -48.4, y: 3.57, z: 34.6}
