@@ -3,20 +3,19 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - FxTemporaire
+  tags: []
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - RenderOnTop
+  - Wall
   - Water
   - UI
-  - Colision
-  - Player
-  - Floor
-  - Enemy
-  - Wall
+  - 
+  - 
+  - 
+  - 
+  - 
   - 
   - 
   - 
