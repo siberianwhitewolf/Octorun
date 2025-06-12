@@ -48,9 +48,19 @@ public class OctopusController : Entity, IAdjustableSpeed
 
     protected override void Update()
     {
+        // --- LÍNEA AÑADIDA ---
+        // Si estamos pegados a la pared, este script cede el control por completo.
+        if (_wallCling != null && _wallCling.IsClinging)
+        {
+            // Reseteamos el input para que no se mueva al despegarse.
+            _moveDirection = Vector3.zero; 
+            animator.SetBool("IsMovingForward", false);
+            return;
+        }
+        
         base.Update();
         
-        bool canCurrentlyMove = !isHiding && (_wallCling == null || !_wallCling._isClinging) && isAlive;
+        bool canCurrentlyMove = !isHiding && (_wallCling == null || !_wallCling.IsClinging) && isAlive;
         
         if (canCurrentlyMove)
         {
