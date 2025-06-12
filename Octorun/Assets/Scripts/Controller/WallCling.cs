@@ -89,7 +89,6 @@ public class WallCling : MonoBehaviour
         Quaternion lookAwayFromWall = Quaternion.LookRotation(-_wallNormal, Vector3.up);
         float targetYAngle = lookAwayFromWall.eulerAngles.y;
         transform.rotation = Quaternion.Euler(-90f, targetYAngle, 0f);
-    
         transform.position = wallHit.point;
     }
 
