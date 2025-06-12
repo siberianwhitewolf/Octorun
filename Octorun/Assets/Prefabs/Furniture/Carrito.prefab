@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1772967940602924588}
   - component: {fileID: 4476537822059024131}
   - component: {fileID: 4467241888148428585}
-  - component: {fileID: 8098606654966161488}
+  - component: {fileID: 1268624080820096733}
   m_Layer: 0
   m_Name: Carrito
   m_TagString: Untagged
@@ -84,8 +84,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &8098606654966161488
-MeshCollider:
+--- !u!65 &1268624080820096733
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -102,7 +102,6 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 5577259544937603362, guid: 5b91b6e197842c84bbc2bc1cab9f5b36, type: 3}
+  serializedVersion: 3
+  m_Size: {x: 80.65173, y: 64.74664, z: 45.359264}
+  m_Center: {x: -37.492733, y: 32.16033, z: 20.426031}
