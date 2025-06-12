@@ -45,7 +45,8 @@ public class WallCling : MonoBehaviour
     {
         if (_lockClingUntilGrounded && _octopusJump.isGrounded)
         {
-            _lockClingUntilGrounded = false;
+            //_lockClingUntilGrounded = false;
+            _clingTimer = 0f;
         }
 
         if (IsClinging)
@@ -55,7 +56,7 @@ public class WallCling : MonoBehaviour
         else
         {
             // Lógica para iniciar el cling
-            if (Input.GetKeyDown(KeyCode.E) && !_octopusJump.isGrounded && !_lockClingUntilGrounded)
+            if (Input.GetKeyDown(KeyCode.E) && !_octopusJump.isGrounded)
             {
                 TryToCling();
             }
@@ -100,12 +101,7 @@ public class WallCling : MonoBehaviour
     private void HandleWallMovement()
     {
         float verticalInput = Input.GetAxis("Vertical");
-        
-        // --- LÓGICA DE MOVIMIENTO EN PARED CORREGIDA ---
-        // La dirección de movimiento es el "arriba" del personaje (su espalda),
-        // que ahora está alineada para moverse verticalmente por la pared.
-        Vector3 moveDirection = transform.up * verticalInput;
-
+        Vector3 moveDirection = transform.forward * verticalInput;
         _rb.velocity = moveDirection * wallMoveSpeed;
     }
 
@@ -124,11 +120,11 @@ public class WallCling : MonoBehaviour
     private void StartClinging(RaycastHit wallHit)
     {
         IsClinging = true;
-        _lockClingUntilGrounded = false;
-        _clingTimer = 0f;
+       // _lockClingUntilGrounded = false;
+       // _clingTimer = 0f;
         _wallNormal = wallHit.normal; 
 
-        _rb.isKinematic = true;
+        _rb.isKinematic = false;
         _rb.velocity = Vector3.zero;
 
         // --- ROTACIÓN CORREGIDA Y ROBUSTA ---
@@ -165,5 +161,31 @@ public class WallCling : MonoBehaviour
         StopClinging();
 
         _rb.AddForce(jumpDirection * finalForce, ForceMode.Impulse);
+        _clingTimer = 0f;
     }
+    
+    public void RotateTowardsMouseOnWall()
+    {
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        Plane wallPlane = new Plane(-_wallNormal, transform.position); // Plano de la pared
+
+        if (wallPlane.Raycast(ray, out float hitDist))
+        {
+            Vector3 hitPoint = ray.GetPoint(hitDist);
+            Vector3 dirToMouse = hitPoint - transform.position;
+
+            // 1. Proyectamos la dirección del mouse sobre el plano de la pared
+            Vector3 projectedDirection = Vector3.ProjectOnPlane(dirToMouse, _wallNormal).normalized;
+
+            if (projectedDirection.sqrMagnitude > 0.001f)
+            {
+                // 2. Construimos una rotación con:
+                // - forward = la dirección proyectada hacia el mouse (en el plano)
+                // - up = la normal de la pared (que define cómo está “pegado”)
+                Quaternion targetRotation = Quaternion.LookRotation(projectedDirection, _wallNormal);
+                transform.rotation = targetRotation;
+            }
+        }
+    }
+
 }
