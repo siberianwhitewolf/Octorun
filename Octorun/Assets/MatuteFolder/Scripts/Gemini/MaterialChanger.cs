@@ -1,87 +1,70 @@
 using UnityEngine;
-using System.Collections.Generic; // Necesario para Dictionary
+using System.Collections.Generic;
 
+[RequireComponent(typeof(Collider))]
 public class MaterialChanger : MonoBehaviour
 {
-    [SerializeField]
-    private Material nuevoMaterial;
+    [SerializeField] private Material newMaterial;
+    [SerializeField] private string layerName = "Wall";
 
-    [SerializeField]
-    private string layerAfectada = "Wall";
+    private int layer;
+    private Dictionary<Renderer, Material> originalMaterials = new Dictionary<Renderer, Material>();
+    private Collider triggerCollider;
 
-    // Diccionario para almacenar los materiales originales de los objetos que colisionan
-    private Dictionary<GameObject, Material> materialesOriginales = new Dictionary<GameObject, Material>();
-
-    void Start()
+    void Awake()
     {
-        Debug.Log("MaterialChanger: Script iniciado en el objeto: " + gameObject.name);
-        if (nuevoMaterial == null)
+        layer = LayerMask.NameToLayer(layerName);
+        triggerCollider = GetComponent<Collider>();
+    }
+
+    void OnEnable()
+    {
+        // Si al activarse ya hay muros dentro, los cambiamos inmediatamente
+        if (triggerCollider.isTrigger)
         {
-            Debug.LogError("MaterialChanger: ¡ADVERTENCIA! El 'Nuevo Material' no está asignado en el Inspector.");
-        }
-        if (LayerMask.NameToLayer(layerAfectada) == -1)
-        {
-            Debug.LogError("MaterialChanger: ¡ADVERTENCIA! La capa '" + layerAfectada + "' no existe en Project Settings -> Layers.");
+            foreach (var other in Physics.OverlapBox(
+                triggerCollider.bounds.center,
+                triggerCollider.bounds.extents,
+                transform.rotation,
+                1 << layer))
+            {
+                ApplyChange(other);
+            }
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other) => ApplyChange(other);
+    void OnTriggerStay(Collider other) => ApplyChange(other);
+    void OnTriggerExit(Collider other) => RestoreOriginal(other);
+
+    void OnDisable()
     {
-        Debug.Log("TRIGGER DETECTADO con el objeto: " + other.gameObject.name + " desde: " + gameObject.name);
-        Debug.Log("La capa REAL de '" + other.gameObject.name + "' es: " + LayerMask.LayerToName(other.gameObject.layer));
-        Debug.Log("La capa ESPERADA es: " + layerAfectada + " (valor numérico: " + LayerMask.NameToLayer(layerAfectada) + ")");
+        // Al desactivarse, restauramos todo
+        foreach (var kvp in originalMaterials)
+            if (kvp.Key != null)
+                kvp.Key.material = kvp.Value;
+        originalMaterials.Clear();
+    }
 
-        // Comprobar si la capa del objeto colisionado coincide
-        if (other.gameObject.layer == LayerMask.NameToLayer(layerAfectada))
+    private void ApplyChange(Collider other)
+    {
+        if (other.gameObject.layer != layer || newMaterial == null) return;
+        var rend = other.GetComponent<Renderer>();
+        if (rend != null && !originalMaterials.ContainsKey(rend))
         {
-            Debug.Log("CAPA CORRECTA. Intentando cambiar el material...");
-            Renderer rendererObjeto = other.gameObject.GetComponent<Renderer>();
-
-            if (rendererObjeto != null && nuevoMaterial != null)
-            {
-                // Almacenar el material original antes de cambiarlo, si no lo hemos guardado ya
-                if (!materialesOriginales.ContainsKey(other.gameObject))
-                {
-                    materialesOriginales.Add(other.gameObject, rendererObjeto.material);
-                    Debug.Log("Material original de " + other.gameObject.name + " guardado.");
-                }
-
-                rendererObjeto.material = nuevoMaterial;
-                Debug.Log("¡Material de " + other.gameObject.name + " cambiado con éxito a " + nuevoMaterial.name + "!");
-            }
-            else
-            {
-                Debug.LogError("ERROR: No se encontró el componente Renderer en " + other.gameObject.name + " o el Nuevo Material no está asignado en " + gameObject.name + ".");
-            }
-        }
-        else
-        {
-            Debug.LogWarning("La capa de " + other.gameObject.name + " (" + LayerMask.LayerToName(other.gameObject.layer) + ") no es '" + layerAfectada + "'. No se cambiará el material.");
+            originalMaterials[rend] = rend.material;
+            rend.material = newMaterial;
         }
     }
 
-    private void OnTriggerExit(Collider other)
+    private void RestoreOriginal(Collider other)
     {
-        Debug.Log("TRIGGER FINALIZADO con el objeto: " + other.gameObject.name + " desde: " + gameObject.name);
-
-        // Verificar si el objeto con el que se terminó el trigger estaba en la capa afectada
-        if (other.gameObject.layer == LayerMask.NameToLayer(layerAfectada))
+        if (other.gameObject.layer != layer) return;
+        var rend = other.GetComponent<Renderer>();
+        if (rend != null && originalMaterials.ContainsKey(rend))
         {
-            // Si tenemos el material original guardado para este objeto, restaurarlo
-            if (materialesOriginales.ContainsKey(other.gameObject))
-            {
-                Renderer rendererObjeto = other.gameObject.GetComponent<Renderer>();
-                if (rendererObjeto != null)
-                {
-                    rendererObjeto.material = materialesOriginales[other.gameObject];
-                    materialesOriginales.Remove(other.gameObject); // Eliminar del diccionario después de restaurar
-                    Debug.Log("Material de " + other.gameObject.name + " restaurado a su estado original.");
-                }
-                else
-                {
-                    Debug.LogError("ERROR: No se encontró el componente Renderer al intentar restaurar el material de " + other.gameObject.name + ".");
-                }
-            }
+            rend.material = originalMaterials[rend];
+            originalMaterials.Remove(rend);
         }
     }
 }
