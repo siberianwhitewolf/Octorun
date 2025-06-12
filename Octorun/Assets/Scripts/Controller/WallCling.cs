@@ -26,7 +26,7 @@ public class WallCling : MonoBehaviour
     private Vector3 _wallNormal;
     private bool _lockClingUntilGrounded = false;
     private bool _isChargingJump = false;
-    private float _wallJumpChargeTimer = 0f;
+    private float _wallJumpChargeTimer = 1f;
 
     private Rigidbody _rb;
     private OctopusController _octopusController;
@@ -80,7 +80,7 @@ public class WallCling : MonoBehaviour
         if (Input.GetKeyDown(_octopusJump.jumpKey))
         {
             _isChargingJump = true;
-            _wallJumpChargeTimer = 0f;
+            _wallJumpChargeTimer = 1f;
             if(_animator) _animator.SetBool("JumpHeld", _isChargingJump);
             if(_animator) _animator.SetTrigger("JumpTrigger");
         }
@@ -148,7 +148,7 @@ public class WallCling : MonoBehaviour
         _rb.useGravity = true;
 
         _isChargingJump = false;
-        _wallJumpChargeTimer = 0f;
+        _wallJumpChargeTimer = 1f;
     }
 
     private void JumpFromWall()

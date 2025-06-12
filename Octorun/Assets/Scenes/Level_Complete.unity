@@ -32433,7 +32433,7 @@ Transform:
   m_GameObject: {fileID: 961933809}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.47, y: 2.2077937, z: -0.17}
+  m_LocalPosition: {x: -8.47, y: 3.17, z: -0.17}
   m_LocalScale: {x: 9.246613, y: 0.21579, z: 20.162573}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -74680,6 +74680,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8866978887037818906, guid: b7eb0eb22b968334d9c11b0813483b87,
+        type: 3}
+      propertyPath: maxWallJumpForce
+      value: 6.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
