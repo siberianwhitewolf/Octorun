@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 31390413734719300}
   - component: {fileID: 4309964302434966050}
   - component: {fileID: 6158846994885997521}
-  - component: {fileID: 3710761277867108056}
+  - component: {fileID: 7123259942914027190}
   m_Layer: 0
   m_Name: Modulo_hornalla
   m_TagString: Untagged
@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4d41a6a2f4952f6418d44f23732022a3, type: 2}
+  - {fileID: -1128633128595605300, guid: 6db62a51831cf96419de2fa416997c20, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -84,14 +84,14 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &3710761277867108056
-MeshCollider:
+--- !u!65 &7123259942914027190
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1058694022139297396}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: f80d9806d8e10bb49b0798d44a97e18c, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -102,7 +102,6 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2424736640946870999, guid: aeeb148f65f8c1f478626ccd83f0dd26, type: 3}
+  serializedVersion: 3
+  m_Size: {x: 120.00009, y: 97.15471, z: 64.118484}
+  m_Center: {x: -60.000046, y: 48.577354, z: 32.059242}

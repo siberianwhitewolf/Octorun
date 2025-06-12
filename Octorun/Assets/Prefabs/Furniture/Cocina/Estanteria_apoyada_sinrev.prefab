@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 8527321877266240272}
   - component: {fileID: 8740610802592696200}
   - component: {fileID: 6337172965420885825}
-  - component: {fileID: 8287203677456381471}
-  - component: {fileID: 5471590087564469946}
   - component: {fileID: 130525834746379085}
   m_Layer: 0
   m_Name: Estanteria_apoyada_sinrev
@@ -64,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4d41a6a2f4952f6418d44f23732022a3, type: 2}
+  - {fileID: -1128633128595605300, guid: 6db62a51831cf96419de2fa416997c20, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -86,48 +84,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8287203677456381471
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2837754985799757034}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 120.00014, y: 4.1721373, z: 30.000008}
-  m_Center: {x: -60.000057, y: 41.913883, z: 15.000004}
---- !u!65 &5471590087564469946
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2837754985799757034}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 4.822419, y: 39.694275, z: 4.9730325}
-  m_Center: {x: -5.6404696, y: 19.847137, z: 24.0151}
 --- !u!65 &130525834746379085
 BoxCollider:
   m_ObjectHideFlags: 0
