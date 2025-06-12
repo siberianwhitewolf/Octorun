@@ -28,9 +28,11 @@ public class OctopusInk : MonoBehaviour
     private bool isFiring = false;
     private Rigidbody rb;
     private float blindTimer;
+    Animator _animator;
     
     void Awake() // Cambiado de Start a Awake para asegurar que la referencia exista antes que otros Start() la necesiten
     {
+        _animator = GetComponent<Animator>();
         inkManager = GetComponent<InkManager>();
         if (inkManager == null)
         {
@@ -82,6 +84,8 @@ public class OctopusInk : MonoBehaviour
         foreach (var ps in allInkParticles)
             ps.Play();
         isFiring = true;
+        _animator.SetTrigger("AttackTrigger");
+        _animator.SetBool("AttackHeld",isFiring);
     }
 
     void StopFiringEffects()
@@ -90,6 +94,7 @@ public class OctopusInk : MonoBehaviour
         foreach (var ps in allInkParticles)
             ps.Stop();
         isFiring = false;
+        _animator.SetBool("AttackHeld",isFiring);
     }
 
     void ApplyRecoil()

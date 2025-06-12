@@ -20,6 +20,7 @@ public class OctopusController : Entity, IAdjustableSpeed // Asegúrate que tu c
     public MaterialFloatLerp  _materialFloatLerp;
     private WallCling _wallCling;
     private OctopusJump _octopusJump;
+    private Animator _animator;
 
     // Referencia a la cámara principal para el movimiento isométrico
     private Camera mainCamera;
@@ -29,6 +30,7 @@ public class OctopusController : Entity, IAdjustableSpeed // Asegúrate que tu c
     {
         base.Awake(); // Llama al Awake de Entity si heredas de él
         _rb = GetComponent<Rigidbody>();
+        _animator = GetComponent<Animator>();
         _octopusJump = GetComponent<OctopusJump>();
         _wallCling = GetComponent<WallCling>();
         mainCamera = Camera.main; // Guardamos la referencia a la cámara principal
@@ -63,6 +65,7 @@ public class OctopusController : Entity, IAdjustableSpeed // Asegúrate que tu c
             
         if (Input.GetKeyDown(KeyCode.Q) && isAlive)
         {
+            _animator.SetTrigger("HideToggle");
             SetIsHiding();
         }
         
@@ -108,6 +111,7 @@ public class OctopusController : Entity, IAdjustableSpeed // Asegúrate que tu c
         //    'v' (W/S) controla el movimiento a lo largo del eje "adelante" de la cámara.
         //    'h' (A/D) controla el movimiento a lo largo del eje "derecha" de la cámara.
         _moveDirection = (camForward * v + camRight * h);
+        _animator.SetBool("IsMovingForward", _moveDirection.sqrMagnitude > 0);
 
         // Opcional: Normalizar si se usa teclado para que el movimiento diagonal no sea más rápido.
         if (_moveDirection.sqrMagnitude > 1f)
@@ -150,6 +154,7 @@ public class OctopusController : Entity, IAdjustableSpeed // Asegúrate que tu c
     {
         isHiding = !isHiding;
         canMove = !isHiding;
+        _animator.SetBool("Hide", isHiding);
         if(isHiding) _rb.velocity = Vector3.zero;
     }
 
@@ -160,8 +165,7 @@ public class OctopusController : Entity, IAdjustableSpeed // Asegúrate que tu c
         {
             if(_materialFloatLerp != null) _materialFloatLerp.triggered = true;
             hideTimer = 0;
-            isHiding = false;
-            canMove = true;
+            SetIsHiding();
         }
     }
 

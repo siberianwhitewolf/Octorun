@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -24,6 +25,12 @@ public class OctopusJump : MonoBehaviour
     private bool _isCharging = false;
     private float _chargeTimer = 1f;
     private IAdjustableSpeed _adjustableSpeed;
+    Animator _animator;
+
+    private void Awake()
+    {
+        _animator = GetComponent<Animator>();
+    }
 
     void Start()
     {
@@ -42,6 +49,8 @@ public class OctopusJump : MonoBehaviour
         if (Input.GetKeyDown(jumpKey) && isGrounded && playerEntity.IsAlive)
         {
             _isCharging = true;
+            _animator.SetBool("JumpHeld", _isCharging);
+            _animator.SetTrigger("JumpTrigger");
 
             if (_adjustableSpeed != null)
                 _adjustableSpeed.SetSpeedMultiplier(slowFactor);
@@ -63,6 +72,7 @@ public class OctopusJump : MonoBehaviour
 
             _isCharging = false;
             _chargeTimer = 1f;
+            _animator.SetBool("JumpHeld", _isCharging);
 
             if (_adjustableSpeed != null)
                 _adjustableSpeed.SetSpeedMultiplier(1f); // Restaura la velocidad normal
@@ -72,6 +82,7 @@ public class OctopusJump : MonoBehaviour
     void CheckGround()
     {
         isGrounded = Physics.CheckSphere(groundCheckPoint.position, groundCheckRadius, groundLayer);
+        _animator.SetBool("IsGrounded", isGrounded);
     }
     
     void OnDrawGizmosSelected()

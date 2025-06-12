@@ -9334,10 +9334,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2795397902362475942, guid: 72c47fdc43d84b243bdc109c284341d6,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 9039474162298268107}
-    - targetCorrespondingSourceObject: {fileID: 2795397902362475942, guid: 72c47fdc43d84b243bdc109c284341d6,
-        type: 3}
-      insertIndex: -1
       addedObject: {fileID: 2431986236747630058}
     - targetCorrespondingSourceObject: {fileID: 2795397902362475942, guid: 72c47fdc43d84b243bdc109c284341d6,
         type: 3}
@@ -9518,25 +9514,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: f7d3a68faa09e674fb3424029d1c156b, type: 2}
   isLerping: 0
   triggered: 0
---- !u!114 &9039474162298268107
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3464002488724881093}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fc64237845ceee40ab75129528e6e57, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  wallLayer:
-    serializedVersion: 2
-    m_Bits: 1024
-  checkDistance: 0.7
-  maxClingTime: 1.5
-  jumpForce: 4.5
-  _isClinging: 0
 --- !u!114 &2431986236747630058
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9578,7 +9555,7 @@ Animator:
   m_GameObject: {fileID: 3464002488724881093}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 15befbc0e6403c846ab52180a3bc8962, type: 3}
-  m_Controller: {fileID: 9100000, guid: 8c12aaecf0710cb42b5bc533f67302b6, type: 2}
+  m_Controller: {fileID: 9100000, guid: 20da3c15a2984aa41bb3d3bf5d027a66, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
