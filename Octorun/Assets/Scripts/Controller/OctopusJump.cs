@@ -29,7 +29,7 @@ public class OctopusJump : MonoBehaviour
 
     private void Awake()
     {
-        _animator = GetComponent<Animator>();
+        _animator = GetComponentInChildren<Animator>();
     }
 
     void Start()

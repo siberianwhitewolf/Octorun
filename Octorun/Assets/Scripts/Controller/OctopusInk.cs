@@ -23,7 +23,6 @@ public class OctopusInk : MonoBehaviour
     // --- Variables eliminadas: inkMax, currentInk, inkRechargeRate ---
     // --- Nueva referencia al InkManager ---
     private InkManager inkManager;
-
     private ParticleSystem[] allInkParticles;
     private bool isFiring = false;
     private Rigidbody rb;
@@ -32,7 +31,7 @@ public class OctopusInk : MonoBehaviour
     
     void Awake() // Cambiado de Start a Awake para asegurar que la referencia exista antes que otros Start() la necesiten
     {
-        _animator = GetComponent<Animator>();
+        _animator = GetComponentInChildren<Animator>();
         inkManager = GetComponent<InkManager>();
         if (inkManager == null)
         {
@@ -100,7 +99,7 @@ public class OctopusInk : MonoBehaviour
     void ApplyRecoil()
     {
         if (rb == null) return;
-        Vector3 recoilDir = transform.up;
+        Vector3 recoilDir = -transform.forward;
         rb.AddForce(recoilDir * recoilForce, ForceMode.Impulse);
     }
 
@@ -138,16 +137,16 @@ public class OctopusInk : MonoBehaviour
         Gizmos.color = new Color(1f, 0f, 0f, 0.9f); // Rojo brillante con alta opacidad
         
         Vector3 origin = transform.position;
-        Vector3 forward = -transform.up; // Dirección del spray
+        Vector3 forward = transform.forward; // Dirección del spray
 
         int segments = 30;
         float angleStep = (sprayAngle * 2f) / segments;
-        Vector3 previousPoint = origin + Quaternion.Euler(0, -sprayAngle, 0) * forward * sprayRadius;
+        Vector3 previousPoint = origin + Quaternion.Euler(0, sprayAngle, 0) * forward * sprayRadius;
 
         // Dibuja líneas radiales desde el origen
         for (int i = 1; i <= segments; i++)
         {
-            float angle = -sprayAngle + (angleStep * i);
+            float angle = sprayAngle + (angleStep * i);
             Vector3 dir = Quaternion.Euler(0, angle, 0) * forward;
             Vector3 point = origin + dir.normalized * sprayRadius;
 
