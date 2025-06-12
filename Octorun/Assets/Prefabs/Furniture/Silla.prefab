@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 2307657346577606393}
   - component: {fileID: 3005538452608197666}
   - component: {fileID: 7023864128983602702}
-  - component: {fileID: 5872482242318481933}
+  - component: {fileID: 5254090777554702317}
+  - component: {fileID: 1903095418555480163}
   m_Layer: 0
   m_Name: Silla
   m_TagString: Untagged
@@ -27,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9169333053318671275}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -2.7452188, y: 0, z: -3.192677}
   m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_ConstrainProportionsScale: 0
@@ -84,14 +85,14 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &5872482242318481933
+--- !u!65 &5254090777554702317
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9169333053318671275}
-  m_Material: {fileID: 13400000, guid: f80d9806d8e10bb49b0798d44a97e18c, type: 2}
+  m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -103,5 +104,26 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 48.812355, y: 46.848633, z: 34.826626}
-  m_Center: {x: 0, y: 23.424316, z: -0.13522357}
+  m_Size: {x: 48.812374, y: 44.24674, z: 44.86415}
+  m_Center: {x: 0, y: 22.122875, z: 0}
+--- !u!65 &1903095418555480163
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9169333053318671275}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5.4897547, y: 80.67629, z: 44.86415}
+  m_Center: {x: 21.661234, y: 40.33715, z: -0.000011892012}

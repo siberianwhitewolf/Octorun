@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7607855516091343358}
   - component: {fileID: 4117327367344973700}
   - component: {fileID: 6848984742810447960}
-  - component: {fileID: 2510062928094652771}
+  - component: {fileID: 5193327277330904974}
   m_Layer: 0
   m_Name: Mesa_redonda_una_pata
   m_TagString: Untagged
@@ -84,14 +84,14 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2510062928094652771
-MeshCollider:
+--- !u!65 &5193327277330904974
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7354260603719628957}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: f80d9806d8e10bb49b0798d44a97e18c, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -102,7 +102,6 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4179798784747623045, guid: 1b65d51cb39da734b9c21272a58ffa58, type: 3}
+  serializedVersion: 3
+  m_Size: {x: 120.000015, y: 75.063934, z: 120.000015}
+  m_Center: {x: 0, y: 37.485443, z: 0}
