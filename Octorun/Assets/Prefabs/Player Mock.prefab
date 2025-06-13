@@ -51800,7 +51800,7 @@ MonoBehaviour:
   jumpKey: 32
   isGrounded: 1
   groundCheckPoint: {fileID: 7295392289123986563}
-  groundCheckRadius: 0.22
+  groundCheckRadius: 0.2
   groundLayer:
     serializedVersion: 2
     m_Bits: 320
@@ -51822,8 +51822,8 @@ MonoBehaviour:
   inkCostPerSecond: 10
   recoilForce: 0.025
   fireKey: 323
-  sprayRadius: 3.01
-  sprayAngle: 19.9
+  sprayRadius: 3.13
+  sprayAngle: 5
   blindDuration: 5
   blindInterval: 1
   enemyMask:
@@ -51847,9 +51847,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1024
   checkDistance: 0.5
-  wallMoveSpeed: 3
-  maxClingTime: 10000
-  maxWallJumpForce: 15
+  wallMoveSpeed: 1
+  maxClingTime: 5
+  maxWallJumpForce: 6.5
   chargeTimeToMax: 1.5
 --- !u!114 &2989964869634876469
 MonoBehaviour:
@@ -51935,8 +51935,8 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.12225525
-  m_Center: {x: -2.4832025e-11, y: 0.21045491, z: -0.03440231}
+  m_Radius: 0.12707698
+  m_Center: {x: 0, y: 0.24551386, z: -0.14000213}
 --- !u!1 &6184149203600198243
 GameObject:
   m_ObjectHideFlags: 0
