@@ -54113,6 +54113,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mesada_isla_estante (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1304843130798306188, guid: c9b0887cd701e7a4ebbad5a1f03683d5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4d41a6a2f4952f6418d44f23732022a3, type: 2}
     - target: {fileID: 4819350545433988659, guid: c9b0887cd701e7a4ebbad5a1f03683d5,
         type: 3}
       propertyPath: m_LocalPosition.x
