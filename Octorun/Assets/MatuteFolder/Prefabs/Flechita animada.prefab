@@ -61,7 +61,6 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: 13c7b52ce1e9fc14987a286a1e7933a0, type: 3}
   - {fileID: 2100000, guid: e5c40263b0f02ec4daa0b599c5b4f014, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -94,6 +93,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5494291594206725575}
   - component: {fileID: 1855517881725739464}
+  - component: {fileID: 3525106074818192713}
   m_Layer: 0
   m_Name: Flechita animada
   m_TagString: Untagged
@@ -135,6 +135,22 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!114 &3525106074818192713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3454098281568763753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4c34bfa7c4c9eb4394118e2a3c7169d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetMaterial: {fileID: 2100000, guid: e5c40263b0f02ec4daa0b599c5b4f014, type: 2}
+  floatName: _Outline_thickness
+  descentDuration: 1
+  holdDuration: 1
 --- !u!1 &3897732035886669574
 GameObject:
   m_ObjectHideFlags: 0
@@ -196,7 +212,6 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: 13c7b52ce1e9fc14987a286a1e7933a0, type: 3}
   - {fileID: 2100000, guid: e5c40263b0f02ec4daa0b599c5b4f014, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
