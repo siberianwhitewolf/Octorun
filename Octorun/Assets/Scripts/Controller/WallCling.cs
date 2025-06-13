@@ -19,6 +19,12 @@ public class WallCling : MonoBehaviour
     public float maxWallJumpForce = 15f;
     [Tooltip("El tiempo en segundos para cargar el salto al máximo.")]
     public float chargeTimeToMax = 1.5f;
+    
+    [Header("Transición al Soltarse")]
+    [Tooltip("Fuerza del impulso vertical cuando se suelta por falta de pared.")]
+    public float detachJumpForce = 5f;
+    [Tooltip("Fuerza horizontal para empujar al pulpo fuera de la pared al soltarse.")]
+    public float detachForwardForce = 2f;
 
     public bool IsClinging { get; private set; } = false;
     private float _clingTimer = 0f;
@@ -194,26 +200,47 @@ public class WallCling : MonoBehaviour
 
     private void CheckForAdjacentSurfaceTransition()
     {
-        Vector3 origin = transform.position + transform.forward * 0.01f; // mirar un poco adelante
+        Vector3 origin = transform.position + transform.forward * 0.05f;
         Vector3[] directions = new Vector3[]
         {
-            -transform.up, // suelo o cambio hacia abajo
-            transform.up, // techo
-            transform.forward // por si hay continuidad recta
+            transform.forward,                     // pared adelante
+            -transform.up,                         // suelo
+            transform.up,                          // techo
+            (transform.forward + transform.up).normalized,    // diagonal arriba
+            (transform.forward - transform.up).normalized     // diagonal abajo
         };
+
+        bool foundSurface = false;
 
         foreach (var dir in directions)
         {
-            if (Physics.Raycast(origin, dir, out RaycastHit hit, 0.1f, wallLayer))
+            if (Physics.Raycast(origin, dir, out RaycastHit hit, checkDistance, wallLayer))
             {
-                // Si la superficie no es la misma que la anterior, y estamos al borde, cambiamos
                 float angle = Vector3.Angle(hit.normal, _wallNormal);
-                if (angle > 5f) // margen para evitar falsos positivos
+
+                if (angle > 5f)
                 {
-                    StartClinging(hit); // se reorienta al nuevo plano
+                    // Nueva superficie con diferente normal: reorientar
+                    StartClinging(hit);
                     return;
+                }
+                else
+                {
+                    // Sigue habiendo la misma superficie o continuidad muy suave
+                    foundSurface = true;
+                    break;
                 }
             }
         }
+
+        if (!foundSurface)
+        {
+            // No hay superficie: soltamos y damos salto + empuje horizontal
+            StopClinging();
+            Vector3 impulse = -_wallNormal * detachForwardForce      // empuja fuera de la pared
+                              + Vector3.up   * detachJumpForce;        // salto hacia arriba
+            _rb.AddForce(impulse, ForceMode.Impulse);
+        }
     }
+
 }

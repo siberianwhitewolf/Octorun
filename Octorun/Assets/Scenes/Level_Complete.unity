@@ -74402,31 +74402,6 @@ PrefabInstance:
       propertyPath: sceneLoader
       value: 
       objectReference: {fileID: 159607299}
-    - target: {fileID: 1478339754294733022, guid: b7eb0eb22b968334d9c11b0813483b87,
-        type: 3}
-      propertyPath: m_Radius
-      value: 0.12707698
-      objectReference: {fileID: 0}
-    - target: {fileID: 1478339754294733022, guid: b7eb0eb22b968334d9c11b0813483b87,
-        type: 3}
-      propertyPath: m_Center.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1478339754294733022, guid: b7eb0eb22b968334d9c11b0813483b87,
-        type: 3}
-      propertyPath: m_Center.y
-      value: 0.24551386
-      objectReference: {fileID: 0}
-    - target: {fileID: 1478339754294733022, guid: b7eb0eb22b968334d9c11b0813483b87,
-        type: 3}
-      propertyPath: m_Center.z
-      value: -0.14000213
-      objectReference: {fileID: 0}
-    - target: {fileID: 4947339890300774610, guid: b7eb0eb22b968334d9c11b0813483b87,
-        type: 3}
-      propertyPath: groundCheckRadius
-      value: 0.2
-      objectReference: {fileID: 0}
     - target: {fileID: 6061193437879610953, guid: b7eb0eb22b968334d9c11b0813483b87,
         type: 3}
       propertyPath: m_Name
@@ -74481,36 +74456,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8411233561247062406, guid: b7eb0eb22b968334d9c11b0813483b87,
-        type: 3}
-      propertyPath: sprayAngle
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8411233561247062406, guid: b7eb0eb22b968334d9c11b0813483b87,
-        type: 3}
-      propertyPath: sprayRadius
-      value: 3.13
-      objectReference: {fileID: 0}
-    - target: {fileID: 8866978887037818906, guid: b7eb0eb22b968334d9c11b0813483b87,
-        type: 3}
-      propertyPath: maxClingTime
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8866978887037818906, guid: b7eb0eb22b968334d9c11b0813483b87,
-        type: 3}
-      propertyPath: checkDistance
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8866978887037818906, guid: b7eb0eb22b968334d9c11b0813483b87,
-        type: 3}
-      propertyPath: wallMoveSpeed
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8866978887037818906, guid: b7eb0eb22b968334d9c11b0813483b87,
-        type: 3}
-      propertyPath: maxWallJumpForce
-      value: 6.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
