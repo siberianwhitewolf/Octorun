@@ -20,7 +20,6 @@ public class LineOfSight : MonoBehaviour
     void Update()
     {
         CanSeeTarget = CheckLineOfSight();
-        Debug.Log(CanSeeTarget);
         
         // --- NUEVO: DIBUJAR LÍNEA DE DEBUG EN TIEMPO REAL ---
         // Esto te permitirá ver exactamente qué está pasando en la vista de Scene.

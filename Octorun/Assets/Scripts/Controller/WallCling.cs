@@ -75,6 +75,7 @@ public class WallCling : MonoBehaviour
     {
         // Gestión del tiempo, soltar la tecla y carga de salto
         _clingTimer += Time.deltaTime;
+        if(_animator) _animator.SetBool("IsMovingForward", _rb.velocity.sqrMagnitude > 0);
         if (_clingTimer >= maxClingTime) { StopClinging(); return; }
         if (Input.GetKeyUp(KeyCode.E)) { StopClinging(); return; }
 
@@ -94,6 +95,7 @@ public class WallCling : MonoBehaviour
         if (Input.GetKeyUp(_octopusJump.jumpKey) && _isChargingJump)
         {
             if(_animator) _animator.SetBool("JumpHeld", false);
+            if(_animator) _animator.SetBool("IsMovingForward", false);
             JumpFromWall();
         }
     }
@@ -120,6 +122,7 @@ public class WallCling : MonoBehaviour
     private void StartClinging(RaycastHit wallHit)
     {
         IsClinging = true;
+        _animator.SetBool("ClinginWall", IsClinging);
        // _lockClingUntilGrounded = false;
        // _clingTimer = 0f;
         _wallNormal = wallHit.normal; 
@@ -139,6 +142,7 @@ public class WallCling : MonoBehaviour
     {
         _lockClingUntilGrounded = true;
         IsClinging = false;
+        _animator.SetBool("ClinginWall", IsClinging);
         
         _rb.isKinematic = false;
         _rb.useGravity = true;

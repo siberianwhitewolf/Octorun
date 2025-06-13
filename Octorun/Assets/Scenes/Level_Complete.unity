@@ -3269,6 +3269,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Puerta_sinmanija_doble_2
       objectReference: {fileID: 0}
+    - target: {fileID: 2607257744842907766, guid: 1ff97933256957a4d91f4f1f9cba6c22,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4979553437845606774, guid: 1ff97933256957a4d91f4f1f9cba6c22,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -56276,6 +56281,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pared_marco_doble_mitad
       objectReference: {fileID: 0}
+    - target: {fileID: 7291624123051352141, guid: 49659b58772d9b745a352b16c88a1615,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -74710,6 +74720,11 @@ PrefabInstance:
         type: 3}
       propertyPath: maxClingTime
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8866978887037818906, guid: b7eb0eb22b968334d9c11b0813483b87,
+        type: 3}
+      propertyPath: checkDistance
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8866978887037818906, guid: b7eb0eb22b968334d9c11b0813483b87,
         type: 3}
