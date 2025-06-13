@@ -21,7 +21,6 @@ public class WallCling : MonoBehaviour
     public float chargeTimeToMax = 1.5f;
 
     public bool IsClinging { get; private set; } = false;
-
     private float _clingTimer = 0f;
     private Vector3 _wallNormal;
     private bool _lockClingUntilGrounded = false;
@@ -68,6 +67,7 @@ public class WallCling : MonoBehaviour
         if (IsClinging)
         {
             HandleWallMovement();
+            CheckForAdjacentSurfaceTransition();
         }
     }
 
@@ -192,4 +192,28 @@ public class WallCling : MonoBehaviour
         }
     }
 
+    private void CheckForAdjacentSurfaceTransition()
+    {
+        Vector3 origin = transform.position + transform.forward * 0.01f; // mirar un poco adelante
+        Vector3[] directions = new Vector3[]
+        {
+            -transform.up, // suelo o cambio hacia abajo
+            transform.up, // techo
+            transform.forward // por si hay continuidad recta
+        };
+
+        foreach (var dir in directions)
+        {
+            if (Physics.Raycast(origin, dir, out RaycastHit hit, 0.1f, wallLayer))
+            {
+                // Si la superficie no es la misma que la anterior, y estamos al borde, cambiamos
+                float angle = Vector3.Angle(hit.normal, _wallNormal);
+                if (angle > 5f) // margen para evitar falsos positivos
+                {
+                    StartClinging(hit); // se reorienta al nuevo plano
+                    return;
+                }
+            }
+        }
+    }
 }
