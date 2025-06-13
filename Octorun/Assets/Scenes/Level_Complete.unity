@@ -1322,6 +1322,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tuberia_L (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6666757751538047928, guid: e0b3c757ed174724b83539748f6822b9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2613,7 +2618,7 @@ PrefabInstance:
     - target: {fileID: 5628971547104579980, guid: d229384a3cac46b47a03fbb3dde9c22a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.560001
+      value: -9.330998
       objectReference: {fileID: 0}
     - target: {fileID: 5628971547104579980, guid: d229384a3cac46b47a03fbb3dde9c22a,
         type: 3}
@@ -2623,7 +2628,7 @@ PrefabInstance:
     - target: {fileID: 5628971547104579980, guid: d229384a3cac46b47a03fbb3dde9c22a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.118002
+      value: 6.214001
       objectReference: {fileID: 0}
     - target: {fileID: 5628971547104579980, guid: d229384a3cac46b47a03fbb3dde9c22a,
         type: 3}
@@ -2665,6 +2670,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Estante (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8835822641022956107, guid: d229384a3cac46b47a03fbb3dde9c22a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2676,74 +2686,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 81521113}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &49162900
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1999417153}
-    m_Modifications:
-    - target: {fileID: 8452876690058728311, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_Name
-      value: Mesada_isla_esquinero
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -9.590003
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 6.140003
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a134806d8a907274a9cc0362dec16cf6, type: 3}
 --- !u!1001 &50385824
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3292,7 +3234,7 @@ PrefabInstance:
     - target: {fileID: 4979553437845606774, guid: 1ff97933256957a4d91f4f1f9cba6c22,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.6584918
       objectReference: {fileID: 0}
     - target: {fileID: 4979553437845606774, guid: 1ff97933256957a4d91f4f1f9cba6c22,
         type: 3}
@@ -3302,7 +3244,7 @@ PrefabInstance:
     - target: {fileID: 4979553437845606774, guid: 1ff97933256957a4d91f4f1f9cba6c22,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0.752588
       objectReference: {fileID: 0}
     - target: {fileID: 4979553437845606774, guid: 1ff97933256957a4d91f4f1f9cba6c22,
         type: 3}
@@ -3317,7 +3259,7 @@ PrefabInstance:
     - target: {fileID: 4979553437845606774, guid: 1ff97933256957a4d91f4f1f9cba6c22,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 97.63
       objectReference: {fileID: 0}
     - target: {fileID: 4979553437845606774, guid: 1ff97933256957a4d91f4f1f9cba6c22,
         type: 3}
@@ -4034,10 +3976,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Estanteria_colgante_esquina (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 734474532831275622, guid: 078d5159f5301be4fa36df50ff8f7709,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8134781849273869802, guid: 078d5159f5301be4fa36df50ff8f7709,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.56
+      value: -9.330997
       objectReference: {fileID: 0}
     - target: {fileID: 8134781849273869802, guid: 078d5159f5301be4fa36df50ff8f7709,
         type: 3}
@@ -4047,7 +3994,7 @@ PrefabInstance:
     - target: {fileID: 8134781849273869802, guid: 078d5159f5301be4fa36df50ff8f7709,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.718
+      value: 4.124
       objectReference: {fileID: 0}
     - target: {fileID: 8134781849273869802, guid: 078d5159f5301be4fa36df50ff8f7709,
         type: 3}
@@ -5764,6 +5711,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tuberia_I
       objectReference: {fileID: 0}
+    - target: {fileID: 1280125176140318777, guid: a10b45f835a65e140903305e4729bb83,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6634825606411602066, guid: a10b45f835a65e140903305e4729bb83,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6269,6 +6221,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Modulo_mesada_puertas (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7402152196151051450, guid: a74586944e0e6b6419ecb7869464e127,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7144,10 +7101,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mesada_isla_basica (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 633164792566857088, guid: c3cf29d6031a1bb43b1c3e97d5a72e3b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7637520769738934215, guid: c3cf29d6031a1bb43b1c3e97d5a72e3b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.590003
+      value: -9.361
       objectReference: {fileID: 0}
     - target: {fileID: 7637520769738934215, guid: c3cf29d6031a1bb43b1c3e97d5a72e3b,
         type: 3}
@@ -7811,7 +7773,7 @@ PrefabInstance:
     - target: {fileID: 4979553437845606774, guid: 1ff97933256957a4d91f4f1f9cba6c22,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7070238
       objectReference: {fileID: 0}
     - target: {fileID: 4979553437845606774, guid: 1ff97933256957a4d91f4f1f9cba6c22,
         type: 3}
@@ -7821,7 +7783,7 @@ PrefabInstance:
     - target: {fileID: 4979553437845606774, guid: 1ff97933256957a4d91f4f1f9cba6c22,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: -0.7071898
       objectReference: {fileID: 0}
     - target: {fileID: 4979553437845606774, guid: 1ff97933256957a4d91f4f1f9cba6c22,
         type: 3}
@@ -7836,7 +7798,7 @@ PrefabInstance:
     - target: {fileID: 4979553437845606774, guid: 1ff97933256957a4d91f4f1f9cba6c22,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -90.013
       objectReference: {fileID: 0}
     - target: {fileID: 4979553437845606774, guid: 1ff97933256957a4d91f4f1f9cba6c22,
         type: 3}
@@ -11794,10 +11756,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mesada_isla_basica (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 633164792566857088, guid: c3cf29d6031a1bb43b1c3e97d5a72e3b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7637520769738934215, guid: c3cf29d6031a1bb43b1c3e97d5a72e3b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.37
+      value: -7.344
       objectReference: {fileID: 0}
     - target: {fileID: 7637520769738934215, guid: c3cf29d6031a1bb43b1c3e97d5a72e3b,
         type: 3}
@@ -11807,7 +11774,7 @@ PrefabInstance:
     - target: {fileID: 7637520769738934215, guid: c3cf29d6031a1bb43b1c3e97d5a72e3b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.0099998
+      value: 5.624
       objectReference: {fileID: 0}
     - target: {fileID: 7637520769738934215, guid: c3cf29d6031a1bb43b1c3e97d5a72e3b,
         type: 3}
@@ -13393,10 +13360,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Estanteria_colgante_esquina
       objectReference: {fileID: 0}
+    - target: {fileID: 734474532831275622, guid: 078d5159f5301be4fa36df50ff8f7709,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8134781849273869802, guid: 078d5159f5301be4fa36df50ff8f7709,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.560002
+      value: -9.330999
       objectReference: {fileID: 0}
     - target: {fileID: 8134781849273869802, guid: 078d5159f5301be4fa36df50ff8f7709,
         type: 3}
@@ -13406,7 +13378,7 @@ PrefabInstance:
     - target: {fileID: 8134781849273869802, guid: 078d5159f5301be4fa36df50ff8f7709,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.1180015
+      value: 6.2140007
       objectReference: {fileID: 0}
     - target: {fileID: 8134781849273869802, guid: 078d5159f5301be4fa36df50ff8f7709,
         type: 3}
@@ -14076,10 +14048,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mesada_isla_estante (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1189732760735595606, guid: c9b0887cd701e7a4ebbad5a1f03683d5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4819350545433988659, guid: c9b0887cd701e7a4ebbad5a1f03683d5,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.590003
+      value: -9.361
       objectReference: {fileID: 0}
     - target: {fileID: 4819350545433988659, guid: c9b0887cd701e7a4ebbad5a1f03683d5,
         type: 3}
@@ -14641,6 +14618,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tuberia_I (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1280125176140318777, guid: a10b45f835a65e140903305e4729bb83,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6634825606411602066, guid: a10b45f835a65e140903305e4729bb83,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14701,12 +14683,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2166390569208551154, guid: 45778b9f5a06347468b135659c667055,
     type: 3}
   m_PrefabInstance: {fileID: 44582048}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &421343326 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-    type: 3}
-  m_PrefabInstance: {fileID: 2006708932}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &421672127 stripped
 Transform:
@@ -16187,12 +16163,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 990177c3fccba2c4382ab6d1df2645b4, type: 3}
---- !u!4 &457540863 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-    type: 3}
-  m_PrefabInstance: {fileID: 995943598}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &462554763 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8527321877266240272, guid: f7e8f9853a5a7284ba352484f2fee9b0,
@@ -16627,6 +16597,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2870769133642659705, guid: 64646d75ebdfb63468c78c2dd948a26d,
     type: 3}
   m_PrefabInstance: {fileID: 101627808}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &477790550 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5444634515647165470, guid: db3812a43611c2a4f8993319725c67e3,
+    type: 3}
+  m_PrefabInstance: {fileID: 2012775886}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &478471661
 PrefabInstance:
@@ -17183,6 +17159,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mesada_isla_estante (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1189732760735595606, guid: c9b0887cd701e7a4ebbad5a1f03683d5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4819350545433988659, guid: c9b0887cd701e7a4ebbad5a1f03683d5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -17526,12 +17507,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5082226740309184754, guid: 48884e786bb804a4996585e95393a3ff,
     type: 3}
   m_PrefabInstance: {fileID: 1975746582}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &512624371 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-    type: 3}
-  m_PrefabInstance: {fileID: 1689752063}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &515629022
 PrefabInstance:
@@ -18014,7 +17989,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 525879544}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Muebles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18652,6 +18627,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Estanteria_apoyada (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7289881390307656133, guid: e32dcfcfb0c3c4849bb78e550e4052c1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18849,6 +18829,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Estanteria_apoyada_sinrev (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2837754985799757034, guid: f7e8f9853a5a7284ba352484f2fee9b0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8527321877266240272, guid: f7e8f9853a5a7284ba352484f2fee9b0,
         type: 3}
@@ -21230,7 +21215,7 @@ PrefabInstance:
     - target: {fileID: 5628971547104579980, guid: d229384a3cac46b47a03fbb3dde9c22a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.56
+      value: -9.330997
       objectReference: {fileID: 0}
     - target: {fileID: 5628971547104579980, guid: d229384a3cac46b47a03fbb3dde9c22a,
         type: 3}
@@ -21240,7 +21225,7 @@ PrefabInstance:
     - target: {fileID: 5628971547104579980, guid: d229384a3cac46b47a03fbb3dde9c22a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.5179992
+      value: 2.9239993
       objectReference: {fileID: 0}
     - target: {fileID: 5628971547104579980, guid: d229384a3cac46b47a03fbb3dde9c22a,
         type: 3}
@@ -21281,6 +21266,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Estante
+      objectReference: {fileID: 0}
+    - target: {fileID: 8835822641022956107, guid: d229384a3cac46b47a03fbb3dde9c22a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23903,12 +23893,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64646d75ebdfb63468c78c2dd948a26d, type: 3}
---- !u!4 &700199992 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-    type: 3}
-  m_PrefabInstance: {fileID: 1738367306}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &701508946
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24329,6 +24313,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Modulo_hornalla (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1058694022139297396, guid: d55348868cd0e0844873c10f861fdbb8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24346,6 +24335,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tuberia_I (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1280125176140318777, guid: a10b45f835a65e140903305e4729bb83,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6634825606411602066, guid: a10b45f835a65e140903305e4729bb83,
         type: 3}
@@ -24584,6 +24578,79 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 582963269}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &726424081
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1999417153}
+    m_Modifications:
+    - target: {fileID: 633164792566857088, guid: c3cf29d6031a1bb43b1c3e97d5a72e3b,
+        type: 3}
+      propertyPath: m_Name
+      value: Mesada_isla_basica (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 633164792566857088, guid: c3cf29d6031a1bb43b1c3e97d5a72e3b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7637520769738934215, guid: c3cf29d6031a1bb43b1c3e97d5a72e3b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 7637520769738934215, guid: c3cf29d6031a1bb43b1c3e97d5a72e3b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7637520769738934215, guid: c3cf29d6031a1bb43b1c3e97d5a72e3b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 7637520769738934215, guid: c3cf29d6031a1bb43b1c3e97d5a72e3b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7637520769738934215, guid: c3cf29d6031a1bb43b1c3e97d5a72e3b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7637520769738934215, guid: c3cf29d6031a1bb43b1c3e97d5a72e3b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7637520769738934215, guid: c3cf29d6031a1bb43b1c3e97d5a72e3b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7637520769738934215, guid: c3cf29d6031a1bb43b1c3e97d5a72e3b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7637520769738934215, guid: c3cf29d6031a1bb43b1c3e97d5a72e3b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7637520769738934215, guid: c3cf29d6031a1bb43b1c3e97d5a72e3b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c3cf29d6031a1bb43b1c3e97d5a72e3b, type: 3}
 --- !u!4 &726824667 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2870769133642659705, guid: 64646d75ebdfb63468c78c2dd948a26d,
@@ -24720,7 +24787,7 @@ PrefabInstance:
     - target: {fileID: 8124301781878549278, guid: 39d0064e7c6e9f04d9a5a2603b00afb0,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.16100025
+      value: 1.1599998
       objectReference: {fileID: 0}
     - target: {fileID: 8124301781878549278, guid: 39d0064e7c6e9f04d9a5a2603b00afb0,
         type: 3}
@@ -25189,74 +25256,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 739677855}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &739848700
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1999417153}
-    m_Modifications:
-    - target: {fileID: 8452876690058728311, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_Name
-      value: Mesada_isla_esquinero (8)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -7.37
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 6.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a134806d8a907274a9cc0362dec16cf6, type: 3}
 --- !u!1001 &741343242
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25648,6 +25647,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Modulo_mesada_puertas (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7402152196151051450, guid: a74586944e0e6b6419ecb7869464e127,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25901,6 +25905,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Mesada_isla_basica
+      objectReference: {fileID: 0}
+    - target: {fileID: 633164792566857088, guid: c3cf29d6031a1bb43b1c3e97d5a72e3b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7637520769738934215, guid: c3cf29d6031a1bb43b1c3e97d5a72e3b,
         type: 3}
@@ -26573,12 +26582,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 778775365}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &779458046 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-    type: 3}
-  m_PrefabInstance: {fileID: 1981236106}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &783681869
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26740,6 +26743,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 788531573}
+  - component: {fileID: 788531574}
   m_Layer: 0
   m_Name: Pisos
   m_TagString: Untagged
@@ -26832,6 +26836,29 @@ Transform:
   - {fileID: 1628841093}
   m_Father: {fileID: 1436456931}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &788531574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 788531572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27c8cce731ed6cc4f810680f7bb06848, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodePrefab: {fileID: 1980521807}
+  cellSize: 1
+  tileLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  currentSelectedNode: {fileID: 0}
+  debug: 1
+  generated: 0
 --- !u!4 &791532383 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 950484471029191980, guid: 14825d8a1753c5d40877d64b0f1f2b7d,
@@ -27331,6 +27358,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Estanteria_colgante (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9217608310078555708, guid: 2af8560132d0b3145b9472ecde348364,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -28313,7 +28345,7 @@ PrefabInstance:
     - target: {fileID: 5628971547104579980, guid: d229384a3cac46b47a03fbb3dde9c22a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.56
+      value: -9.330997
       objectReference: {fileID: 0}
     - target: {fileID: 5628971547104579980, guid: d229384a3cac46b47a03fbb3dde9c22a,
         type: 3}
@@ -28323,7 +28355,7 @@ PrefabInstance:
     - target: {fileID: 5628971547104579980, guid: d229384a3cac46b47a03fbb3dde9c22a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.718
+      value: 4.124
       objectReference: {fileID: 0}
     - target: {fileID: 5628971547104579980, guid: d229384a3cac46b47a03fbb3dde9c22a,
         type: 3}
@@ -28364,6 +28396,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Estante (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8835822641022956107, guid: d229384a3cac46b47a03fbb3dde9c22a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -28873,10 +28910,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Estanteria_colgante_esquina (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 734474532831275622, guid: 078d5159f5301be4fa36df50ff8f7709,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8134781849273869802, guid: 078d5159f5301be4fa36df50ff8f7709,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.560001
+      value: -9.330998
       objectReference: {fileID: 0}
     - target: {fileID: 8134781849273869802, guid: 078d5159f5301be4fa36df50ff8f7709,
         type: 3}
@@ -28886,7 +28928,7 @@ PrefabInstance:
     - target: {fileID: 8134781849273869802, guid: 078d5159f5301be4fa36df50ff8f7709,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.9180007
+      value: 5.014
       objectReference: {fileID: 0}
     - target: {fileID: 8134781849273869802, guid: 078d5159f5301be4fa36df50ff8f7709,
         type: 3}
@@ -30786,6 +30828,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tuberia_L (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6666757751538047928, guid: e0b3c757ed174724b83539748f6822b9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -31244,6 +31291,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2107723459}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &933807431
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 933807432}
+  m_Layer: 9
+  m_Name: eyes
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &933807432
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 933807431}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.719, z: 0.2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 477790550}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &936171231
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32247,74 +32325,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 951080957}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &952616574
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1999417153}
-    m_Modifications:
-    - target: {fileID: 8452876690058728311, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_Name
-      value: Mesada_isla_esquinero (5)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -7.35
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 2.0199997
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 270
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a134806d8a907274a9cc0362dec16cf6, type: 3}
 --- !u!4 &953411774 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4819350545433988659, guid: c9b0887cd701e7a4ebbad5a1f03683d5,
@@ -33194,37 +33204,37 @@ PrefabInstance:
     - target: {fileID: 1205771865468046198, guid: 478f870820b721243b5700b6fd11bf7b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.9722381
+      value: -1.8994961
       objectReference: {fileID: 0}
     - target: {fileID: 1205771865468046198, guid: 478f870820b721243b5700b6fd11bf7b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.1
+      value: 7.9930005
       objectReference: {fileID: 0}
     - target: {fileID: 1205771865468046198, guid: 478f870820b721243b5700b6fd11bf7b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -11.354456
+      value: -11.436847
       objectReference: {fileID: 0}
     - target: {fileID: 1205771865468046198, guid: 478f870820b721243b5700b6fd11bf7b,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.89770746
+      value: 0.90513444
       objectReference: {fileID: 0}
     - target: {fileID: 1205771865468046198, guid: 478f870820b721243b5700b6fd11bf7b,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.2808173
+      value: 0.28314063
       objectReference: {fileID: 0}
     - target: {fileID: 1205771865468046198, guid: 478f870820b721243b5700b6fd11bf7b,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.32402068
+      value: -0.30265445
       objectReference: {fileID: 0}
     - target: {fileID: 1205771865468046198, guid: 478f870820b721243b5700b6fd11bf7b,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.101358876
+      value: 0.09467518
       objectReference: {fileID: 0}
     - target: {fileID: 1205771865468046198, guid: 478f870820b721243b5700b6fd11bf7b,
         type: 3}
@@ -33454,74 +33464,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 995601896}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &995943598
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1999417153}
-    m_Modifications:
-    - target: {fileID: 8452876690058728311, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_Name
-      value: Mesada_isla_esquinero (6)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -7.35
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 3.2200003
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a134806d8a907274a9cc0362dec16cf6, type: 3}
 --- !u!1001 &996801437
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34344,10 +34286,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Estanteria_colgante_esquina (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 734474532831275622, guid: 078d5159f5301be4fa36df50ff8f7709,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8134781849273869802, guid: 078d5159f5301be4fa36df50ff8f7709,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.56
+      value: -9.330997
       objectReference: {fileID: 0}
     - target: {fileID: 8134781849273869802, guid: 078d5159f5301be4fa36df50ff8f7709,
         type: 3}
@@ -34357,7 +34304,7 @@ PrefabInstance:
     - target: {fileID: 8134781849273869802, guid: 078d5159f5301be4fa36df50ff8f7709,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.5179992
+      value: 2.9239993
       objectReference: {fileID: 0}
     - target: {fileID: 8134781849273869802, guid: 078d5159f5301be4fa36df50ff8f7709,
         type: 3}
@@ -35030,12 +34977,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64646d75ebdfb63468c78c2dd948a26d, type: 3}
---- !u!4 &1037592603 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-    type: 3}
-  m_PrefabInstance: {fileID: 49162900}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1037663544
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35048,6 +34989,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Estanteria_apoyada_sinrev
+      objectReference: {fileID: 0}
+    - target: {fileID: 2837754985799757034, guid: f7e8f9853a5a7284ba352484f2fee9b0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8527321877266240272, guid: f7e8f9853a5a7284ba352484f2fee9b0,
         type: 3}
@@ -36279,6 +36225,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Modulo_mesada_puertas (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7402152196151051450, guid: a74586944e0e6b6419ecb7869464e127,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -37179,12 +37130,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5082226740309184754, guid: 48884e786bb804a4996585e95393a3ff,
     type: 3}
   m_PrefabInstance: {fileID: 1479807512}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1122238244 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-    type: 3}
-  m_PrefabInstance: {fileID: 2145287206}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1131736879
 PrefabInstance:
@@ -38966,10 +38911,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Estanteria_colgante_esquina (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 734474532831275622, guid: 078d5159f5301be4fa36df50ff8f7709,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8134781849273869802, guid: 078d5159f5301be4fa36df50ff8f7709,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.560002
+      value: -9.330999
       objectReference: {fileID: 0}
     - target: {fileID: 8134781849273869802, guid: 078d5159f5301be4fa36df50ff8f7709,
         type: 3}
@@ -38979,7 +38929,7 @@ PrefabInstance:
     - target: {fileID: 8134781849273869802, guid: 078d5159f5301be4fa36df50ff8f7709,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.1180015
+      value: 6.2140007
       objectReference: {fileID: 0}
     - target: {fileID: 8134781849273869802, guid: 078d5159f5301be4fa36df50ff8f7709,
         type: 3}
@@ -40171,7 +40121,7 @@ PrefabInstance:
     - target: {fileID: 2166390569208551154, guid: 76b45940fb22a644292094d7cb2c9abb,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -13.005548
+      value: -12.776545
       objectReference: {fileID: 0}
     - target: {fileID: 2166390569208551154, guid: 76b45940fb22a644292094d7cb2c9abb,
         type: 3}
@@ -40364,6 +40314,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Modulo_mesada_canilla (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5069911310173653776, guid: b81cdf870839d894f964f164a61aad84,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -42103,10 +42058,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Estanteria_colgante_esquina (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 734474532831275622, guid: 078d5159f5301be4fa36df50ff8f7709,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8134781849273869802, guid: 078d5159f5301be4fa36df50ff8f7709,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.56
+      value: -9.330997
       objectReference: {fileID: 0}
     - target: {fileID: 8134781849273869802, guid: 078d5159f5301be4fa36df50ff8f7709,
         type: 3}
@@ -42116,7 +42076,7 @@ PrefabInstance:
     - target: {fileID: 8134781849273869802, guid: 078d5159f5301be4fa36df50ff8f7709,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.718
+      value: 4.124
       objectReference: {fileID: 0}
     - target: {fileID: 8134781849273869802, guid: 078d5159f5301be4fa36df50ff8f7709,
         type: 3}
@@ -43589,6 +43549,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Estanteria_apoyada (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7289881390307656133, guid: e32dcfcfb0c3c4849bb78e550e4052c1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -44006,6 +43971,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Modulo_mesada_canilla (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5069911310173653776, guid: b81cdf870839d894f964f164a61aad84,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -44278,10 +44248,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mesada_isla_basica (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 633164792566857088, guid: c3cf29d6031a1bb43b1c3e97d5a72e3b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7637520769738934215, guid: c3cf29d6031a1bb43b1c3e97d5a72e3b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.590003
+      value: -9.361
       objectReference: {fileID: 0}
     - target: {fileID: 7637520769738934215, guid: c3cf29d6031a1bb43b1c3e97d5a72e3b,
         type: 3}
@@ -46000,6 +45975,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Estanteria_colgante (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 9217608310078555708, guid: 2af8560132d0b3145b9472ecde348364,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -46261,6 +46241,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tuberia_I (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1280125176140318777, guid: a10b45f835a65e140903305e4729bb83,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6634825606411602066, guid: a10b45f835a65e140903305e4729bb83,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -46424,10 +46409,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Estanteria_colgante_esquina (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 734474532831275622, guid: 078d5159f5301be4fa36df50ff8f7709,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8134781849273869802, guid: 078d5159f5301be4fa36df50ff8f7709,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.560001
+      value: -9.330998
       objectReference: {fileID: 0}
     - target: {fileID: 8134781849273869802, guid: 078d5159f5301be4fa36df50ff8f7709,
         type: 3}
@@ -46437,7 +46427,7 @@ PrefabInstance:
     - target: {fileID: 8134781849273869802, guid: 078d5159f5301be4fa36df50ff8f7709,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.9180007
+      value: 5.014
       objectReference: {fileID: 0}
     - target: {fileID: 8134781849273869802, guid: 078d5159f5301be4fa36df50ff8f7709,
         type: 3}
@@ -46652,37 +46642,37 @@ PrefabInstance:
     - target: {fileID: 264637185627682184, guid: d8a9d4363ca4d1c4886e935255e3f489,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.89770746
+      value: 0.90513444
       objectReference: {fileID: 0}
     - target: {fileID: 264637185627682184, guid: d8a9d4363ca4d1c4886e935255e3f489,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.2808173
+      value: 0.28314063
       objectReference: {fileID: 0}
     - target: {fileID: 264637185627682184, guid: d8a9d4363ca4d1c4886e935255e3f489,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.32402068
+      value: -0.30265445
       objectReference: {fileID: 0}
     - target: {fileID: 264637185627682184, guid: d8a9d4363ca4d1c4886e935255e3f489,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.101358876
+      value: 0.09467518
       objectReference: {fileID: 0}
     - target: {fileID: 2318180146972956223, guid: d8a9d4363ca4d1c4886e935255e3f489,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.9722381
+      value: -1.8994961
       objectReference: {fileID: 0}
     - target: {fileID: 2318180146972956223, guid: d8a9d4363ca4d1c4886e935255e3f489,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.1
+      value: 7.9930005
       objectReference: {fileID: 0}
     - target: {fileID: 2318180146972956223, guid: d8a9d4363ca4d1c4886e935255e3f489,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -11.354456
+      value: -11.436847
       objectReference: {fileID: 0}
     - target: {fileID: 2318180146972956223, guid: d8a9d4363ca4d1c4886e935255e3f489,
         type: 3}
@@ -46747,22 +46737,22 @@ PrefabInstance:
     - target: {fileID: 3540707065728254592, guid: d8a9d4363ca4d1c4886e935255e3f489,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.8977074
+      value: 0.90513444
       objectReference: {fileID: 0}
     - target: {fileID: 3540707065728254592, guid: d8a9d4363ca4d1c4886e935255e3f489,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.2808173
+      value: 0.2831406
       objectReference: {fileID: 0}
     - target: {fileID: 3540707065728254592, guid: d8a9d4363ca4d1c4886e935255e3f489,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.3240207
+      value: -0.30265445
       objectReference: {fileID: 0}
     - target: {fileID: 3540707065728254592, guid: d8a9d4363ca4d1c4886e935255e3f489,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.10135889
+      value: 0.094675176
       objectReference: {fileID: 0}
     - target: {fileID: 4379231042953172089, guid: d8a9d4363ca4d1c4886e935255e3f489,
         type: 3}
@@ -46802,22 +46792,22 @@ PrefabInstance:
     - target: {fileID: 7547905548689519656, guid: d8a9d4363ca4d1c4886e935255e3f489,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.90343076
+      value: 0.9109051
       objectReference: {fileID: 0}
     - target: {fileID: 7547905548689519656, guid: d8a9d4363ca4d1c4886e935255e3f489,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.26182032
+      value: 0.2639864
       objectReference: {fileID: 0}
     - target: {fileID: 7547905548689519656, guid: d8a9d4363ca4d1c4886e935255e3f489,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.32608655
+      value: -0.30458403
       objectReference: {fileID: 0}
     - target: {fileID: 7547905548689519656, guid: d8a9d4363ca4d1c4886e935255e3f489,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.09450206
+      value: 0.088270485
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -46835,7 +46825,7 @@ PrefabInstance:
     - target: {fileID: 5628971547104579980, guid: d229384a3cac46b47a03fbb3dde9c22a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.560001
+      value: -9.330998
       objectReference: {fileID: 0}
     - target: {fileID: 5628971547104579980, guid: d229384a3cac46b47a03fbb3dde9c22a,
         type: 3}
@@ -46845,7 +46835,7 @@ PrefabInstance:
     - target: {fileID: 5628971547104579980, guid: d229384a3cac46b47a03fbb3dde9c22a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.9180007
+      value: 5.014
       objectReference: {fileID: 0}
     - target: {fileID: 5628971547104579980, guid: d229384a3cac46b47a03fbb3dde9c22a,
         type: 3}
@@ -46886,6 +46876,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Estante (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8835822641022956107, guid: d229384a3cac46b47a03fbb3dde9c22a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -47714,7 +47709,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1410445999}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Estanterias
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48131,6 +48126,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tuberia_L (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6666757751538047928, guid: e0b3c757ed174724b83539748f6822b9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -48492,6 +48492,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tuberia_I (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1280125176140318777, guid: a10b45f835a65e140903305e4729bb83,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6634825606411602066, guid: a10b45f835a65e140903305e4729bb83,
         type: 3}
@@ -52319,6 +52324,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Modulo_mesada_puertas (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7402152196151051450, guid: a74586944e0e6b6419ecb7869464e127,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -52408,7 +52418,7 @@ PrefabInstance:
     - target: {fileID: 143024581117917152, guid: 56dc4468435fb9c43a98709bf3b91608,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.16100025
+      value: 1.1599998
       objectReference: {fileID: 0}
     - target: {fileID: 634207792268451145, guid: 56dc4468435fb9c43a98709bf3b91608,
         type: 3}
@@ -52428,7 +52438,7 @@ PrefabInstance:
     - target: {fileID: 3117855782899800820, guid: 56dc4468435fb9c43a98709bf3b91608,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.16100025
+      value: 1.1599998
       objectReference: {fileID: 0}
     - target: {fileID: 4381807613806743653, guid: 56dc4468435fb9c43a98709bf3b91608,
         type: 3}
@@ -52438,12 +52448,12 @@ PrefabInstance:
     - target: {fileID: 5365911526962321990, guid: 56dc4468435fb9c43a98709bf3b91608,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.25
+      value: 5.2489996
       objectReference: {fileID: 0}
     - target: {fileID: 5365911526962321990, guid: 56dc4468435fb9c43a98709bf3b91608,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.32
+      value: 6.143
       objectReference: {fileID: 0}
     - target: {fileID: 5733035292411029492, guid: 56dc4468435fb9c43a98709bf3b91608,
         type: 3}
@@ -52498,7 +52508,7 @@ PrefabInstance:
     - target: {fileID: 5778818844702476820, guid: 56dc4468435fb9c43a98709bf3b91608,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.11200023
+      value: 1.1109998
       objectReference: {fileID: 0}
     - target: {fileID: 6772318198968422615, guid: 56dc4468435fb9c43a98709bf3b91608,
         type: 3}
@@ -52518,12 +52528,12 @@ PrefabInstance:
     - target: {fileID: 9112447213316659050, guid: 56dc4468435fb9c43a98709bf3b91608,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.161
+      value: 1.16
       objectReference: {fileID: 0}
     - target: {fileID: 9112447213316659050, guid: 56dc4468435fb9c43a98709bf3b91608,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.31
+      value: 6.107
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -54118,10 +54128,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mesada_isla_estante (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1189732760735595606, guid: c9b0887cd701e7a4ebbad5a1f03683d5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4819350545433988659, guid: c9b0887cd701e7a4ebbad5a1f03683d5,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.37
+      value: -7.344
       objectReference: {fileID: 0}
     - target: {fileID: 4819350545433988659, guid: c9b0887cd701e7a4ebbad5a1f03683d5,
         type: 3}
@@ -54131,7 +54146,7 @@ PrefabInstance:
     - target: {fileID: 4819350545433988659, guid: c9b0887cd701e7a4ebbad5a1f03683d5,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.8099995
+      value: 4.424
       objectReference: {fileID: 0}
     - target: {fileID: 4819350545433988659, guid: c9b0887cd701e7a4ebbad5a1f03683d5,
         type: 3}
@@ -56466,6 +56481,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mesada_isla_esquinero (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 8452876690058728311, guid: a134806d8a907274a9cc0362dec16cf6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -57460,6 +57480,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Modulo_mesada_canilla
       objectReference: {fileID: 0}
+    - target: {fileID: 5069911310173653776, guid: b81cdf870839d894f964f164a61aad84,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -58145,6 +58170,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Mesada_isla_basica (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 633164792566857088, guid: c3cf29d6031a1bb43b1c3e97d5a72e3b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7637520769738934215, guid: c3cf29d6031a1bb43b1c3e97d5a72e3b,
         type: 3}
@@ -58876,74 +58906,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1688616826}
   m_CullTransparentMesh: 1
---- !u!1001 &1689752063
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1999417153}
-    m_Modifications:
-    - target: {fileID: 8452876690058728311, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_Name
-      value: Mesada_isla_esquinero (10)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -9.810001
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 8.680258
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 270
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a134806d8a907274a9cc0362dec16cf6, type: 3}
 --- !u!4 &1690453041 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4366270595907445851, guid: ec52b984d08047747b1cb2cee714e4a2,
@@ -59180,6 +59142,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tuberia_L (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6666757751538047928, guid: e0b3c757ed174724b83539748f6822b9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -59850,6 +59817,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mesada_isla_esquinero (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 8452876690058728311, guid: a134806d8a907274a9cc0362dec16cf6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -60010,6 +59982,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1729859952}
+  - component: {fileID: 1729859953}
   m_Layer: 8
   m_Name: Pisos
   m_TagString: Untagged
@@ -60118,6 +60091,29 @@ Transform:
   - {fileID: 1218138930}
   m_Father: {fileID: 2034336883}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1729859953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1729859951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27c8cce731ed6cc4f810680f7bb06848, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodePrefab: {fileID: 1980521807}
+  cellSize: 1
+  tileLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  currentSelectedNode: {fileID: 0}
+  debug: 1
+  generated: 0
 --- !u!4 &1730068136 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2307657346577606393, guid: 55e909877a304354ab9d798d61325d71,
@@ -60444,74 +60440,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1737876490}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1738367306
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1999417153}
-    m_Modifications:
-    - target: {fileID: 8452876690058728311, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_Name
-      value: Mesada_isla_esquinero (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -9.590003
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 6.1400037
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a134806d8a907274a9cc0362dec16cf6, type: 3}
 --- !u!1001 &1738940363
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -60884,6 +60812,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tuberia_L
       objectReference: {fileID: 0}
+    - target: {fileID: 6666757751538047928, guid: e0b3c757ed174724b83539748f6822b9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -60967,6 +60900,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2870769133642659705, guid: 64646d75ebdfb63468c78c2dd948a26d,
     type: 3}
   m_PrefabInstance: {fileID: 1743371676}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1747851450 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7637520769738934215, guid: c3cf29d6031a1bb43b1c3e97d5a72e3b,
+    type: 3}
+  m_PrefabInstance: {fileID: 726424081}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1750758442
 PrefabInstance:
@@ -61550,10 +61489,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mesada_isla_basica (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 633164792566857088, guid: c3cf29d6031a1bb43b1c3e97d5a72e3b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7637520769738934215, guid: c3cf29d6031a1bb43b1c3e97d5a72e3b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.590003
+      value: -9.361
       objectReference: {fileID: 0}
     - target: {fileID: 7637520769738934215, guid: c3cf29d6031a1bb43b1c3e97d5a72e3b,
         type: 3}
@@ -61617,6 +61561,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Modulo_mesada_esquinero_int
+      objectReference: {fileID: 0}
+    - target: {fileID: 251801789035085793, guid: bdebfb3edcdbcf24986eff5b33a161c0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8760502932995595746, guid: bdebfb3edcdbcf24986eff5b33a161c0,
         type: 3}
@@ -63427,6 +63376,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Modulo_hornalla
       objectReference: {fileID: 0}
+    - target: {fileID: 1058694022139297396, guid: d55348868cd0e0844873c10f861fdbb8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -64057,6 +64011,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tuberia_I (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1280125176140318777, guid: a10b45f835a65e140903305e4729bb83,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6634825606411602066, guid: a10b45f835a65e140903305e4729bb83,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -64587,74 +64546,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1885703936
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1999417153}
-    m_Modifications:
-    - target: {fileID: 8452876690058728311, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_Name
-      value: Mesada_isla_esquinero (7)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -7.35
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 3.2200007
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a134806d8a907274a9cc0362dec16cf6, type: 3}
 --- !u!4 &1886307813 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5082226740309184754, guid: 48884e786bb804a4996585e95393a3ff,
@@ -64686,10 +64577,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Estanteria_colgante_esquina (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 734474532831275622, guid: 078d5159f5301be4fa36df50ff8f7709,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8134781849273869802, guid: 078d5159f5301be4fa36df50ff8f7709,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.56
+      value: -9.330997
       objectReference: {fileID: 0}
     - target: {fileID: 8134781849273869802, guid: 078d5159f5301be4fa36df50ff8f7709,
         type: 3}
@@ -64699,7 +64595,7 @@ PrefabInstance:
     - target: {fileID: 8134781849273869802, guid: 078d5159f5301be4fa36df50ff8f7709,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.5179992
+      value: 2.9239993
       objectReference: {fileID: 0}
     - target: {fileID: 8134781849273869802, guid: 078d5159f5301be4fa36df50ff8f7709,
         type: 3}
@@ -65333,6 +65229,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Estanteria_apoyada_sinrev (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2837754985799757034, guid: f7e8f9853a5a7284ba352484f2fee9b0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8527321877266240272, guid: f7e8f9853a5a7284ba352484f2fee9b0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -65701,12 +65602,6 @@ Transform:
   - {fileID: 1266026570}
   m_Father: {fileID: 1370122911}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1932682848 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-    type: 3}
-  m_PrefabInstance: {fileID: 2049195940}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1933566812 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2870769133642659705, guid: 64646d75ebdfb63468c78c2dd948a26d,
@@ -65804,12 +65699,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1927598042}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1944375716 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-    type: 3}
-  m_PrefabInstance: {fileID: 952616574}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1945639415
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -65822,6 +65711,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Estanteria_apoyada_sinrev (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2837754985799757034, guid: f7e8f9853a5a7284ba352484f2fee9b0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8527321877266240272, guid: f7e8f9853a5a7284ba352484f2fee9b0,
         type: 3}
@@ -66462,10 +66356,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mesada_isla_basica (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 633164792566857088, guid: c3cf29d6031a1bb43b1c3e97d5a72e3b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7637520769738934215, guid: c3cf29d6031a1bb43b1c3e97d5a72e3b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.590003
+      value: -9.361
       objectReference: {fileID: 0}
     - target: {fileID: 7637520769738934215, guid: c3cf29d6031a1bb43b1c3e97d5a72e3b,
         type: 3}
@@ -66675,80 +66574,24 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1529897191}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1980521807 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5616781926792168269, guid: 56dc4468435fb9c43a98709bf3b91608,
+    type: 3}
+  m_PrefabInstance: {fileID: 1529897191}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 932b97b64baf10145bcd16307fbf1f98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1980714359 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1772967940602924588, guid: 9c2ee173c3d9c1b41a827d29fd4a55c7,
     type: 3}
   m_PrefabInstance: {fileID: 1318796962}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1981236106
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1999417153}
-    m_Modifications:
-    - target: {fileID: 8452876690058728311, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_Name
-      value: Mesada_isla_esquinero (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -9.590003
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 2.54
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a134806d8a907274a9cc0362dec16cf6, type: 3}
 --- !u!1001 &1982924471
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -67055,6 +66898,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Modulo_mesada_estantes (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4241558406916630102, guid: 193d22a1be0d22b4d897e0831f944544,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8833545348634115242, guid: 193d22a1be0d22b4d897e0831f944544,
         type: 3}
@@ -67777,7 +67625,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1999417153}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Mesadas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -67803,12 +67651,14 @@ Transform:
   - {fileID: 527845738}
   - {fileID: 1094798135}
   - {fileID: 1420061096}
+  - {fileID: 1747851450}
   - {fileID: 2087756234}
   - {fileID: 1425101573}
   - {fileID: 15904862}
   - {fileID: 535229260}
   - {fileID: 639750419}
   - {fileID: 1907666036}
+  - {fileID: 2117718380}
   - {fileID: 219304754}
   - {fileID: 2063102150}
   - {fileID: 1003323879}
@@ -67820,19 +67670,8 @@ Transform:
   - {fileID: 842508800}
   - {fileID: 2053256969}
   - {fileID: 1295460389}
-  - {fileID: 1037592603}
-  - {fileID: 700199992}
-  - {fileID: 457540863}
-  - {fileID: 421343326}
-  - {fileID: 2046665124}
-  - {fileID: 2076782682}
-  - {fileID: 779458046}
-  - {fileID: 1932682848}
   - {fileID: 498327740}
-  - {fileID: 1944375716}
-  - {fileID: 1122238244}
   - {fileID: 465480249}
-  - {fileID: 512624371}
   - {fileID: 372568141}
   m_Father: {fileID: 525879544}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -67842,74 +67681,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2053767531}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &2006708932
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1999417153}
-    m_Modifications:
-    - target: {fileID: 8452876690058728311, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_Name
-      value: Mesada_isla_esquinero (9)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -7.37
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 6.0100007
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a134806d8a907274a9cc0362dec16cf6, type: 3}
 --- !u!1001 &2007642331
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -67922,6 +67693,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tuberia_I (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1280125176140318777, guid: a10b45f835a65e140903305e4729bb83,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6634825606411602066, guid: a10b45f835a65e140903305e4729bb83,
         type: 3}
@@ -68158,17 +67934,17 @@ PrefabInstance:
     - target: {fileID: 5444634515647165470, guid: db3812a43611c2a4f8993319725c67e3,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.803
+      value: -10.699
       objectReference: {fileID: 0}
     - target: {fileID: 5444634515647165470, guid: db3812a43611c2a4f8993319725c67e3,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.067
+      value: 0.024
       objectReference: {fileID: 0}
     - target: {fileID: 5444634515647165470, guid: db3812a43611c2a4f8993319725c67e3,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.343
+      value: 0.985
       objectReference: {fileID: 0}
     - target: {fileID: 5444634515647165470, guid: db3812a43611c2a4f8993319725c67e3,
         type: 3}
@@ -68257,6 +68033,11 @@ PrefabInstance:
       objectReference: {fileID: 6618901274418772837}
     - target: {fileID: 7951063454954486323, guid: db3812a43611c2a4f8993319725c67e3,
         type: 3}
+      propertyPath: eyeLevel
+      value: 
+      objectReference: {fileID: 933807432}
+    - target: {fileID: 7951063454954486323, guid: db3812a43611c2a4f8993319725c67e3,
+        type: 3}
       propertyPath: viewAngle
       value: 90
       objectReference: {fileID: 0}
@@ -68265,25 +68046,35 @@ PrefabInstance:
       propertyPath: viewRadius
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 7951063454954486323, guid: db3812a43611c2a4f8993319725c67e3,
+        type: 3}
+      propertyPath: targetMask.m_Bits
+      value: 128
+      objectReference: {fileID: 0}
     - target: {fileID: 8370930800154514877, guid: db3812a43611c2a4f8993319725c67e3,
         type: 3}
       propertyPath: m_Height
-      value: 1.8109416
+      value: 1.809316
       objectReference: {fileID: 0}
     - target: {fileID: 8370930800154514877, guid: db3812a43611c2a4f8993319725c67e3,
         type: 3}
       propertyPath: m_Radius
-      value: 0.11808642
+      value: 0.118125916
+      objectReference: {fileID: 0}
+    - target: {fileID: 8370930800154514877, guid: db3812a43611c2a4f8993319725c67e3,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 0.0049057007
       objectReference: {fileID: 0}
     - target: {fileID: 8370930800154514877, guid: db3812a43611c2a4f8993319725c67e3,
         type: 3}
       propertyPath: m_Center.y
-      value: 0.9445474
+      value: 0.94373626
       objectReference: {fileID: 0}
     - target: {fileID: 8370930800154514877, guid: db3812a43611c2a4f8993319725c67e3,
         type: 3}
       propertyPath: m_Center.z
-      value: -0.066355154
+      value: -0.027839225
       objectReference: {fileID: 0}
     - target: {fileID: 8370930800154514877, guid: db3812a43611c2a4f8993319725c67e3,
         type: 3}
@@ -68291,9 +68082,23 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 13400000, guid: f80d9806d8e10bb49b0798d44a97e18c,
         type: 2}
+    - target: {fileID: 8522725357890421360, guid: db3812a43611c2a4f8993319725c67e3,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8522725357890421360, guid: db3812a43611c2a4f8993319725c67e3,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 84
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 5444634515647165470, guid: db3812a43611c2a4f8993319725c67e3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 933807432}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db3812a43611c2a4f8993319725c67e3, type: 3}
 --- !u!4 &2013360724 stripped
@@ -69655,12 +69460,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2051957104}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &2046665124 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-    type: 3}
-  m_PrefabInstance: {fileID: 739848700}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2047493740
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -69841,74 +69640,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2108397822}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &2049195940
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1999417153}
-    m_Modifications:
-    - target: {fileID: 8452876690058728311, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_Name
-      value: Mesada_isla_esquinero (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -9.590003
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 2.5400004
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 270
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a134806d8a907274a9cc0362dec16cf6, type: 3}
 --- !u!1001 &2049544939
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -69921,6 +69652,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Modulo_mesada_estantes (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4241558406916630102, guid: 193d22a1be0d22b4d897e0831f944544,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8833545348634115242, guid: 193d22a1be0d22b4d897e0831f944544,
         type: 3}
@@ -70198,6 +69934,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Modulo_mesada_puertas (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7402152196151051450, guid: a74586944e0e6b6419ecb7869464e127,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -70606,6 +70347,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Estanteria_apoyada (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7289881390307656133, guid: e32dcfcfb0c3c4849bb78e550e4052c1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -71096,12 +70842,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1326943514}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &2076782682 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-    type: 3}
-  m_PrefabInstance: {fileID: 1885703936}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2078520834 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2166390569208551154, guid: 45778b9f5a06347468b135659c667055,
@@ -71285,6 +71025,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tuberia_I (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1280125176140318777, guid: a10b45f835a65e140903305e4729bb83,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6634825606411602066, guid: a10b45f835a65e140903305e4729bb83,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -71432,10 +71177,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mesada_isla_estante (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1189732760735595606, guid: c9b0887cd701e7a4ebbad5a1f03683d5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4819350545433988659, guid: c9b0887cd701e7a4ebbad5a1f03683d5,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.590003
+      value: -9.361
       objectReference: {fileID: 0}
     - target: {fileID: 4819350545433988659, guid: c9b0887cd701e7a4ebbad5a1f03683d5,
         type: 3}
@@ -71918,6 +71668,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Estanteria_apoyada
+      objectReference: {fileID: 0}
+    - target: {fileID: 7289881390307656133, guid: e32dcfcfb0c3c4849bb78e550e4052c1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -72644,6 +72399,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2115813074}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &2117718380 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4819350545433988659, guid: c9b0887cd701e7a4ebbad5a1f03683d5,
+    type: 3}
+  m_PrefabInstance: {fileID: 2137205062}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2118650338
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -72891,7 +72652,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2129815412}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tuberias
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73162,6 +72923,79 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1457555352}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2137205062
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1999417153}
+    m_Modifications:
+    - target: {fileID: 1189732760735595606, guid: c9b0887cd701e7a4ebbad5a1f03683d5,
+        type: 3}
+      propertyPath: m_Name
+      value: Mesada_isla_estante (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189732760735595606, guid: c9b0887cd701e7a4ebbad5a1f03683d5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819350545433988659, guid: c9b0887cd701e7a4ebbad5a1f03683d5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819350545433988659, guid: c9b0887cd701e7a4ebbad5a1f03683d5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819350545433988659, guid: c9b0887cd701e7a4ebbad5a1f03683d5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.394
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819350545433988659, guid: c9b0887cd701e7a4ebbad5a1f03683d5,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819350545433988659, guid: c9b0887cd701e7a4ebbad5a1f03683d5,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819350545433988659, guid: c9b0887cd701e7a4ebbad5a1f03683d5,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819350545433988659, guid: c9b0887cd701e7a4ebbad5a1f03683d5,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819350545433988659, guid: c9b0887cd701e7a4ebbad5a1f03683d5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819350545433988659, guid: c9b0887cd701e7a4ebbad5a1f03683d5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819350545433988659, guid: c9b0887cd701e7a4ebbad5a1f03683d5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c9b0887cd701e7a4ebbad5a1f03683d5, type: 3}
 --- !u!1001 &2138263695
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -73741,74 +73575,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2144923523}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &2145287206
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1999417153}
-    m_Modifications:
-    - target: {fileID: 8452876690058728311, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_Name
-      value: Mesada_isla_esquinero (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -7.35
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 2.0199993
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: 8746279465116438026, guid: a134806d8a907274a9cc0362dec16cf6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a134806d8a907274a9cc0362dec16cf6, type: 3}
 --- !u!4 &2147461423 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6634825606411602066, guid: a10b45f835a65e140903305e4729bb83,
@@ -74669,17 +74435,17 @@ PrefabInstance:
     - target: {fileID: 6785032628581567838, guid: b7eb0eb22b968334d9c11b0813483b87,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.432
+      value: -8.925
       objectReference: {fileID: 0}
     - target: {fileID: 6785032628581567838, guid: b7eb0eb22b968334d9c11b0813483b87,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.107
       objectReference: {fileID: 0}
     - target: {fileID: 6785032628581567838, guid: b7eb0eb22b968334d9c11b0813483b87,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.367
+      value: -2.106
       objectReference: {fileID: 0}
     - target: {fileID: 6785032628581567838, guid: b7eb0eb22b968334d9c11b0813483b87,
         type: 3}
@@ -74715,6 +74481,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8411233561247062406, guid: b7eb0eb22b968334d9c11b0813483b87,
+        type: 3}
+      propertyPath: sprayAngle
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8411233561247062406, guid: b7eb0eb22b968334d9c11b0813483b87,
+        type: 3}
+      propertyPath: sprayRadius
+      value: 3.13
       objectReference: {fileID: 0}
     - target: {fileID: 8866978887037818906, guid: b7eb0eb22b968334d9c11b0813483b87,
         type: 3}

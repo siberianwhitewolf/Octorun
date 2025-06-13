@@ -147,7 +147,7 @@ MonoBehaviour:
   isTargetNode: 0
   colliderRadius: 0.3
   isTextVisible: 0
-  walkableMat: {fileID: 2100000, guid: 5b5f80acd9122cd4091c4cb180146707, type: 2}
+  walkableMat: {fileID: 2100000, guid: 86243ce8c1d1db54996a4c87a1cd41d1, type: 2}
   notWalkableMat: {fileID: 2100000, guid: d19629a5e180b634f9b9ec7c7f96949d, type: 2}
   targetMat: {fileID: 2100000, guid: bdfec62ed1a594444972b2117034ed29, type: 2}
   obstacleLayer:
