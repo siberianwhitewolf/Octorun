@@ -20,9 +20,7 @@ public class OctopusController : Entity, IAdjustableSpeed
     public MaterialFloatLerp  _materialFloatLerp;
     private WallCling _wallCling;
     private OctopusJump _octopusJump;
-    
-    // La referencia al Animator ahora puede estar en un hijo.
-    // Lo asignamos en el Inspector para mayor claridad.
+
     [Header("References")]
     public Animator _animator; 
     private Camera mainCamera;
@@ -48,10 +46,18 @@ public class OctopusController : Entity, IAdjustableSpeed
 
     protected override void Update()
     {
+        if (_wallCling != null && _wallCling.IsClinging)
+        {
+            _moveDirection = Vector3.zero; 
+            animator.SetBool("IsMovingForward", false);
+            _wallCling.RotateTowardsMouseOnWall();
+            return;
+        }
+
         base.Update();
-        
-        bool canCurrentlyMove = !isHiding && (_wallCling == null || !_wallCling._isClinging) && isAlive;
-        
+
+        bool canCurrentlyMove = !isHiding && (_wallCling == null || !_wallCling.IsClinging) && isAlive;
+
         if (canCurrentlyMove)
         {
             GetInputs();
@@ -61,13 +67,13 @@ public class OctopusController : Entity, IAdjustableSpeed
         {
             _moveDirection = Vector3.zero;
         }
-            
+
         if (Input.GetKeyDown(KeyCode.Q) && isAlive)
         {
             if(animator) animator.SetTrigger("HideToggle");
             SetIsHiding();
         }
-        
+
         if (isHiding && isAlive)
         {
             HideTimer();
@@ -78,7 +84,7 @@ public class OctopusController : Entity, IAdjustableSpeed
             animator.SetBool("IsMovingForward", _moveDirection.sqrMagnitude > 0);
         }
     }
-    
+
     void FixedUpdate()
     {
         if (canMove && _octopusJump.isGrounded)
@@ -88,18 +94,11 @@ public class OctopusController : Entity, IAdjustableSpeed
         }
     }
 
-    /// <summary>
-    /// Calcula el impulso de movimiento basado en la dirección que mira el personaje.
-    /// </summary>
     void GetInputs()
     {
-        // --- LÓGICA DE MOVIMIENTO TIPO TANQUE CORREGIDA ---
-        float verticalInput = Input.GetAxis("Vertical"); // Solo leemos W y S
-
-        // La dirección del movimiento ahora es el 'adelante' del objeto controlador, que es el estándar.
+        float verticalInput = Input.GetAxis("Vertical");
         _moveDirection = transform.forward * verticalInput;
 
-        // La propiedad pública se sigue actualizando para otros scripts.
         if (_moveDirection.sqrMagnitude > 0)
         {
             MoveDirection = _moveDirection.normalized;
@@ -109,10 +108,7 @@ public class OctopusController : Entity, IAdjustableSpeed
             MoveDirection = Vector3.zero;
         }
     }
-    
-    /// <summary>
-    /// Rota al personaje para que siempre mire hacia la posición del cursor del mouse.
-    /// </summary>
+
     void RotateTowardsMouse()
     {
         Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
@@ -126,16 +122,11 @@ public class OctopusController : Entity, IAdjustableSpeed
 
             if (directionToLook.sqrMagnitude > 0.01f)
             {
-                // --- ROTACIÓN SIMPLIFICADA ---
-                // Ya no necesitamos multiplicar por Euler(-90,0,0) porque eso se maneja en el transform del hijo.
-                // Ahora rotamos el objeto padre, que tiene una rotación normal.
                 Quaternion targetRotation = Quaternion.LookRotation(directionToLook);
                 transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * rotationSpeed);
             }
         }
     }
-    
-    // --- El resto de tus funciones se mantienen igual ---
 
     void SetIsHiding()
     {
@@ -160,7 +151,7 @@ public class OctopusController : Entity, IAdjustableSpeed
     {
         _speedMultiplier = multiplier;
     }
-    
+
     public void SetMovement(bool canPlayerMove)
     {
         canMove = canPlayerMove;

@@ -146,10 +146,8 @@ public class ChefAIController : MonoBehaviour, IBlindable
     /// </summary>
     private bool HasLineOfSightTo(Vector3 target)
     {
-        // Usamos un Linecast, que es como un Raycast pero entre dos puntos.
-        // Si golpea algo en la capa de obstáculos, no hay línea de visión.
-        // Añadimos un poco de altura para evitar que el rayo choque con el suelo.
-        return !Physics.Linecast(transform.position + Vector3.up * 0.5f, target + Vector3.up * 0.5f, obstacleMask);
+        
+        return Physics.Linecast(transform.position, target, playerMask);
     }
 
     /// <summary>

@@ -26,6 +26,7 @@ public class OctopusJump : MonoBehaviour
     private float _chargeTimer = 1f;
     private IAdjustableSpeed _adjustableSpeed;
     Animator _animator;
+    private WallCling wallCling;
 
     private void Awake()
     {
@@ -35,6 +36,7 @@ public class OctopusJump : MonoBehaviour
     void Start()
     {
         _rb = GetComponent<Rigidbody>();
+        wallCling = GetComponent<WallCling>();
 
         // Verifica que el script de movimiento implementa la interfaz (si corresponde)
         if (movementScript is IAdjustableSpeed speed)
@@ -43,6 +45,8 @@ public class OctopusJump : MonoBehaviour
 
     void Update()
     {
+        
+        if (wallCling != null && wallCling.IsClinging) return;
         
         CheckGround();
         
