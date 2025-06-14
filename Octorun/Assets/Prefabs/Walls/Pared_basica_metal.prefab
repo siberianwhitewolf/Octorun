@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6877016759252193316}
   - component: {fileID: 7182514414621469007}
   - component: {fileID: 2201607325118586882}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Pared_basica_metal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
