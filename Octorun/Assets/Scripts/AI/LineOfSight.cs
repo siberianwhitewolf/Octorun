@@ -5,8 +5,10 @@ public class LineOfSight : MonoBehaviour
     public Transform target;
     public float viewRadius = 10f;
     [Range(0, 360)] public float viewAngle = 90f;
-    public Transform eyeLevel;
     
+    // --- NUEVA VARIABLE ---
+    [Tooltip("La altura desde el pivote del Chef desde donde se origina la visión (sus 'ojos').")]
+    public float eyeHeight = 1.5f;
 
     public LayerMask targetMask; // Nota: Esta variable no se está usando, pero la dejo por si la necesitas.
     public LayerMask obstacleMask;
@@ -17,16 +19,16 @@ public class LineOfSight : MonoBehaviour
     void Update()
     {
         CanSeeTarget = CheckLineOfSight();
-        Debug.Log(CanSeeTarget);
         
         // --- NUEVO: DIBUJAR LÍNEA DE DEBUG EN TIEMPO REAL ---
         // Esto te permitirá ver exactamente qué está pasando en la vista de Scene.
         #if UNITY_EDITOR
         if (target != null)
         {
-            Vector3 origin = eyeLevel.position;
+            Vector3 origin = transform.position + Vector3.up * eyeHeight;
+            Vector3 targetCenter = target.position + Vector3.up * (eyeHeight / 2); // Apuntamos al centro del torso del objetivo
             Color debugColor = CanSeeTarget ? Color.green : Color.red;
-            Debug.DrawLine(origin, target.position, debugColor);
+            Debug.DrawLine(origin, targetCenter, debugColor);
         }
         #endif
     }
@@ -59,11 +61,11 @@ public class LineOfSight : MonoBehaviour
 
         // 3. --- COMPROBACIÓN DE OBSTÁCULOS CORREGIDA ---
         // Lanzamos el rayo desde la altura de los ojos hacia el centro del torso del objetivo.
-        Vector3 origin = eyeLevel.position;
-        Vector3 targetCenter = target.position; 
+        Vector3 origin = transform.position + Vector3.up * eyeHeight;
+        Vector3 targetCenter = target.position + Vector3.up * (eyeHeight/2); // Un poco más bajo que los ojos del Chef
 
         // Si el Linecast NO golpea ningún obstáculo, entonces SÍ podemos ver al objetivo.
-        if (Physics.Linecast(origin, targetCenter, targetMask))
+        if (!Physics.Linecast(origin, targetCenter, obstacleMask))
         {
             return true;
         }

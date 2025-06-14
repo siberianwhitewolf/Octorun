@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6769540907976576222}
   - component: {fileID: 7752460291362700241}
   - component: {fileID: 5020451410234544162}
-  - component: {fileID: 562385616286082235}
+  - component: {fileID: 5854777198753866982}
   m_Layer: 0
   m_Name: Estanteria_apoyada
   m_TagString: Untagged
@@ -84,7 +84,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &562385616286082235
+--- !u!65 &5854777198753866982
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -103,5 +103,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 4.2079444, y: 40.19659, z: 4.177105}
-  m_Center: {x: -113.91776, y: 20.098295, z: 24.108198}
+  m_Size: {x: 120.00012, y: 43.999992, z: 30.000008}
+  m_Center: {x: -60.00006, y: 21.999996, z: 15.000004}

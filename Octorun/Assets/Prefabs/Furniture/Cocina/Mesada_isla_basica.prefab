@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7637520769738934215}
   - component: {fileID: 9178121754317477965}
   - component: {fileID: 1296718390594975814}
-  - component: {fileID: 5539946703825698610}
+  - component: {fileID: 8830039154958670406}
   m_Layer: 0
   m_Name: Mesada_isla_basica
   m_TagString: Untagged
@@ -84,14 +84,14 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &5539946703825698610
+--- !u!65 &8830039154958670406
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 633164792566857088}
-  m_Material: {fileID: 13400000, guid: f80d9806d8e10bb49b0798d44a97e18c, type: 2}
+  m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -103,5 +103,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 3.1633434, y: 10.086107, z: 3.2592056}
-  m_Center: {x: -56.8, y: 67.73093, z: 64.90185}
+  m_Size: {x: 120.00011, y: 90, z: 66.53146}
+  m_Center: {x: -60.00004, y: 45, z: 33.26573}

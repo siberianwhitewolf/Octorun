@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6969372540318712681}
   - component: {fileID: 5065561011230044993}
   - component: {fileID: 1697217098696946726}
-  - component: {fileID: 7980199115997388043}
+  - component: {fileID: 2672428422331244412}
   m_Layer: 0
   m_Name: Modulo_mesada_puertas
   m_TagString: Untagged
@@ -84,7 +84,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &7980199115997388043
+--- !u!65 &2672428422331244412
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -103,5 +103,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 3.0665395, y: 10.187674, z: 7.6573725}
-  m_Center: {x: -63.281963, y: 67.82004, z: 62.702747}
+  m_Size: {x: 120.00012, y: 97.1547, z: 66.53146}
+  m_Center: {x: -60.00003, y: 48.57735, z: 33.26573}
